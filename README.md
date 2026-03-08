@@ -28,6 +28,8 @@ Each skill is a self-contained module (a `SKILL.md` file) that:
 - Connects to real databases, APIs, and computational tools
 - Produces structured, clinically or scientifically relevant outputs
 
+> We benefit from the open-source community. The full collection of resources can be found here: [Awesome LLM Resources](https://github.com/WangRongsheng/awesome-LLM-resources?tab=readme-ov-file#%E6%8A%80%E8%83%BD-Skills)
+
 ### Why This Collection Matters
 
 | Without Skills | With OpenClaw Medical Skills |
