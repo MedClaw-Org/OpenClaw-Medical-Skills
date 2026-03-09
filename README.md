@@ -1553,3 +1553,9 @@ Your agent should list the installed skills with their capabilities.
 | [using-git-worktrees](skills/using-git-worktrees/) | Create isolated git worktrees for feature work and plan execution. |
 | [finishing-a-development-branch](skills/finishing-a-development-branch/) | Complete development branches: merge, PR, or cleanup with structured decision options. |
 | [using-superpowers](skills/using-superpowers/) | Meta-skill: discover and use available skills for any task at conversation start. |
+
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=FreedomIntelligence/OpenClaw-Medical-Skills&type=Date)](https://star-history.com/#FreedomIntelligence/OpenClaw-Medical-Skills&Date)
