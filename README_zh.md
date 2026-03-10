@@ -156,19 +156,15 @@ Agent 应当列出已安装的技能及其功能说明。
 
 | 类别 | 数量 | 代表技能 |
 |---|---|---|
-| 通用工具 | 9 | 浏览器、深度研究、PDF/DOCX/XLSX/PPTX |
-| 临床与医疗 | 30+ | 预授权、临床报告、CDS、FHIR、USMLE |
-| 药物发现与安全 | 20+ | DDI 预测、药物警戒、药物再利用、ADMET |
-| 科学数据库 | 35+ | PubMed、ChEMBL、UniProt、GWAS 目录、FDA |
-| 生物信息学 (gptomics) | 228 | 变异注释、RNA-seq、scRNA-seq、ATAC-seq |
-| 组学工具 | 50+ | Scanpy、scVI、空间转录组、蛋白质组 |
-| 蛋白质设计 | 15+ | RFdiffusion、ProteinMPNN、AlphaFold、BindCraft |
-| 健康管理 | 19 | 营养、睡眠、健身、中医体质、心理健康 |
-| 医疗器械法规 | 47 | FDA、IEC 62304、ISO 14971、EU MDR、FHIR |
-| BioOS 扩展套件 | 285+ | 端到端流程、肿瘤智能体、临床 AI |
-| ClawBio 管道 | 22 | scRNA 编排、GWAS、祖先分析、药物基因组学 |
-| 模拟与本体论 | 17 | 本体验证、数值求解器、网格生成 |
-| **总计** | **872** | |
+| 通用与核心 | 10 | 浏览器/搜索、文档处理与开发工作流工具 |
+| 医疗与临床 | 119 | 临床报告、决策支持、肿瘤学、影像与医疗 AI |
+| 科学数据库 | 43 | 基因组/蛋白/药物数据库与生物医学检索 |
+| 生物信息学 (gptomics bio-* 套件) | 239 | 变异分析、测序质控、差异表达、通路与单细胞分析 |
+| 组学与计算生物学 | 59 | 单细胞/空间组学、蛋白质组、化学信息学与蛋白设计 |
+| ClawBio 管道 | 21 | 面向 scRNA、GWAS、祖先分析与结构生物学的编排流程 |
+| BioOS 扩展套件 | 285 | 覆盖肿瘤、免疫、临床 AI 与研究基础设施的扩展智能体 |
+| 数据科学与工具 | 93 | 统计、可视化、自动化、模拟与科研工具链 |
+| **总计** | **869** | |
 
 ---
 
@@ -185,16 +181,16 @@ Agent 应当列出已安装的技能及其功能说明。
 - [心理健康与危机干预](#心理健康与危机干预)
 - [健康与健康管理分析](#健康与健康管理分析)
 - [医疗器械与监管](#医疗器械与监管)
-- [医疗器械软件 (meddev-agent-skills)](#医疗器械软件-aminalammeddev-agent-skills-47个技能)
+- [医疗器械软件 (meddev-agent-skills)](#医疗器械与监管)
 
 ### 科学数据库
-- [科学数据库（基因组与变异）](#科学数据库基因组与变异)
-- [科学数据库（蛋白质、通路与药物）](#科学数据库蛋白质通路与药物)
+- [科学数据库（基因组与变异）](#科学数据库（基因组与变异）)
+- [科学数据库（蛋白质、通路与药物）](#科学数据库（蛋白质、通路与药物）)
 - [癌症基因组数据库](#癌症基因组数据库)
 - [基因组与分子数据库](#基因组与分子数据库)
 - [结构生物学与药物发现](#结构生物学与药物发现)
 
-### 生物信息学 (gptomics bio-* 套件)
+### 生物信息学 (gptomics)
 - [生物信息学工具与流程](#生物信息学工具与流程)
 - [生物信息 — 临床数据库与变异分析](#生物信息--临床数据库与变异分析)
 - [生物信息 — 测序与读长质控](#生物信息--测序与读长质控)
@@ -219,7 +215,7 @@ Agent 应当列出已安装的技能及其功能说明。
 
 ### ClawBio 管道
 - [生物信息学编排与管道 (ClawBio)](#生物信息学编排与管道-clawbio)
-- [基因组学、祖先分析与药物基因组学 (ClawBio)](#基因组学祖先分析与药物基因组学-clawbio)
+- [基因组学、祖先分析与药物基因组学 (ClawBio)](#基因组学、祖先分析与药物基因组学-clawbio)
 - [结构生物学与文献综合 (ClawBio)](#结构生物学与文献综合-clawbio)
 
 ### BioOS 扩展套件
@@ -243,15 +239,21 @@ Agent 应当列出已安装的技能及其功能说明。
 - [科学研究与写作](#科学研究与写作)
 - [科学文献与参考管理](#科学文献与参考管理)
 - [补充科学工具](#补充科学工具)
-- [开发工作流技能](#开发工作流技能-obra-superpowers-14个)
+- [开发工作流技能](#开发工作流技能-obrasuperpowers-14个)
 
 ---
 
 ## 技能列表
 
----
+## 🧰 通用与核心
 
-## 通用工具
+<details open>
+<summary>展开/收起该大类</summary>
+
+### 通用工具
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -266,9 +268,19 @@ Agent 应当列出已安装的技能及其功能说明。
 | [pptx](skills/pptx/) | 演示文稿创建、编辑与分析。支持布局、演讲者备注、模板和设计定制。处理任何 .pptx 文件时使用。 |
 | [doc-coauthoring](skills/doc-coauthoring/) | 结构化文档协作撰写工作流。撰写文档、提案、技术规格、决策文件或类似结构化内容时使用。 |
 
----
+</details>
 
-## 医疗专用工具
+</details>
+
+## 🏥 医疗与临床
+
+<details open>
+<summary>展开/收起该大类</summary>
+
+### 医疗专用工具
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -348,9 +360,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [gwas-database](skills/gwas-database/) | 查询 NHGRI-EBI GWAS Catalog 的 SNP-性状关联——按 rs ID、疾病/性状或基因检索，获取 p 值和汇总统计数据。 |
 | [scikit-survival](skills/scikit-survival/) | Python 生存分析与时间-事件建模工具——Kaplan-Meier 曲线、Cox 回归、log-rank 检验和删失数据处理（scikit-survival）。 |
 
----
+</details>
 
 ### 药物安全与化学生物学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -361,9 +376,107 @@ Agent 应当列出已安装的技能及其功能说明。
 | [tooluniverse-drug-target-validation](skills/tooluniverse-drug-target-validation/) | 跨10个维度（消歧、疾病关联、成药性、化合物存量、临床先例、安全性、表达证据）计算验证药物靶点，用于早期药物发现。 |
 | [tooluniverse-sequence-retrieval](skills/tooluniverse-sequence-retrieval/) | 从 NCBI 和 ENA 检索生物序列（DNA、RNA、蛋白质），含基因消歧、登录号类型处理和综合序列档案。 |
 
----
+</details>
+
+### 医学影像与病理
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
+|------|------|
+| [pydicom](skills/pydicom/) | 用于处理 DICOM 医学影像文件的 Python 库。读取、写入、修改 DICOM 数据，提取像素数据，处理元数据和多帧文件。 |
+| [histolab](skills/histolab/) | 全切片图像（WSI）数字病理学图像处理工具包。处理 H&E 或 IHC 染色组织图像，从吉像素切片中提取图块用于深度学习。 |
+| [pathml](skills/pathml/) | 用于分析 WSI 和多参数影像数据的计算病理学工具包。支持 H&E 染色图像、多重免疫荧光和空间组学整合。 |
+| [omero-integration](skills/omero-integration/) | 显微镜数据管理平台。通过 Python 访问图像，检索数据集，分析像素，管理 ROI/注释，用于高内容筛选工作流。 |
+| [neurokit2](skills/neurokit2/) | 综合生理信号处理工具包：ECG、EEG、EDA、RSP、PPG、EMG、EOG 信号。心血管信号分析、神经生理学和生理数据处理。 |
+| [neuropixels-analysis](skills/neuropixels-analysis/) | Neuropixels 神经记录分析。加载 SpikeGLX/OpenEphys 数据，Kilosort4 峰值排序，质量指标，Allen/IBL 管理，用于神经科学研究。 |
+
+</details>
+
+### 医疗 ML 与临床 AI
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
+|------|------|
+| [pyhealth](skills/pyhealth/) | 用于临床数据（EHR、医保理赔）开发 ML 模型的综合医疗 AI 工具包。任务定义 API、模型训练、评估，用于临床 NLP 和预测。 |
+| [scikit-learn](skills/scikit-learn/) | Python 机器学习：监督学习（分类、回归）、无监督学习（聚类、降维）、模型评估、超参数调优，应用于医疗数据分析。 |
+| [transformers](skills/transformers/) | 用于 NLP、计算机视觉、音频和多模态任务的预训练 Transformer 模型。文本生成、分类、问答和生物医学 NLP（BioBERT、ClinicalBERT）。 |
+| [shap](skills/shap/) | 使用 SHAP（沙普利加性解释）的模型可解释性。解释 ML 模型预测，计算特征重要性，生成生物医学模型的 SHAP 图。 |
+| [umap-learn](skills/umap-learn/) | UMAP 降维。快速非线性流形学习，用于 2D/3D 可视化、聚类预处理（HDBSCAN），用于高维组学数据。 |
+
+</details>
+
+### 健康与健康管理分析
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [nutrition-analyzer](skills/nutrition-analyzer/) | 全面营养分析：宏量/微量营养素追踪、膳食评估、餐食规划、食物数据查询和营养建议。 |
+| [mental-health-analyzer](skills/mental-health-analyzer/) | 心理健康数据分析：情绪追踪、症状模式、PHQ/GAD评分、行为洞察和健康建议。 |
+| [sleep-analyzer](skills/sleep-analyzer/) | 睡眠质量分析：睡眠阶段、时长、效率指标、昼夜节律评估和睡眠卫生建议。 |
+| [rehabilitation-analyzer](skills/rehabilitation-analyzer/) | 康复进度追踪：功能评估、运动方案、康复里程碑和物理/职业治疗结局测量。 |
+| [fitness-analyzer](skills/fitness-analyzer/) | 健身表现分析：运动追踪、力量/有氧指标、训练负荷、VO2max估算和周期化规划。 |
+| [health-trend-analyzer](skills/health-trend-analyzer/) | 纵向健康趋势分析：生命体征追踪、生物标志物趋势、风险因素监测和预测性健康洞察。 |
+| [weightloss-analyzer](skills/weightloss-analyzer/) | 体重管理分析：热量平衡、体成分追踪、进度监测和循证减重策略。 |
+| [goal-analyzer](skills/goal-analyzer/) | 健康目标追踪与分析：SMART目标设定、进度指标、习惯养成和健康目标的激励洞察。 |
+| [occupational-health-analyzer](skills/occupational-health-analyzer/) | 职业健康评估：工作场所人体工程学、暴露风险、工作相关疾病监测和复工规划。 |
+| [travel-health-analyzer](skills/travel-health-analyzer/) | 旅行医学：目的地健康风险、疫苗接种要求、疟疾预防、高原反应和旅行者健康准备。 |
+| [family-health-analyzer](skills/family-health-analyzer/) | 家庭健康管理：儿科发育里程碑、家族病史、预防性筛查时间表和多代健康追踪。 |
+| [tcm-constitution-analyzer](skills/tcm-constitution-analyzer/) | 中医体质分析：中医体质评估、证型辨别、草药建议和生活方式指导。 |
+| [emergency-card](skills/emergency-card/) | 生成包含关键健康数据、药物、过敏和紧急联系人的急救医疗信息卡，用于患者安全。 |
+| [ai-analyzer](skills/ai-analyzer/) | AI驱动的全面健康数据解读，结合多个生物标志物和健康指标进行整体健康评估。 |
+| [wellally-tech](skills/wellally-tech/) | WellAlly健康分析平台的技术框架：集成模式、数据管道和健康AI基础设施。 |
+
+</details>
+
+### 心理健康与危机干预
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [crisis-detection-intervention-ai](skills/crisis-detection-intervention-ai/) | 使用NLP和心理健康情感分析检测危机信号。实现自杀意念检测、自动升级和危机资源整合，用于心理健康应用和康复平台。 |
+| [crisis-response-protocol](skills/crisis-response-protocol/) | 安全处理心理健康危机情况：危机检测、安全协议、紧急升级、自杀预防和热线整合，适用于AI辅导应用。 |
+| [hipaa-compliance](skills/hipaa-compliance/) | 处理PHI时确保HIPAA合规。用于健康数据应用的审计日志、数据访问控制、安全事件追踪和合规验证。 |
+| [clinical-diagnostic-reasoning](skills/clinical-diagnostic-reasoning/) | 通过系统性错误分析、鉴别诊断框架和临床判断改进，识别和抵制医疗决策中的认知偏见。 |
+| [speech-pathology-ai](skills/speech-pathology-ai/) | AI驱动的言语语言病理学：音素分析、构音可视化、嗓音障碍评估、流利度干预、AAC和口吃治疗支持。 |
+| [hrv-alexithymia-expert](skills/hrv-alexithymia-expert/) | 心率变异性生物特征和情绪意识训练。HRV分析、内感受训练、生物反馈、迷走神经张力评估和自主神经系统评价。 |
+| [adhd-daily-planner](skills/adhd-daily-planner/) | ADHD优化的日常规划：时间盲友好的日程安排、执行功能支持、多巴胺感知任务设计和神经多样性友好的生产力系统。 |
+| [grief-companion](skills/grief-companion/) | 富有同理心的丧亲支持、纪念创作、悲伤教育和在非线性失落旅程中提供治愈引导。 |
+| [jungian-psychologist](skills/jungian-psychologist/) | 荣格分析心理学：阴影工作、原型分析、梦境解析、积极想象、通过深层心理学视角的成瘾/康复和个体化过程。 |
+| [modern-drug-rehab-computer](skills/modern-drug-rehab-computer/) | 综合成瘾康复知识系统：循证治疗（CBT、DBT、MI、EMDR、MAT）、康复资源、危机干预和戒毒机构的家庭系统。 |
+| [recovery-community-moderator](skills/recovery-community-moderator/) | 成瘾康复社区的创伤知情AI主持：减少伤害、12步传统、冲突检测和危机帖子识别。 |
+
+</details>
+
+### 医疗器械与监管
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [iso-13485-certification](skills/iso-13485-certification/) | 医疗器械ISO 13485质量管理体系文档综合工具包：差距分析、质量手册、程序、医疗器械档案。涵盖FDA QMSR、EU MDR合规要求。 |
+
+</details>
+
+</details>
+
+## 🗂️ 科学数据库
+
+<details open>
+<summary>展开/收起该大类</summary>
 
 ### 科学数据库（基因组与变异）
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -377,9 +490,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [gget](skills/gget/) | 快速生物信息查询的 CLI/Python 工具包，访问 20+ 数据库：Ensembl、UniProt、AlphaFold、ARCHS4、Enrichr、OpenTargets、COSMIC、BLAST 等。 |
 | [pysam](skills/pysam/) | 基因组文件工具包。读写 SAM/BAM/CRAM 比对、VCF/BCF 变异、FASTA/FASTQ 序列，提取区域，计算覆盖度，用于 NGS 数据处理流程。 |
 
----
+</details>
 
 ### 科学数据库（蛋白质、通路与药物）
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -404,9 +520,63 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bioservices](skills/bioservices/) | 访问 40+ 生物信息学服务的首选 Python 工具。UniProt、KEGG、ChEMBL、PubChem、Reactome、QuickGO 的统一 API——推荐用于多数据库工作流。 |
 | [uspto-database](skills/uspto-database/) | 访问 USPTO API 进行专利/商标搜索、审查历史（PEDS）、转让、引用、办公室行动，用于 IP 分析和先有技术检索。 |
 
----
+</details>
+
+### 癌症基因组数据库
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [cbioportal-database](skills/cbioportal-database/) | 查询cBioPortal的癌症基因组数据：体细胞突变、拷贝数、基因表达和数百项癌症研究的生存数据。癌症靶点验证、癌基因分析和患者级基因组图谱。 |
+| [depmap](skills/depmap/) | 查询癌症依赖图谱（DepMap）的癌细胞系基因依赖评分（CRISPR Chronos）、药物敏感性和基因效应图谱。识别癌症特异性脆弱性和合成致死相互作用。 |
+| [imaging-data-commons](skills/imaging-data-commons/) | 查询和下载NCI成像数据共享平台的公共癌症成像数据。访问放射学（CT、MR、PET）和病理数据集用于AI训练或研究。无需身份验证。 |
+
+</details>
+
+### 基因组与分子数据库
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [bindingdb-database](skills/bindingdb-database/) | 查询BindingDB获取药物-靶点结合亲和力数据（Ki、Kd、IC50、EC50）。药物发现、先导化合物优化、多药理学和SAR研究。 |
+| [gnomad-database](skills/gnomad-database/) | 查询gnomAD获取群体等位基因频率、变异约束评分（pLI、LOEUF）和功能丧失不耐受性。变异致病性解读和罕见病遗传学。 |
+| [gtex-database](skills/gtex-database/) | 查询GTEx获取组织特异性基因表达、eQTL和sQTL。将GWAS变异与基因调控联系起来并解释非编码变异效应。 |
+| [interpro-database](skills/interpro-database/) | 查询InterPro获取蛋白质家族、结构域和功能位点注释。整合Pfam、PANTHER、PRINTS、SMART等11+数据库进行蛋白质功能预测。 |
+| [jaspar-database](skills/jaspar-database/) | 查询JASPAR获取转录因子结合位点图谱（PWM/PFM）。调控基因组学、基序分析和GWAS调控变异解读。 |
+| [monarch-database](skills/monarch-database/) | 查询Monarch Initiative知识图谱获取疾病-基因-表型关联。整合OMIM、ORPHANET、HPO、ClinVar用于罕见病基因发现。 |
+| [tiledbvcf](skills/tiledbvcf/) | 使用TileDB进行可扩展的VCF/BCF摄取、存储和并行查询，用于大规模群体基因组学。 |
+
+</details>
+
+### 结构生物学与药物发现
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [molecular-dynamics](skills/molecular-dynamics/) | 使用OpenMM和MDAnalysis运行和分析分子动力学模拟。蛋白质/小分子系统、力场、能量最小化、RMSD/RMSF分析、自由能面计算。 |
+| [glycoengineering](skills/glycoengineering/) | 分析和工程化蛋白质糖基化。预测N/O-糖基化位点，访问糖工程化工具（NetOGlyc、GlycoShield）。治疗性抗体优化和疫苗设计。 |
+| [adaptyv](skills/adaptyv/) | 自动化蛋白质测试的云实验室平台：结合测定、表达测试、热稳定性、酶活性。使用NetSolP、SoluProt、ESM进行蛋白质序列优化。 |
+| [ginkgo-cloud-lab](skills/ginkgo-cloud-lab/) | 在Ginkgo Bioworks云实验室提交和管理协议，实现自主实验室执行。无细胞蛋白质表达、协议工作流程和生物技术自动化。 |
+
+</details>
+
+</details>
+
+## 🧬 生物信息学 (gptomics bio-* 套件)
+
+<details open>
+<summary>展开/收起该大类</summary>
 
 ### 生物信息学工具与流程
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 说明 |
 |------|------|
@@ -423,164 +593,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [dnanexus-integration](skills/dnanexus-integration/) | DNAnexus 云基因组学平台。构建应用程序/小程序，管理数据（上传/下载），dxpy Python SDK，运行工作流，处理 FASTQ/BAM/VCF。 |
 | [latchbio-integration](skills/latchbio-integration/) | Latch 生物信息学工作流平台。使用 Latch SDK、@workflow/@task 装饰器构建流程，部署无服务器工作流，支持 Nextflow/Snakemake 集成。 |
 
----
-
-### 单细胞与空间组学
-
-| 技能 | 说明 |
-|------|------|
-| [anndata](skills/anndata/) | 在 Python 中处理单细胞基因组学的注释数据矩阵，管理带元数据的实验测量数据和大规模组学数据。 |
-| [scanpy](skills/scanpy/) | 单细胞 RNA-seq 分析。加载 .h5ad/10X 数据，QC、标准化、PCA/UMAP/t-SNE、Leiden 聚类、标志基因、细胞类型注释、轨迹分析。 |
-| [scvi-tools](skills/scvi-tools/) | 单细胞分析的深度学习框架：数据整合/批次校正（scVI/scANVI）、ATAC-seq（PeakVI）、CITE-seq（totalVI）、多组学（MultiVI）、空间转录组解卷积（DestVI）。 |
-| [single-cell-rna-qc](skills/single-cell-rna-qc/) | 使用 scverse 最佳实践对单细胞 RNA-seq 数据（.h5ad 或 .h5 文件）进行 MAD-based 过滤和综合可视化质控。 |
-| [cellxgene-census](skills/cellxgene-census/) | 查询 CZ CELLxGENE Census（6100万+细胞）。按细胞类型/组织/疾病过滤，检索表达数据，与 scanpy/PyTorch 集成，用于人群级单细胞分析。 |
-| [pydeseq2](skills/pydeseq2/) | 使用 Python DESeq2 进行差异基因表达分析。从 bulk RNA-seq 计数识别差异表达基因，Wald 检验，FDR 校正，火山图/MA 图。 |
-| [bulk-combat-correction](skills/bulk-combat-correction/) | 使用 pyComBat 去除合并 bulk RNA-seq 或微阵列队列中的批次效应，导出校正矩阵并生成校正前后对比可视化。 |
-| [bulk-deg-analysis](skills/bulk-deg-analysis/) | Bulk RNA-seq DEG 流程：基因 ID 映射、DESeq2 标准化、统计检验、可视化和通路富集（OmicVerse）。 |
-| [bulk-deseq2-analysis](skills/bulk-deseq2-analysis/) | 基于 PyDESeq2 的差异表达分析，含 ID 映射、差异检验、折叠变化阈值和富集可视化。 |
-| [bulk-stringdb-ppi](skills/bulk-stringdb-ppi/) | 通过 STRING 查询蛋白相互作用，使用 pyPPI 构建 PPI 图谱，为 bulk 基因列表生成网络图。 |
-| [bulk-to-single-deconvolution](skills/bulk-to-single-deconvolution/) | 使用 Bulk2Single 工作流将 bulk RNA-seq 队列转换为合成单细胞数据集，进行细胞比例估计和 beta-VAE 生成。 |
-| [bulk-trajblend-interpolation](skills/bulk-trajblend-interpolation/) | 使用 BulkTrajBlend 通过 beta-VAE 和 GNN 模型从 bulk RNA-seq 生成中间细胞，扩展 scRNA-seq 发育轨迹。 |
-| [bulk-wgcna-analysis](skills/bulk-wgcna-analysis/) | 在 OmicVerse 中运行 PyWGCNA——共表达模块构建、特征基因可视化和枢纽基因提取。 |
-| [single-annotation](skills/single-annotation/) | 单细胞注释工作流：SCSA、MetaTiME、CellVote、CellMatch、GPTAnno 和加权 KNN 转移，用于跨模态细胞类型注释。 |
-| [single-cellphone-db](skills/single-cellphone-db/) | 在注释的单细胞数据上运行 CellPhoneDB v5，推断配体-受体网络并生成 CellChat 风格的可视化。 |
-| [single-clustering](skills/single-clustering/) | 单细胞聚类工作流：QC、多方法聚类、主题建模、cNMF 和跨批次整合（OmicVerse）。 |
-| [single-downstream-analysis](skills/single-downstream-analysis/) | OmicVerse 下游分析教程参考：AUCell 评分、metacell DEG 及相关导出。 |
-| [single-multiomics](skills/single-multiomics/) | OmicVerse 多组学教程：MOFA、GLUE 配对、SIMBA 整合、TOSICA 转移和 StaVIA 制图。 |
-| [single-preprocessing](skills/single-preprocessing/) | OmicVerse 单细胞预处理教程：QC、标准化、HVG 检测、PCA/嵌入流程（CPU/GPU）。 |
-| [single-to-spatial-mapping](skills/single-to-spatial-mapping/) | 使用 Single2Spatial 工作流将 scRNA-seq 图谱映射到空间转录组切片，进行深度森林训练和标志物可视化。 |
-| [single-trajectory](skills/single-trajectory/) | OmicVerse 轨迹分析工作流：PAGA、Palantir、VIA、速度耦合和命运评分。 |
-| [spatial-tutorials](skills/spatial-tutorials/) | 空间转录组学教程：跨 Visium、Visium HD、Stereo-seq 和 Slide-seq 平台的预处理、解卷积和下游建模。 |
-| [tcga-preprocessing](skills/tcga-preprocessing/) | 将 TCGA 样本表、表达数据和临床数据导入 OmicVerse，初始化生存元数据并导出注释的 AnnData 文件。 |
-| [gsea-enrichment](skills/gsea-enrichment/) | OmicVerse 中的基因集富集分析，含正确的基因集格式处理，用于加载通路数据库和运行 GSEA。 |
-
----
-
-### 化学信息学与药物发现
-
-| 技能 | 说明 |
-|------|------|
-| [rdkit](skills/rdkit/) | 精细分子控制的化学信息学工具包。SMILES/SDF 解析、描述符（MW、LogP、TPSA）、指纹、子结构搜索、2D/3D 生成、相似性计算。 |
-| [datamol](skills/datamol/) | 具有简化接口的 Pythonic RDKit 封装，用于标准药物发现：SMILES 解析、标准化、描述符、指纹、聚类、3D 构象生成。 |
-| [medchem](skills/medchem/) | 药物化学过滤器。应用药物样规则（Lipinski、Veber）、PAINS 过滤、结构警报、复杂度指标，用于化合物优先级排列和文库过滤。 |
-| [diffdock](skills/diffdock/) | 基于扩散的分子对接。从 PDB/SMILES 预测蛋白质-配体结合构象，置信度评分，虚拟筛选，用于基于结构的药物设计。 |
-| [molfeat](skills/molfeat/) | 用于 ML 的分子特征化（100+ 特征器）。ECFP、MACCS、描述符、预训练模型（ChemBERTa），将 SMILES 转换为特征，用于 QSAR 和分子 ML。 |
-| [deepchem](skills/deepchem/) | 分子机器学习工具包。性质预测（ADMET、毒性）、GNN（GCN、MPNN）、MoleculeNet 基准、预训练模型，用于药物发现 ML。 |
-| [torchdrug](skills/torchdrug/) | 基于图的药物发现工具包。分子性质预测（ADMET）、蛋白质建模、知识图谱推理、分子生成、逆合成、GNN（GIN、GAT、SchNet）。 |
-| [torch_geometric](skills/torch_geometric/) | 图神经网络（PyG）。节点/图分类、链接预测、GCN、GAT、GraphSAGE、分子性质预测，用于药物发现中的几何深度学习。 |
-| [pytdc](skills/pytdc/) | 治疗学数据公共基准（TDC）。AI-ready 药物发现数据集（ADME、毒性、DTI）、基准、支架分割、分子预言机，用于治疗学 ML。 |
-| [cobrapy](skills/cobrapy/) | 约束型代谢建模（COBRA）。FBA、FVA、基因敲除、通量采样、SBML 模型，用于系统生物学和代谢工程分析。 |
-
----
-
-### 蛋白质组学与质谱
-
-| 技能 | 说明 |
-|------|------|
-| [matchms](skills/matchms/) | 质谱光谱分析。处理 mzML/MGF/MSP 文件，光谱相似性（余弦、改良余弦），元数据协调，化合物鉴定，用于代谢组学和 MS 数据处理。 |
-| [pyopenms](skills/pyopenms/) | OpenMS 的 Python 接口，用于 LC-MS/MS 蛋白质组学和代谢组学工作流。文件处理（mzML、mzXML、mzTab、pepXML、mzIdentML）和定量分析。 |
-| [flowio](skills/flowio/) | 解析 FCS（流式细胞术标准）文件 v2.0-3.1。提取事件为 NumPy 数组，读取元数据/通道，转换为 CSV/DataFrame，用于流式细胞术数据预处理。 |
-
----
-
-### 蛋白质结构与设计
-
-| 技能 | 说明 |
-|------|------|
-| [esm](skills/esm/) | ESM3 生成式多模态蛋白质设计（序列、结构、功能）和 ESM C 高效蛋白质嵌入。用于序列评分和嵌入的蛋白质语言模型。 |
-| [alphafold](skills/alphafold/) | 使用 AlphaFold2 结构预测验证蛋白质设计。验证设计序列折叠正确性，预测结合剂-靶点复合物结构，计算 pLDDT/PAE 指标。 |
-| [boltz](skills/boltz/) | 使用 Boltz-1/Boltz-2 进行结构预测，这是一个开放的生物分子结构预测器，用于蛋白质复合物和结合剂验证。 |
-| [boltzgen](skills/boltzgen/) | 使用 BoltzGen 扩散模型进行全原子蛋白质设计。从一开始就具有侧链感知的设计，可围绕小分子或配体进行设计。 |
-| [chai](skills/chai/) | 使用 Chai-1 基础模型进行蛋白质-蛋白质复合物结构预测、结合剂验证和蛋白质-小分子相互作用预测。 |
-| [rfdiffusion](skills/rfdiffusion/) | 使用 RFdiffusion 扩散模型从头生成蛋白质骨架，用于结合剂支架设计和蛋白质从头设计。 |
-| [bindcraft](skills/bindcraft/) | 使用 BindCraft 幻觉进行端到端结合剂设计，内置 AF2 验证，用于高质量结合剂设计活动。 |
-| [binder-design](skills/binder-design/) | 选择合适蛋白质结合剂设计工具（BoltzGen、BindCraft 或 RFdiffusion）并规划结合剂设计活动的指导。 |
-| [proteinmpnn](skills/proteinmpnn/) | 使用 ProteinMPNN 逆折叠设计蛋白质序列，用于 RFdiffusion 骨架的序列设计、序列重设计和固定位置设计。 |
-| [ligandmpnn](skills/ligandmpnn/) | 使用 LigandMPNN 进行配体感知蛋白质序列设计，围绕小分子设计序列、酶活性位点设计和结合口袋优化。 |
-| [solublempnn](skills/solublempnn/) | 使用 SolubleMPNN 进行溶解性优化的蛋白质序列设计，用于大肠杆菌表达优化、减少聚集和溶解性改善。 |
-| [foldseek](skills/foldseek/) | 使用 Foldseek 进行结构相似性搜索，在 PDB/AFDB 数据库中查找相似结构，进行结构同源性搜索和进化关系发现。 |
-| [ipsae](skills/ipsae/) | 使用 ipSAE（来自对齐误差的蛋白间评分）对结合剂设计进行排名，用于对 BindCraft 或 RFdiffusion 输出进行筛选。 |
-| [pdb](skills/pdb/) | 从 RCSB PDB 按 PDB ID 获取并分析蛋白质结构，搜索相似结构，为结合剂设计准备靶点。 |
-| [protein-design-workflow](skills/protein-design-workflow/) | 蛋白质设计流程的端到端指导，从项目启动到实验验证的逐步工作流指南。 |
-| [protein-qc](skills/protein-qc/) | 蛋白质设计的质量控制指标和过滤阈值：pLDDT、PAE、ipTM，用于结合、表达和结构评估。 |
-| [cell-free-expression](skills/cell-free-expression/) | 无细胞蛋白质合成（CFPS）优化指导、低产量/聚集故障排除和 DNA 模板设计优化。 |
-| [binding-characterization](skills/binding-characterization/) | SPR 和 BLI 结合表征实验指导，动力学数据解读和结合信号不良故障排除。 |
-
----
-
-### 医学影像与病理
-
-| 技能 | 说明 |
-|------|------|
-| [pydicom](skills/pydicom/) | 用于处理 DICOM 医学影像文件的 Python 库。读取、写入、修改 DICOM 数据，提取像素数据，处理元数据和多帧文件。 |
-| [histolab](skills/histolab/) | 全切片图像（WSI）数字病理学图像处理工具包。处理 H&E 或 IHC 染色组织图像，从吉像素切片中提取图块用于深度学习。 |
-| [pathml](skills/pathml/) | 用于分析 WSI 和多参数影像数据的计算病理学工具包。支持 H&E 染色图像、多重免疫荧光和空间组学整合。 |
-| [omero-integration](skills/omero-integration/) | 显微镜数据管理平台。通过 Python 访问图像，检索数据集，分析像素，管理 ROI/注释，用于高内容筛选工作流。 |
-| [neurokit2](skills/neurokit2/) | 综合生理信号处理工具包：ECG、EEG、EDA、RSP、PPG、EMG、EOG 信号。心血管信号分析、神经生理学和生理数据处理。 |
-| [neuropixels-analysis](skills/neuropixels-analysis/) | Neuropixels 神经记录分析。加载 SpikeGLX/OpenEphys 数据，Kilosort4 峰值排序，质量指标，Allen/IBL 管理，用于神经科学研究。 |
-
----
-
-### 医疗 ML 与临床 AI
-
-| 技能 | 说明 |
-|------|------|
-| [pyhealth](skills/pyhealth/) | 用于临床数据（EHR、医保理赔）开发 ML 模型的综合医疗 AI 工具包。任务定义 API、模型训练、评估，用于临床 NLP 和预测。 |
-| [scikit-learn](skills/scikit-learn/) | Python 机器学习：监督学习（分类、回归）、无监督学习（聚类、降维）、模型评估、超参数调优，应用于医疗数据分析。 |
-| [transformers](skills/transformers/) | 用于 NLP、计算机视觉、音频和多模态任务的预训练 Transformer 模型。文本生成、分类、问答和生物医学 NLP（BioBERT、ClinicalBERT）。 |
-| [shap](skills/shap/) | 使用 SHAP（沙普利加性解释）的模型可解释性。解释 ML 模型预测，计算特征重要性，生成生物医学模型的 SHAP 图。 |
-| [umap-learn](skills/umap-learn/) | UMAP 降维。快速非线性流形学习，用于 2D/3D 可视化、聚类预处理（HDBSCAN），用于高维组学数据。 |
-
----
-
-### 统计与数据分析
-
-| 技能 | 说明 |
-|------|------|
-| [statistical-analysis](skills/statistical-analysis/) | 统计分析工具包。假设检验（t 检验、ANOVA、卡方）、回归、相关、贝叶斯统计、检验效能分析、假设检验、APA 报告。 |
-| [statsmodels](skills/statsmodels/) | 统计建模工具包。OLS、GLM、逻辑回归、ARIMA、时间序列、假设检验、诊断、AIC/BIC，用于严格的统计推断。 |
-| [pymc](skills/pymc/) | 使用 PyMC 进行贝叶斯建模。构建层次模型，MCMC（NUTS），变分推断，LOO/WAIC 比较，后验检验，用于概率编程。 |
-| [simpy](skills/simpy/) | 基于过程的离散事件仿真框架，适用于临床系统建模：队列、资源、时间事件，用于医院工作流和患者流建模。 |
-| [exploratory-data-analysis](skills/exploratory-data-analysis/) | 对 200+ 格式的科学数据文件进行综合探索性数据分析——结构、内容、质量评估和可视化。 |
-| [data-stats-analysis](skills/data-stats-analysis/) | 统计检验、假设检验、相关分析和多重检验校正（OmicVerse，使用 scipy 和 statsmodels）。 |
-| [data-transform](skills/data-transform/) | 使用 pandas 和 numpy 转换、清洗、重塑和预处理生物数据（OmicVerse）。 |
-| [data-viz-plots](skills/data-viz-plots/) | 使用 matplotlib 和 seaborn 创建出版质量的图表和可视化（OmicVerse）。 |
-| [scientific-visualization](skills/scientific-visualization/) | 使用 matplotlib/seaborn/plotly 创建发表级图形。多面板布局、误差棒、显著性标记、色盲友好、PDF/EPS/TIFF 导出。 |
-
----
-
-### 实验室自动化与集成
-
-| 技能 | 说明 |
-|------|------|
-| [opentrons-integration](skills/opentrons-integration/) | Flex/OT-2 机器人实验室自动化平台。编写 Protocol API v2 协议、液体处理、硬件模块（加热振荡器、热循环仪）、耗材管理。 |
-| [pylabrobot](skills/pylabrobot/) | 实验室自动化工具包，控制移液工作站、酶标仪、泵、加热振荡器、培养箱、离心机和分析仪器。 |
-| [benchling-integration](skills/benchling-integration/) | Benchling R&D 平台集成。通过 API 访问注册表（DNA、蛋白质）、库存、ELN 条目、工作流，构建 Benchling App，用于实验室数据管理自动化。 |
-| [labarchive-integration](skills/labarchive-integration/) | 电子实验记录本 API 集成。访问记录本、管理条目/附件、备份记录本，与 Protocols.io/Jupyter/REDCap 集成。 |
-| [protocolsio-integration](skills/protocolsio-integration/) | protocols.io API 集成，用于管理科学实验方案——搜索、创建、更新、发布方案，管理步骤和试剂。 |
-| [instrument-data-to-allotrope](skills/instrument-data-to-allotrope/) | 将实验室仪器输出文件（PDF、CSV、Excel、TXT）转换为 Allotrope Simple Model（ASM）JSON 格式，用于 LIMS 系统、数据湖和下游分析。 |
-
----
-
-### 科学研究与写作
-
-| 技能 | 说明 |
-|------|------|
-| [scientific-writing](skills/scientific-writing/) | 用完整段落撰写科学稿件，采用两阶段流程：章节提纲然后正文。覆盖研究论文所有章节。 |
-| [scientific-critical-thinking](skills/scientific-critical-thinking/) | 评估研究严谨性。评估方法学、实验设计、统计有效性、偏倚、混杂因素、证据质量（GRADE、Cochrane ROB）。 |
-| [scientific-brainstorming](skills/scientific-brainstorming/) | 研究构思伙伴。生成假说、探索跨学科联系、挑战假设、开发方法论、识别研究空白，用于创造性科学问题解决。 |
-| [hypothesis-generation](skills/hypothesis-generation/) | 生成可检验的假说。从观察中制定假设，设计实验，探索竞争性解释，发展预测，提出机制，用于跨学科科学探究。 |
-| [scientific-problem-selection](skills/scientific-problem-selection/) | 帮助科学家进行研究问题选择、项目构思、解决停滞项目和战略性科学决策。 |
-| [peer-review](skills/peer-review/) | 系统性同行评审工具包。评估方法学、统计、设计、可重复性、伦理、图形完整性、报告标准，用于稿件和基金评审。 |
-| [citation-management](skills/citation-management/) | 综合文献引用管理。从 Google Scholar 和 PubMed 检索论文，提取准确元数据，验证引用，生成 BibTeX 条目。 |
-| [research-grants](skills/research-grants/) | 为 NSF、NIH、DOE 和 DARPA 撰写竞争性科研项目申请书。机构特定格式、评审标准、预算编制、广泛影响和意义陈述。 |
-| [research-lookup](skills/research-lookup/) | 使用 Perplexity Sonar Pro Search 或 Sonar Reasoning Pro（通过 OpenRouter）查询当前研究信息，自动选择最适合查询复杂度的模型。 |
-| [biomni](skills/biomni/) | 自主生物医学 AI 智能体框架，执行跨基因组学、药物发现、分子生物学和临床分析的复杂研究任务。 |
-| [treatment-plans](skills/treatment-plans/) | 为所有临床专科生成简洁（3-4页）的医疗治疗方案（LaTeX/PDF 格式），支持普通医学、康复治疗、心理健康和慢性病管理。 |
-
----
+</details>
 
 ### 生物信息 — 临床数据库与变异分析
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -616,9 +634,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-methylation-based-detection](skills/bio-methylation-based-detection/) | 从cfDNA甲基化数据检测基于甲基化的癌症信号。 |
 | [bio-longitudinal-monitoring](skills/bio-longitudinal-monitoring/) | 跨序列样本追踪体细胞变异进化和克隆动态。 |
 
----
+</details>
 
 ### 生物信息 — 测序与读长质控
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -653,10 +674,14 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-splicing-qc](skills/bio-splicing-qc/) | RNA剪接质量评估：连接读长覆盖度、新颖剪接位点。 |
 | [bio-splicing-quantification](skills/bio-splicing-quantification/) | 量化可变剪接事件：每亚型的PSI/包含率。 |
 | [bio-sashimi-plots](skills/bio-sashimi-plots/) | 生成Sashimi图以可视化特定位点的RNA-seq剪接。 |
+| [bio-consensus-sequences](skills/bio-consensus-sequences/) | 使用 `bcftools consensus` 将 VCF 变异应用到参考序列，生成共识 FASTA；适用于样本特异参考和单倍型重建。 |
 
----
+</details>
 
 ### 生物信息 — 差异表达与转录组学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -674,9 +699,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-ribo-seq-ribosome-stalling](skills/bio-ribo-seq-ribosome-stalling/) | 从Ribo-seq图谱识别核糖体停滞位点和暂停。 |
 | [bio-ribo-seq-translation-efficiency](skills/bio-ribo-seq-translation-efficiency/) | 从匹配的RNA-seq和Ribo-seq计算翻译效率比。 |
 
----
+</details>
 
 ### 生物信息 — 通路与网络分析
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -687,9 +715,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-pathway-wikipathways](skills/bio-pathway-wikipathways/) | WikiPathways富集和网络可视化。 |
 | [bio-pathway-enrichment-visualization](skills/bio-pathway-enrichment-visualization/) | 通路结果的点图、富集图和网络可视化。 |
 
----
+</details>
 
 ### 生物信息 — 单细胞与空间组学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -720,9 +751,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-spatial-transcriptomics-spatial-statistics](skills/bio-spatial-transcriptomics-spatial-statistics/) | 空间统计：Moran's I、空间自相关、共定位。 |
 | [bio-spatial-transcriptomics-spatial-visualization](skills/bio-spatial-transcriptomics-spatial-visualization/) | 可视化空间基因表达图和组织切片叠加层。 |
 
----
+</details>
 
 ### 生物信息 — 表观基因组学与染色质
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -752,9 +786,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-methylation-dmr-detection](skills/bio-methylation-dmr-detection/) | 使用DSS或MethylKit识别差异甲基化区域（DMR）。 |
 | [bio-methylation-methylkit](skills/bio-methylation-methylkit/) | MethylKit甲基化分析：CpG瓦片、DMR调用、注释。 |
 
----
+</details>
 
 ### 生物信息 — 宏基因组学与微生物组
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -772,9 +809,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-microbiome-qiime2-workflow](skills/bio-microbiome-qiime2-workflow/) | 端到端QIIME2流程：去噪、多样性、差异丰度。 |
 | [bio-microbiome-taxonomy-assignment](skills/bio-microbiome-taxonomy-assignment/) | 使用SILVA、GTDB或Greengenes2为ASV/OTU分配分类。 |
 
----
+</details>
 
 ### 生物信息 — 免疫信息学与流式细胞术
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -803,9 +843,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-imaging-mass-cytometry-quality-metrics](skills/bio-imaging-mass-cytometry-quality-metrics/) | IMC采集质量指标：信噪比、组织覆盖度。 |
 | [bio-imaging-mass-cytometry-spatial-analysis](skills/bio-imaging-mass-cytometry-spatial-analysis/) | 成像质谱细胞仪数据的空间细胞邻域分析。 |
 
----
+</details>
 
 ### 生物信息 — 多组学整合
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -814,9 +857,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-multi-omics-mofa-integration](skills/bio-multi-omics-mofa-integration/) | 跨模态潜因子发现的多组学因子分析（MOFA+）。 |
 | [bio-multi-omics-similarity-network](skills/bio-multi-omics-similarity-network/) | 相似性网络融合（SNF）用于多组学患者分层。 |
 
----
+</details>
 
 ### 生物信息 — 蛋白质组学与代谢组学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -838,9 +884,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-metabolomics-targeted-analysis](skills/bio-metabolomics-targeted-analysis/) | 靶向代谢组学（MRM/SRM）：校准曲线、定量。 |
 | [bio-metabolomics-xcms-preprocessing](skills/bio-metabolomics-xcms-preprocessing/) | XCMS的LC-MS峰检测、对齐和分组。 |
 
----
+</details>
 
 ### 生物信息 — 结构生物学与化学信息学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -858,9 +907,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-virtual-screening](skills/bio-virtual-screening/) | 虚拟筛选流程：对接、评分、姿态过滤（AutoDock/Vina）。 |
 | [bio-admet-prediction](skills/bio-admet-prediction/) | 预测ADMET性质：吸收、分布、代谢、排泄、毒性。 |
 
----
+</details>
 
 ### 生物信息 — 流行病学基因组学与因果基因组学
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -888,107 +940,125 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-crispr-screens-mageck-analysis](skills/bio-crispr-screens-mageck-analysis/) | MAGeCK MLE/RRA分析用于CRISPR pooled筛选。 |
 | [bio-crispr-screens-screen-qc](skills/bio-crispr-screens-screen-qc/) | CRISPR筛选质量控制：基尼指数、读长分布。 |
 
----
+</details>
 
-### 健康与健康管理分析
+</details>
 
-| 技能 | 描述 |
+## 🔬 组学与计算生物学
+
+<details open>
+<summary>展开/收起该大类</summary>
+
+### 单细胞与空间组学
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
 |------|------|
-| [nutrition-analyzer](skills/nutrition-analyzer/) | 全面营养分析：宏量/微量营养素追踪、膳食评估、餐食规划、食物数据查询和营养建议。 |
-| [mental-health-analyzer](skills/mental-health-analyzer/) | 心理健康数据分析：情绪追踪、症状模式、PHQ/GAD评分、行为洞察和健康建议。 |
-| [sleep-analyzer](skills/sleep-analyzer/) | 睡眠质量分析：睡眠阶段、时长、效率指标、昼夜节律评估和睡眠卫生建议。 |
-| [rehabilitation-analyzer](skills/rehabilitation-analyzer/) | 康复进度追踪：功能评估、运动方案、康复里程碑和物理/职业治疗结局测量。 |
-| [fitness-analyzer](skills/fitness-analyzer/) | 健身表现分析：运动追踪、力量/有氧指标、训练负荷、VO2max估算和周期化规划。 |
-| [health-trend-analyzer](skills/health-trend-analyzer/) | 纵向健康趋势分析：生命体征追踪、生物标志物趋势、风险因素监测和预测性健康洞察。 |
-| [weightloss-analyzer](skills/weightloss-analyzer/) | 体重管理分析：热量平衡、体成分追踪、进度监测和循证减重策略。 |
-| [goal-analyzer](skills/goal-analyzer/) | 健康目标追踪与分析：SMART目标设定、进度指标、习惯养成和健康目标的激励洞察。 |
-| [occupational-health-analyzer](skills/occupational-health-analyzer/) | 职业健康评估：工作场所人体工程学、暴露风险、工作相关疾病监测和复工规划。 |
-| [travel-health-analyzer](skills/travel-health-analyzer/) | 旅行医学：目的地健康风险、疫苗接种要求、疟疾预防、高原反应和旅行者健康准备。 |
-| [family-health-analyzer](skills/family-health-analyzer/) | 家庭健康管理：儿科发育里程碑、家族病史、预防性筛查时间表和多代健康追踪。 |
-| [tcm-constitution-analyzer](skills/tcm-constitution-analyzer/) | 中医体质分析：中医体质评估、证型辨别、草药建议和生活方式指导。 |
-| [emergency-card](skills/emergency-card/) | 生成包含关键健康数据、药物、过敏和紧急联系人的急救医疗信息卡，用于患者安全。 |
-| [ai-analyzer](skills/ai-analyzer/) | AI驱动的全面健康数据解读，结合多个生物标志物和健康指标进行整体健康评估。 |
-| [oral-health-analyzer](skills/oral-health-analyzer/) | 口腔健康评估：牙科症状分析、牙周风险、口腔癌筛查意识和预防性牙科护理指导。 |
-| [skin-health-analyzer](skills/skin-health-analyzer/) | 皮肤科健康分析：皮肤状况追踪、皮损记录、紫外线暴露评估和护肤方案优化。 |
-| [sexual-health-analyzer](skills/sexual-health-analyzer/) | 性健康评估：性传播感染风险评估、生殖健康追踪、避孕指导和性健康教育。 |
-| [food-database-query](skills/food-database-query/) | 查询综合食物数据库获取营养成分、配料表、过敏原信息和饮食兼容性。 |
-| [wellally-tech](skills/wellally-tech/) | WellAlly健康分析平台的技术框架：集成模式、数据管道和健康AI基础设施。 |
+| [anndata](skills/anndata/) | 在 Python 中处理单细胞基因组学的注释数据矩阵，管理带元数据的实验测量数据和大规模组学数据。 |
+| [scanpy](skills/scanpy/) | 单细胞 RNA-seq 分析。加载 .h5ad/10X 数据，QC、标准化、PCA/UMAP/t-SNE、Leiden 聚类、标志基因、细胞类型注释、轨迹分析。 |
+| [scvi-tools](skills/scvi-tools/) | 单细胞分析的深度学习框架：数据整合/批次校正（scVI/scANVI）、ATAC-seq（PeakVI）、CITE-seq（totalVI）、多组学（MultiVI）、空间转录组解卷积（DestVI）。 |
+| [single-cell-rna-qc](skills/single-cell-rna-qc/) | 使用 scverse 最佳实践对单细胞 RNA-seq 数据（.h5ad 或 .h5 文件）进行 MAD-based 过滤和综合可视化质控。 |
+| [cellxgene-census](skills/cellxgene-census/) | 查询 CZ CELLxGENE Census（6100万+细胞）。按细胞类型/组织/疾病过滤，检索表达数据，与 scanpy/PyTorch 集成，用于人群级单细胞分析。 |
+| [pydeseq2](skills/pydeseq2/) | 使用 Python DESeq2 进行差异基因表达分析。从 bulk RNA-seq 计数识别差异表达基因，Wald 检验，FDR 校正，火山图/MA 图。 |
+| [bulk-combat-correction](skills/bulk-combat-correction/) | 使用 pyComBat 去除合并 bulk RNA-seq 或微阵列队列中的批次效应，导出校正矩阵并生成校正前后对比可视化。 |
+| [bulk-deg-analysis](skills/bulk-deg-analysis/) | Bulk RNA-seq DEG 流程：基因 ID 映射、DESeq2 标准化、统计检验、可视化和通路富集（OmicVerse）。 |
+| [bulk-deseq2-analysis](skills/bulk-deseq2-analysis/) | 基于 PyDESeq2 的差异表达分析，含 ID 映射、差异检验、折叠变化阈值和富集可视化。 |
+| [bulk-stringdb-ppi](skills/bulk-stringdb-ppi/) | 通过 STRING 查询蛋白相互作用，使用 pyPPI 构建 PPI 图谱，为 bulk 基因列表生成网络图。 |
+| [bulk-to-single-deconvolution](skills/bulk-to-single-deconvolution/) | 使用 Bulk2Single 工作流将 bulk RNA-seq 队列转换为合成单细胞数据集，进行细胞比例估计和 beta-VAE 生成。 |
+| [bulk-trajblend-interpolation](skills/bulk-trajblend-interpolation/) | 使用 BulkTrajBlend 通过 beta-VAE 和 GNN 模型从 bulk RNA-seq 生成中间细胞，扩展 scRNA-seq 发育轨迹。 |
+| [bulk-wgcna-analysis](skills/bulk-wgcna-analysis/) | 在 OmicVerse 中运行 PyWGCNA——共表达模块构建、特征基因可视化和枢纽基因提取。 |
+| [single-annotation](skills/single-annotation/) | 单细胞注释工作流：SCSA、MetaTiME、CellVote、CellMatch、GPTAnno 和加权 KNN 转移，用于跨模态细胞类型注释。 |
+| [single-cellphone-db](skills/single-cellphone-db/) | 在注释的单细胞数据上运行 CellPhoneDB v5，推断配体-受体网络并生成 CellChat 风格的可视化。 |
+| [single-clustering](skills/single-clustering/) | 单细胞聚类工作流：QC、多方法聚类、主题建模、cNMF 和跨批次整合（OmicVerse）。 |
+| [single-downstream-analysis](skills/single-downstream-analysis/) | OmicVerse 下游分析教程参考：AUCell 评分、metacell DEG 及相关导出。 |
+| [single-multiomics](skills/single-multiomics/) | OmicVerse 多组学教程：MOFA、GLUE 配对、SIMBA 整合、TOSICA 转移和 StaVIA 制图。 |
+| [single-preprocessing](skills/single-preprocessing/) | OmicVerse 单细胞预处理教程：QC、标准化、HVG 检测、PCA/嵌入流程（CPU/GPU）。 |
+| [single-to-spatial-mapping](skills/single-to-spatial-mapping/) | 使用 Single2Spatial 工作流将 scRNA-seq 图谱映射到空间转录组切片，进行深度森林训练和标志物可视化。 |
+| [single-trajectory](skills/single-trajectory/) | OmicVerse 轨迹分析工作流：PAGA、Palantir、VIA、速度耦合和命运评分。 |
+| [spatial-tutorials](skills/spatial-tutorials/) | 空间转录组学教程：跨 Visium、Visium HD、Stereo-seq 和 Slide-seq 平台的预处理、解卷积和下游建模。 |
+| [tcga-preprocessing](skills/tcga-preprocessing/) | 将 TCGA 样本表、表达数据和临床数据导入 OmicVerse，初始化生存元数据并导出注释的 AnnData 文件。 |
+| [gsea-enrichment](skills/gsea-enrichment/) | OmicVerse 中的基因集富集分析，含正确的基因集格式处理，用于加载通路数据库和运行 GSEA。 |
 
----
+</details>
 
-### 分析师人格
+### 化学信息学与药物发现
 
-| 技能 | 描述 |
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
 |------|------|
-| [biologist-analyst](skills/biologist-analyst/) | 生物学家分析师人格，用于解读生物实验、测序数据、细胞生物学测定和分子生物学研究。 |
-| [chemist-analyst](skills/chemist-analyst/) | 化学家分析师人格，用于解读化学数据、合成路线、光谱结果、反应机制和实验室分析。 |
-| [epidemiologist-analyst](skills/epidemiologist-analyst/) | 流行病学家分析师人格，用于研究设计、队列分析、风险因素评估、公共卫生监测和因果推断。 |
-| [psychologist-analyst](skills/psychologist-analyst/) | 心理学家分析师人格，用于行为数据分析、心理评估解读、临床案例制定和心理健康研究。 |
+| [rdkit](skills/rdkit/) | 精细分子控制的化学信息学工具包。SMILES/SDF 解析、描述符（MW、LogP、TPSA）、指纹、子结构搜索、2D/3D 生成、相似性计算。 |
+| [datamol](skills/datamol/) | 具有简化接口的 Pythonic RDKit 封装，用于标准药物发现：SMILES 解析、标准化、描述符、指纹、聚类、3D 构象生成。 |
+| [medchem](skills/medchem/) | 药物化学过滤器。应用药物样规则（Lipinski、Veber）、PAINS 过滤、结构警报、复杂度指标，用于化合物优先级排列和文库过滤。 |
+| [diffdock](skills/diffdock/) | 基于扩散的分子对接。从 PDB/SMILES 预测蛋白质-配体结合构象，置信度评分，虚拟筛选，用于基于结构的药物设计。 |
+| [molfeat](skills/molfeat/) | 用于 ML 的分子特征化（100+ 特征器）。ECFP、MACCS、描述符、预训练模型（ChemBERTa），将 SMILES 转换为特征，用于 QSAR 和分子 ML。 |
+| [deepchem](skills/deepchem/) | 分子机器学习工具包。性质预测（ADMET、毒性）、GNN（GCN、MPNN）、MoleculeNet 基准、预训练模型，用于药物发现 ML。 |
+| [torchdrug](skills/torchdrug/) | 基于图的药物发现工具包。分子性质预测（ADMET）、蛋白质建模、知识图谱推理、分子生成、逆合成、GNN（GIN、GAT、SchNet）。 |
+| [torch_geometric](skills/torch_geometric/) | 图神经网络（PyG）。节点/图分类、链接预测、GCN、GAT、GraphSAGE、分子性质预测，用于药物发现中的几何深度学习。 |
+| [pytdc](skills/pytdc/) | 治疗学数据公共基准（TDC）。AI-ready 药物发现数据集（ADME、毒性、DTI）、基准、支架分割、分子预言机，用于治疗学 ML。 |
+| [cobrapy](skills/cobrapy/) | 约束型代谢建模（COBRA）。FBA、FVA、基因敲除、通量采样、SBML 模型，用于系统生物学和代谢工程分析。 |
 
----
+</details>
 
-### 心理健康与危机干预
+### 蛋白质组学与质谱
 
-| 技能 | 描述 |
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
 |------|------|
-| [crisis-detection-intervention-ai](skills/crisis-detection-intervention-ai/) | 使用NLP和心理健康情感分析检测危机信号。实现自杀意念检测、自动升级和危机资源整合，用于心理健康应用和康复平台。 |
-| [crisis-response-protocol](skills/crisis-response-protocol/) | 安全处理心理健康危机情况：危机检测、安全协议、紧急升级、自杀预防和热线整合，适用于AI辅导应用。 |
-| [hipaa-compliance](skills/hipaa-compliance/) | 处理PHI时确保HIPAA合规。用于健康数据应用的审计日志、数据访问控制、安全事件追踪和合规验证。 |
-| [clinical-diagnostic-reasoning](skills/clinical-diagnostic-reasoning/) | 通过系统性错误分析、鉴别诊断框架和临床判断改进，识别和抵制医疗决策中的认知偏见。 |
-| [speech-pathology-ai](skills/speech-pathology-ai/) | AI驱动的言语语言病理学：音素分析、构音可视化、嗓音障碍评估、流利度干预、AAC和口吃治疗支持。 |
-| [hrv-alexithymia-expert](skills/hrv-alexithymia-expert/) | 心率变异性生物特征和情绪意识训练。HRV分析、内感受训练、生物反馈、迷走神经张力评估和自主神经系统评价。 |
-| [adhd-daily-planner](skills/adhd-daily-planner/) | ADHD优化的日常规划：时间盲友好的日程安排、执行功能支持、多巴胺感知任务设计和神经多样性友好的生产力系统。 |
-| [grief-companion](skills/grief-companion/) | 富有同理心的丧亲支持、纪念创作、悲伤教育和在非线性失落旅程中提供治愈引导。 |
-| [jungian-psychologist](skills/jungian-psychologist/) | 荣格分析心理学：阴影工作、原型分析、梦境解析、积极想象、通过深层心理学视角的成瘾/康复和个体化过程。 |
-| [modern-drug-rehab-computer](skills/modern-drug-rehab-computer/) | 综合成瘾康复知识系统：循证治疗（CBT、DBT、MI、EMDR、MAT）、康复资源、危机干预和戒毒机构的家庭系统。 |
-| [recovery-community-moderator](skills/recovery-community-moderator/) | 成瘾康复社区的创伤知情AI主持：减少伤害、12步传统、冲突检测和危机帖子识别。 |
+| [matchms](skills/matchms/) | 质谱光谱分析。处理 mzML/MGF/MSP 文件，光谱相似性（余弦、改良余弦），元数据协调，化合物鉴定，用于代谢组学和 MS 数据处理。 |
+| [pyopenms](skills/pyopenms/) | OpenMS 的 Python 接口，用于 LC-MS/MS 蛋白质组学和代谢组学工作流。文件处理（mzML、mzXML、mzTab、pepXML、mzIdentML）和定量分析。 |
+| [flowio](skills/flowio/) | 解析 FCS（流式细胞术标准）文件 v2.0-3.1。提取事件为 NumPy 数组，读取元数据/通道，转换为 CSV/DataFrame，用于流式细胞术数据预处理。 |
 
----
+</details>
 
-### 癌症基因组数据库
+### 蛋白质结构与设计
 
-| 技能 | 描述 |
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
 |------|------|
-| [cbioportal-database](skills/cbioportal-database/) | 查询cBioPortal的癌症基因组数据：体细胞突变、拷贝数、基因表达和数百项癌症研究的生存数据。癌症靶点验证、癌基因分析和患者级基因组图谱。 |
-| [depmap](skills/depmap/) | 查询癌症依赖图谱（DepMap）的癌细胞系基因依赖评分（CRISPR Chronos）、药物敏感性和基因效应图谱。识别癌症特异性脆弱性和合成致死相互作用。 |
-| [imaging-data-commons](skills/imaging-data-commons/) | 查询和下载NCI成像数据共享平台的公共癌症成像数据。访问放射学（CT、MR、PET）和病理数据集用于AI训练或研究。无需身份验证。 |
+| [esm](skills/esm/) | ESM3 生成式多模态蛋白质设计（序列、结构、功能）和 ESM C 高效蛋白质嵌入。用于序列评分和嵌入的蛋白质语言模型。 |
+| [alphafold](skills/alphafold/) | 使用 AlphaFold2 结构预测验证蛋白质设计。验证设计序列折叠正确性，预测结合剂-靶点复合物结构，计算 pLDDT/PAE 指标。 |
+| [boltz](skills/boltz/) | 使用 Boltz-1/Boltz-2 进行结构预测，这是一个开放的生物分子结构预测器，用于蛋白质复合物和结合剂验证。 |
+| [boltzgen](skills/boltzgen/) | 使用 BoltzGen 扩散模型进行全原子蛋白质设计。从一开始就具有侧链感知的设计，可围绕小分子或配体进行设计。 |
+| [chai](skills/chai/) | 使用 Chai-1 基础模型进行蛋白质-蛋白质复合物结构预测、结合剂验证和蛋白质-小分子相互作用预测。 |
+| [rfdiffusion](skills/rfdiffusion/) | 使用 RFdiffusion 扩散模型从头生成蛋白质骨架，用于结合剂支架设计和蛋白质从头设计。 |
+| [bindcraft](skills/bindcraft/) | 使用 BindCraft 幻觉进行端到端结合剂设计，内置 AF2 验证，用于高质量结合剂设计活动。 |
+| [binder-design](skills/binder-design/) | 选择合适蛋白质结合剂设计工具（BoltzGen、BindCraft 或 RFdiffusion）并规划结合剂设计活动的指导。 |
+| [proteinmpnn](skills/proteinmpnn/) | 使用 ProteinMPNN 逆折叠设计蛋白质序列，用于 RFdiffusion 骨架的序列设计、序列重设计和固定位置设计。 |
+| [ligandmpnn](skills/ligandmpnn/) | 使用 LigandMPNN 进行配体感知蛋白质序列设计，围绕小分子设计序列、酶活性位点设计和结合口袋优化。 |
+| [solublempnn](skills/solublempnn/) | 使用 SolubleMPNN 进行溶解性优化的蛋白质序列设计，用于大肠杆菌表达优化、减少聚集和溶解性改善。 |
+| [foldseek](skills/foldseek/) | 使用 Foldseek 进行结构相似性搜索，在 PDB/AFDB 数据库中查找相似结构，进行结构同源性搜索和进化关系发现。 |
+| [ipsae](skills/ipsae/) | 使用 ipSAE（来自对齐误差的蛋白间评分）对结合剂设计进行排名，用于对 BindCraft 或 RFdiffusion 输出进行筛选。 |
+| [pdb](skills/pdb/) | 从 RCSB PDB 按 PDB ID 获取并分析蛋白质结构，搜索相似结构，为结合剂设计准备靶点。 |
+| [protein-design-workflow](skills/protein-design-workflow/) | 蛋白质设计流程的端到端指导，从项目启动到实验验证的逐步工作流指南。 |
+| [protein-qc](skills/protein-qc/) | 蛋白质设计的质量控制指标和过滤阈值：pLDDT、PAE、ipTM，用于结合、表达和结构评估。 |
+| [cell-free-expression](skills/cell-free-expression/) | 无细胞蛋白质合成（CFPS）优化指导、低产量/聚集故障排除和 DNA 模板设计优化。 |
+| [binding-characterization](skills/binding-characterization/) | SPR 和 BLI 结合表征实验指导，动力学数据解读和结合信号不良故障排除。 |
 
----
-
-### 基因组与分子数据库
-
-| 技能 | 描述 |
-|------|------|
-| [bindingdb-database](skills/bindingdb-database/) | 查询BindingDB获取药物-靶点结合亲和力数据（Ki、Kd、IC50、EC50）。药物发现、先导化合物优化、多药理学和SAR研究。 |
-| [gnomad-database](skills/gnomad-database/) | 查询gnomAD获取群体等位基因频率、变异约束评分（pLI、LOEUF）和功能丧失不耐受性。变异致病性解读和罕见病遗传学。 |
-| [gtex-database](skills/gtex-database/) | 查询GTEx获取组织特异性基因表达、eQTL和sQTL。将GWAS变异与基因调控联系起来并解释非编码变异效应。 |
-| [interpro-database](skills/interpro-database/) | 查询InterPro获取蛋白质家族、结构域和功能位点注释。整合Pfam、PANTHER、PRINTS、SMART等11+数据库进行蛋白质功能预测。 |
-| [jaspar-database](skills/jaspar-database/) | 查询JASPAR获取转录因子结合位点图谱（PWM/PFM）。调控基因组学、基序分析和GWAS调控变异解读。 |
-| [monarch-database](skills/monarch-database/) | 查询Monarch Initiative知识图谱获取疾病-基因-表型关联。整合OMIM、ORPHANET、HPO、ClinVar用于罕见病基因发现。 |
-| [tiledbvcf](skills/tiledbvcf/) | 使用TileDB进行可扩展的VCF/BCF摄取、存储和并行查询，用于大规模群体基因组学。 |
-
----
-
-### 结构生物学与药物发现
-
-| 技能 | 描述 |
-|------|------|
-| [molecular-dynamics](skills/molecular-dynamics/) | 使用OpenMM和MDAnalysis运行和分析分子动力学模拟。蛋白质/小分子系统、力场、能量最小化、RMSD/RMSF分析、自由能面计算。 |
-| [glycoengineering](skills/glycoengineering/) | 分析和工程化蛋白质糖基化。预测N/O-糖基化位点，访问糖工程化工具（NetOGlyc、GlycoShield）。治疗性抗体优化和疫苗设计。 |
-| [adaptyv](skills/adaptyv/) | 自动化蛋白质测试的云实验室平台：结合测定、表达测试、热稳定性、酶活性。使用NetSolP、SoluProt、ESM进行蛋白质序列优化。 |
-| [ginkgo-cloud-lab](skills/ginkgo-cloud-lab/) | 在Ginkgo Bioworks云实验室提交和管理协议，实现自主实验室执行。无细胞蛋白质表达、协议工作流程和生物技术自动化。 |
-
----
+</details>
 
 ### 单细胞与轨迹分析
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
 | [scvelo](skills/scvelo/) | RNA速度分析。从未剪接/剪接mRNA动态估计细胞状态转变，推断轨迹方向，计算潜伏时间，识别scRNA-seq数据中的驱动基因。 |
 
----
+</details>
 
 ### 系统发育与网络分析
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -996,66 +1066,19 @@ Agent 应当列出已安装的技能及其功能说明。
 | [networkx](skills/networkx/) | Python网络和图分析。生物网络分析、蛋白质相互作用网络、通路图、社区检测和中心性度量。 |
 | [torch-geometric](skills/torch-geometric/) | 用于分子属性预测、药物-靶点相互作用建模和生物图几何深度学习的图神经网络（PyG）。 |
 
----
+</details>
 
-### 医疗器械与监管
+</details>
 
-| 技能 | 描述 |
-|------|------|
-| [iso-13485-certification](skills/iso-13485-certification/) | 医疗器械ISO 13485质量管理体系文档综合工具包：差距分析、质量手册、程序、医疗器械档案。涵盖FDA QMSR、EU MDR合规要求。 |
+## ⚙️ ClawBio 管道
 
----
-
-### 公共卫生与时序分析
-
-| 技能 | 描述 |
-|------|------|
-| [datacommons-client](skills/datacommons-client/) | 访问Google Data Commons的公共健康统计数据：疾病流行率、人口统计数据、全球来源的健康指标。 |
-| [timesfm-forecasting](skills/timesfm-forecasting/) | 使用Google TimesFM进行零样本时序预测。适用于生命体征趋势、健康传感器数据和纵向健康监测，无需自定义模型训练。 |
-| [aeon](skills/aeon/) | 时序机器学习：分类、回归、聚类、异常检测、分割，适用于时序健康数据和连续临床测量。 |
-
----
-
-### 科学文献与参考管理
-
-| 技能 | 描述 |
-|------|------|
-| [bgpt-paper-search](skills/bgpt-paper-search/) | 使用BGPT MCP服务器搜索科学论文。每篇论文返回25+结构化字段：方法、结果、样本量、质量评分。用于文献综述和证据综合。 |
-| [pyzotero](skills/pyzotero/) | 通过Zotero Web API v3以编程方式与Zotero参考文献库交互。检索、创建、更新条目，导出引用，上传PDF，构建研究自动化工作流程。 |
-| [open-notebook](skills/open-notebook/) | 自托管NotebookLM替代品。摄取PDF、视频、网页、文档；生成AI驱动的笔记；与研究材料对话；支持16+AI提供商。 |
-
----
-
-### 数据处理与科学计算
-
-| 技能 | 描述 |
-|------|------|
-| [dask](skills/dask/) | 用于超出RAM的基因组/组学数据集的分布式计算。扩展pandas/NumPy超过内存限制，并行文件处理，分布式ML。 |
-| [polars](skills/polars/) | 快速内存DataFrame库（1-100GB）。生物医学数据ETL和分析管道的更快pandas替代品。 |
-| [vaex](skills/vaex/) | 数十亿行数据的核外DataFrame操作。大型基因组和临床数据集的快速统计和可视化。 |
-| [zarr-python](skills/zarr-python/) | 云存储的分块N维数组。压缩数组、并行I/O、S3/GCS集成，用于大规模组学数据。 |
-| [pytorch-lightning](skills/pytorch-lightning/) | 生物医学AI的结构化PyTorch深度学习：多GPU训练、回调、日志记录、临床/基因组模型的分布式训练。 |
-
----
-
-### 科学可视化与科研传播
-
-| 技能 | 描述 |
-|------|------|
-| [matplotlib](skills/matplotlib/) | 全定制的低级绘图库。用于科学手稿和期刊的出版质量图形。 |
-| [seaborn](skills/seaborn/) | 带pandas集成的统计可视化。用于生物医学数据探索的箱线图、小提琴图、热图、配对图。 |
-| [plotly](skills/plotly/) | 交互式可视化。悬停信息、缩放、探索性生物医学分析和演示的仪表板。 |
-| [infographics](skills/infographics/) | 使用迭代AI精炼创建专业科学信息图表。支持10种信息图类型和8种行业风格。 |
-| [scientific-schematics](skills/scientific-schematics/) | 出版质量的科学图表：神经网络架构、生物通路、系统图、流程图。 |
-| [scientific-slides](skills/scientific-slides/) | 为会议、研讨会、论文答辩构建研究演示幻灯片。支持PowerPoint和LaTeX Beamer。 |
-| [latex-posters](skills/latex-posters/) | 使用LaTeX（beamerposter、tikzposter）创建专业研究海报。多栏布局的会议海报。 |
-| [pptx-posters](skills/pptx-posters/) | 可导出为PDF或PPTX的HTML/CSS研究海报。现代网页式海报设计。 |
-| [markdown-mermaid-writing](skills/markdown-mermaid-writing/) | 使用Markdown和24种Mermaid图表类型进行科学文档编写。9种科学报告文档模板。 |
-| [paper-2-web](skills/paper-2-web/) | 将学术论文转换为交互式网站、演示视频和会议海报（Paper2Web、Paper2Video、Paper2Poster）。 |
-
----
+<details open>
+<summary>展开/收起该大类</summary>
 
 ### 生物信息学编排与管道 (ClawBio)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1066,16 +1089,18 @@ Agent 应当列出已安装的技能及其功能说明。
 | [repro-enforcer](skills/repro-enforcer/) | 将生物信息学分析导出为可重现包，包含Conda环境、Singularity容器定义和Nextflow管道。 |
 | [galaxy-bridge](skills/galaxy-bridge/) | Galaxy工具发现、推荐和执行 — 来自usegalaxy.org的8,000+生物信息学工具，多信号评分和工作流程建议。 |
 
----
+</details>
 
 ### 基因组学、祖先分析与药物基因组学 (ClawBio)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
 | [gwas-lookup](skills/gwas-lookup/) | 跨9个基因组数据库的联合变异查询：GWAS Catalog、Open Targets、PheWeb（UKB、FinnGen、BBJ）、GTEx、eQTL Catalogue等。 |
 | [gwas-prs](skills/gwas-prs/) | 使用PGS Catalog从DTC基因数据（23andMe/AncestryDNA）计算多基因风险评分。 |
 | [pharmgx-reporter](skills/pharmgx-reporter/) | 来自DTC基因数据的药物基因组报告 — 12个基因、31个SNP、51种药物，含CPIC指南和个性化剂量卡。 |
-| [nutrigx_advisor](skills/nutrigx_advisor/) | 营养基因组顾问 — 基于SNP的13个营养领域个性化饮食建议。 |
 | [clinpgx](skills/clinpgx/) | 查询ClinPGx API获取药物基因组基因-药物数据、临床注释、CPIC指南和FDA药品标签。 |
 | [drug-photo](skills/drug-photo/) | 通过Claude视觉从药品包装照片识别药物，然后检索基因型知情的剂量指导。 |
 | [claw-ancestry-pca](skills/claw-ancestry-pca/) | 与西蒙斯基因组多样性项目（345个样本，164个全球群体）的祖先分解PCA分析。 |
@@ -1084,9 +1109,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [claw-metagenomics](skills/claw-metagenomics/) | 鸟枪法宏基因组分析：分类（Kraken2/Bracken）、耐药组（CARD/RGI）和功能通路（HUMAnN3）。 |
 | [ukb-navigator](skills/ukb-navigator/) | UK Biobank 12,000+数据字段和出版物的语义搜索 — 为研究问题找到合适的变量。 |
 
----
+</details>
 
 ### 结构生物学与文献综合 (ClawBio)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1096,11 +1124,22 @@ Agent 应当列出已安装的技能及其功能说明。
 | [labstep](skills/labstep/) | 通过Labstep API与电子实验记录本交互。查询实验、协议、资源和库存。 |
 | [profile-report](skills/profile-report/) | 生成结构化生物信息学分析概要报告。 |
 
----
+</details>
+
+</details>
+
+## 🧠 BioOS 扩展套件
+
+<details open>
+<summary>展开/收起该大类</summary>
 
 ### BioOS 扩展生物信息工具套件
 
 #### 序列与比对
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-alignment-sorting](skills/bio-alignment-sorting/) | 使用 samtools sort 按坐标或名称排序 SAM/BAM 文件。 |
@@ -1122,7 +1161,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-sra-data](skills/bio-sra-data/) | 使用 fasterq-dump 从 NCBI SRA 下载原始测序数据。 |
 | [bio-batch-downloads](skills/bio-batch-downloads/) | 批量从 NCBI、EBI、Ensembl 下载生物信息学数据。 |
 
+</details>
+
 #### 序列分析
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-seq-objects](skills/bio-seq-objects/) | 使用 BioPython 序列对象：SeqRecord、特征、注释。 |
@@ -1141,7 +1186,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-restriction-fragment-analysis](skills/bio-restriction-fragment-analysis/) | 分析克隆和凝胶预测的限制片段模式。 |
 | [bio-restriction-enzyme-selection](skills/bio-restriction-enzyme-selection/) | 根据切割位点和兼容性选择克隆用限制酶。 |
 
+</details>
+
 #### 读段比对
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-read-alignment-bwa-alignment](skills/bio-read-alignment-bwa-alignment/) | 使用 BWA-MEM 将短读段比对到参考基因组。 |
@@ -1149,7 +1200,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-read-alignment-hisat2-alignment](skills/bio-read-alignment-hisat2-alignment/) | 使用 HISAT2 进行剪接感知 RNA-seq 比对。 |
 | [bio-read-alignment-star-alignment](skills/bio-read-alignment-star-alignment/) | 使用高速 STAR 比对器进行 RNA-seq，支持连接检测。 |
 
+</details>
+
 #### 基因组组装
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-genome-assembly-long-read-assembly](skills/bio-genome-assembly-long-read-assembly/) | 使用 Flye 或 Canu 从 ONT/PacBio 长读段进行从头组装。 |
@@ -1161,7 +1218,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-genome-assembly-scaffolding](skills/bio-genome-assembly-scaffolding/) | 使用 Hi-C、光学图谱或长读段对 contig 进行支架化。 |
 | [bio-genome-assembly-contamination-detection](skills/bio-genome-assembly-contamination-detection/) | 检测和去除组装基因组中的污染。 |
 
+</details>
+
 #### 基因组区间与注释
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-genome-intervals-bed-file-basics](skills/bio-genome-intervals-bed-file-basics/) | 使用 pybedtools/bedtools 读取、写入和过滤 BED 文件。 |
@@ -1172,7 +1235,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-genome-intervals-gtf-gff-handling](skills/bio-genome-intervals-gtf-gff-handling/) | 解析和操作 GTF/GFF 注释文件。 |
 | [bio-bedgraph-handling](skills/bio-bedgraph-handling/) | 处理 bedGraph 覆盖文件：算术运算、归一化、格式转换。 |
 
+</details>
+
 #### RNA 定量
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-rna-quantification-featurecounts-counting](skills/bio-rna-quantification-featurecounts-counting/) | 使用 subread 包的 featureCounts 统计每个基因的读段数。 |
@@ -1184,7 +1253,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-expression-matrix-metadata-joins](skills/bio-expression-matrix-metadata-joins/) | 将样品元数据连接到表达矩阵用于下游分析。 |
 | [bio-expression-matrix-sparse-handling](skills/bio-expression-matrix-sparse-handling/) | 使用 scipy 稀疏格式高效处理稀疏计数矩阵。 |
 
+</details>
+
 #### 表观转录组与 CLIP-seq
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-epitranscriptomics-merip-preprocessing](skills/bio-epitranscriptomics-merip-preprocessing/) | 预处理 MeRIP-seq 数据用于 m6A 甲基化分析。 |
@@ -1198,7 +1273,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-clip-seq-binding-site-annotation](skills/bio-clip-seq-binding-site-annotation/) | 用基因组特征和 RNA 区域注释 CLIP-seq 峰。 |
 | [bio-clip-seq-clip-motif-analysis](skills/bio-clip-seq-clip-motif-analysis/) | 从 CLIP-seq 峰序列中发现 RBP 结合基序。 |
 
+</details>
+
 #### 小 RNA-seq
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-small-rna-seq-smrna-preprocessing](skills/bio-small-rna-seq-smrna-preprocessing/) | 预处理小 RNA-seq：接头修剪、大小筛选。 |
@@ -1207,7 +1288,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-small-rna-seq-target-prediction](skills/bio-small-rna-seq-target-prediction/) | 使用 TargetScan 或 miRDB 预测 miRNA 靶基因。 |
 | [bio-small-rna-seq-differential-mirna](skills/bio-small-rna-seq-differential-mirna/) | 使用 DESeq2/edgeR 进行差异 miRNA 表达分析。 |
 
+</details>
+
 #### 群体遗传学与单体型分析
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-population-genetics-plink-basics](skills/bio-population-genetics-plink-basics/) | PLINK2 用于 GWAS QC、LD 修剪和基础群体遗传学。 |
@@ -1221,7 +1308,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-phasing-imputation-reference-panels](skills/bio-phasing-imputation-reference-panels/) | 选择和准备用于填补的参考面板（1KGP、HRC、TOPMed）。 |
 | [bio-phasing-imputation-imputation-qc](skills/bio-phasing-imputation-imputation-qc/) | QC 填补数据：R² 过滤、INFO 分数、等位基因一致性。 |
 
+</details>
+
 #### 比较基因组与系统进化
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-comparative-genomics-ortholog-inference](skills/bio-comparative-genomics-ortholog-inference/) | 使用 OrthoFinder 或 OMA 推断直系同源和旁系同源基因。 |
@@ -1235,7 +1328,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-phylo-tree-visualization](skills/bio-phylo-tree-visualization/) | 使用 iTOL、ETE3 或 ggtree 可视化系统发育树。 |
 | [bio-phylo-distance-calculations](skills/bio-phylo-distance-calculations/) | 计算成对系统发育距离和多样性指标。 |
 
+</details>
+
 #### 系统生物学与代谢建模
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-systems-biology-flux-balance-analysis](skills/bio-systems-biology-flux-balance-analysis/) | 使用 COBRApy 进行代谢网络建模的通量平衡分析（FBA）。 |
@@ -1244,7 +1343,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-systems-biology-context-specific-models](skills/bio-systems-biology-context-specific-models/) | 从表达数据构建情境特异性代谢模型（GIMME、iMAT）。 |
 | [bio-systems-biology-model-curation](skills/bio-systems-biology-model-curation/) | 整理 SBML 代谢模型：质量/电荷平衡、缺口填充。 |
 
+</details>
+
 #### 实验设计、机器学习与报告
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-experimental-design-sample-size](skills/bio-experimental-design-sample-size/) | 组学实验的功效分析和样本量计算。 |
@@ -1264,7 +1369,13 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-reporting-figure-export](skills/bio-reporting-figure-export/) | 以指定 DPI 导出 PDF/SVG/TIFF 格式的出版质量图表。 |
 | [bio-research-tools-biomarker-signature-studio](skills/bio-research-tools-biomarker-signature-studio/) | 构建、验证和可视化多组学生物标志物特征。 |
 
+</details>
+
 #### 端到端工作流管道
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-workflows-fastq-to-variants](skills/bio-workflows-fastq-to-variants/) | 完整的 FASTQ → 比对 → 变异检测管道。 |
@@ -1305,8 +1416,15 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-workflow-management-nextflow-pipelines](skills/bio-workflow-management-nextflow-pipelines/) | 构建和运行 Nextflow (DSL2) 生物信息管道。 |
 | [bio-workflow-management-cwl-workflows](skills/bio-workflow-management-cwl-workflows/) | 编写通用工作流语言（CWL）可移植工作流定义。 |
 | [bio-workflow-management-wdl-workflows](skills/bio-workflow-management-wdl-workflows/) | 创建用于 Terra/Cromwell 生物信息执行的 WDL 工作流。 |
+| [bio-workflows-expression-to-pathways](skills/bio-workflows-expression-to-pathways/) | 从差异表达结果到 GO/KEGG/Reactome 富集与通路可视化的端到端工作流。 |
+
+</details>
 
 #### 生信数据可视化
+
+<details>
+<summary>点击展开技能列表</summary>
+
 | 技能 | 描述 |
 |------|------|
 | [bio-data-visualization-heatmaps-clustering](skills/bio-data-visualization-heatmaps-clustering/) | 使用 ComplexHeatmap 或 seaborn 进行层次聚类热图。 |
@@ -1321,9 +1439,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [bio-data-visualization-color-palettes](skills/bio-data-visualization-color-palettes/) | 科学色彩调色板：色盲友好、感知均匀、发散型。 |
 | [bio-data-visualization-specialized-omics-plots](skills/bio-data-visualization-specialized-omics-plots/) | 专用图表：棒棒糖图（突变）、circomap、oncoprint。 |
 
----
+</details>
 
 ### 肿瘤学与精准医学智能体 (21个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1348,10 +1469,14 @@ Agent 应当列出已安装的技能及其功能说明。
 | [deep-visual-proteomics-agent](skills/deep-visual-proteomics-agent/) | 深度视觉蛋白质组学：激光捕获显微切割质谱数据的空间蛋白质组分析。 |
 | [exosome-ev-analysis-agent](skills/exosome-ev-analysis-agent/) | 细胞外囊泡和外泌体分析：货物分析和生物标志物发现。 |
 | [microbiome-cancer-agent](skills/microbiome-cancer-agent/) | 肿瘤微生物组分析及其在癌症进展和免疫治疗反应中的作用。 |
+| [bio-fragment-analysis](skills/bio-fragment-analysis/) | 基于 FinaleToolkit/Griffin 分析 cfDNA 片段长度分布与 fragmentomics 特征，用于肿瘤检测与组织来源评估。 |
 
----
+</details>
 
 ### 血液学与血液病 (7个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1363,9 +1488,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [chip-clonal-hematopoiesis-agent](skills/chip-clonal-hematopoiesis-agent/) | 不确定潜力的克隆性造血（CHIP）变异检测和风险评估。 |
 | [coagulation-thrombosis-agent](skills/coagulation-thrombosis-agent/) | 凝血途径分析、血栓形成倾向评估、抗凝指导。 |
 
----
+</details>
 
 ### 免疫学与细胞治疗 (9个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1379,9 +1507,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [tme-immune-profiling-agent](skills/tme-immune-profiling-agent/) | 肿瘤微环境免疫分型：细胞类型去卷积和空间定位。 |
 | [cytokine-storm-analysis-agent](skills/cytokine-storm-analysis-agent/) | 细胞因子风暴检测、严重程度评分和干预建模。 |
 
----
+</details>
 
 ### 单细胞与空间组学智能体 (15个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1401,9 +1532,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [epigenomics-methylgpt-agent](skills/epigenomics-methylgpt-agent/) | 表观基因组和 DNA 甲基化分析，基于 MethylGPT 方法。 |
 | [biomaster-workflows](skills/biomaster-workflows/) | BioMaster 工作流编排，用于端到端生物信息分析。 |
 
----
+</details>
 
 ### 药物发现与分子设计 (35个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1437,9 +1571,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [long-read-sequencing-agent](skills/long-read-sequencing-agent/) | 长读段测序分析：SV 检测、甲基化、异构体发现、组装。 |
 | [bayesian-optimizer](skills/bayesian-optimizer/) | 贝叶斯优化用于生物医学研究的实验设计和超参数调优。 |
 
----
+</details>
 
 ### 临床AI与医疗 (20个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1463,9 +1600,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [biomedical-data-analysis](skills/biomedical-data-analysis/) | 综合生物医学数据分析：统计、可视化和解读。 |
 | [data-visualization-biomedical](skills/data-visualization-biomedical/) | 生物医学专用数据可视化：临床试验图、生存曲线、森林图。 |
 
----
+</details>
 
 ### 研究基础设施与智能体框架 (20个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1488,9 +1628,150 @@ Agent 应当列出已安装的技能及其功能说明。
 | [data-visualization-expert](skills/data-visualization-expert/) | 复杂科学和临床数据集的专业数据可视化。 |
 | [lobster-bioinformatics](skills/lobster-bioinformatics/) | 通过 Lobster AI 运行生物信息分析：scRNA-seq、bulk RNA-seq、文献挖掘、数据集发现、QC 和可视化。 |
 
----
+</details>
+
+</details>
+
+## 📊 数据科学与工具
+
+<details open>
+<summary>展开/收起该大类</summary>
+
+### 统计与数据分析
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
+|------|------|
+| [statistical-analysis](skills/statistical-analysis/) | 统计分析工具包。假设检验（t 检验、ANOVA、卡方）、回归、相关、贝叶斯统计、检验效能分析、假设检验、APA 报告。 |
+| [statsmodels](skills/statsmodels/) | 统计建模工具包。OLS、GLM、逻辑回归、ARIMA、时间序列、假设检验、诊断、AIC/BIC，用于严格的统计推断。 |
+| [pymc](skills/pymc/) | 使用 PyMC 进行贝叶斯建模。构建层次模型，MCMC（NUTS），变分推断，LOO/WAIC 比较，后验检验，用于概率编程。 |
+| [simpy](skills/simpy/) | 基于过程的离散事件仿真框架，适用于临床系统建模：队列、资源、时间事件，用于医院工作流和患者流建模。 |
+| [exploratory-data-analysis](skills/exploratory-data-analysis/) | 对 200+ 格式的科学数据文件进行综合探索性数据分析——结构、内容、质量评估和可视化。 |
+| [data-stats-analysis](skills/data-stats-analysis/) | 统计检验、假设检验、相关分析和多重检验校正（OmicVerse，使用 scipy 和 statsmodels）。 |
+| [data-transform](skills/data-transform/) | 使用 pandas 和 numpy 转换、清洗、重塑和预处理生物数据（OmicVerse）。 |
+| [data-viz-plots](skills/data-viz-plots/) | 使用 matplotlib 和 seaborn 创建出版质量的图表和可视化（OmicVerse）。 |
+| [scientific-visualization](skills/scientific-visualization/) | 使用 matplotlib/seaborn/plotly 创建发表级图形。多面板布局、误差棒、显著性标记、色盲友好、PDF/EPS/TIFF 导出。 |
+
+</details>
+
+### 实验室自动化与集成
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
+|------|------|
+| [opentrons-integration](skills/opentrons-integration/) | Flex/OT-2 机器人实验室自动化平台。编写 Protocol API v2 协议、液体处理、硬件模块（加热振荡器、热循环仪）、耗材管理。 |
+| [pylabrobot](skills/pylabrobot/) | 实验室自动化工具包，控制移液工作站、酶标仪、泵、加热振荡器、培养箱、离心机和分析仪器。 |
+| [benchling-integration](skills/benchling-integration/) | Benchling R&D 平台集成。通过 API 访问注册表（DNA、蛋白质）、库存、ELN 条目、工作流，构建 Benchling App，用于实验室数据管理自动化。 |
+| [labarchive-integration](skills/labarchive-integration/) | 电子实验记录本 API 集成。访问记录本、管理条目/附件、备份记录本，与 Protocols.io/Jupyter/REDCap 集成。 |
+| [protocolsio-integration](skills/protocolsio-integration/) | protocols.io API 集成，用于管理科学实验方案——搜索、创建、更新、发布方案，管理步骤和试剂。 |
+| [instrument-data-to-allotrope](skills/instrument-data-to-allotrope/) | 将实验室仪器输出文件（PDF、CSV、Excel、TXT）转换为 Allotrope Simple Model（ASM）JSON 格式，用于 LIMS 系统、数据湖和下游分析。 |
+
+</details>
+
+### 科学研究与写作
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 说明 |
+|------|------|
+| [scientific-writing](skills/scientific-writing/) | 用完整段落撰写科学稿件，采用两阶段流程：章节提纲然后正文。覆盖研究论文所有章节。 |
+| [scientific-critical-thinking](skills/scientific-critical-thinking/) | 评估研究严谨性。评估方法学、实验设计、统计有效性、偏倚、混杂因素、证据质量（GRADE、Cochrane ROB）。 |
+| [scientific-brainstorming](skills/scientific-brainstorming/) | 研究构思伙伴。生成假说、探索跨学科联系、挑战假设、开发方法论、识别研究空白，用于创造性科学问题解决。 |
+| [hypothesis-generation](skills/hypothesis-generation/) | 生成可检验的假说。从观察中制定假设，设计实验，探索竞争性解释，发展预测，提出机制，用于跨学科科学探究。 |
+| [scientific-problem-selection](skills/scientific-problem-selection/) | 帮助科学家进行研究问题选择、项目构思、解决停滞项目和战略性科学决策。 |
+| [peer-review](skills/peer-review/) | 系统性同行评审工具包。评估方法学、统计、设计、可重复性、伦理、图形完整性、报告标准，用于稿件和基金评审。 |
+| [citation-management](skills/citation-management/) | 综合文献引用管理。从 Google Scholar 和 PubMed 检索论文，提取准确元数据，验证引用，生成 BibTeX 条目。 |
+| [research-grants](skills/research-grants/) | 为 NSF、NIH、DOE 和 DARPA 撰写竞争性科研项目申请书。机构特定格式、评审标准、预算编制、广泛影响和意义陈述。 |
+| [research-lookup](skills/research-lookup/) | 使用 Perplexity Sonar Pro Search 或 Sonar Reasoning Pro（通过 OpenRouter）查询当前研究信息，自动选择最适合查询复杂度的模型。 |
+| [biomni](skills/biomni/) | 自主生物医学 AI 智能体框架，执行跨基因组学、药物发现、分子生物学和临床分析的复杂研究任务。 |
+| [treatment-plans](skills/treatment-plans/) | 为所有临床专科生成简洁（3-4页）的医疗治疗方案（LaTeX/PDF 格式），支持普通医学、康复治疗、心理健康和慢性病管理。 |
+
+</details>
+
+### 分析师人格
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [biologist-analyst](skills/biologist-analyst/) | 生物学家分析师人格，用于解读生物实验、测序数据、细胞生物学测定和分子生物学研究。 |
+| [chemist-analyst](skills/chemist-analyst/) | 化学家分析师人格，用于解读化学数据、合成路线、光谱结果、反应机制和实验室分析。 |
+| [epidemiologist-analyst](skills/epidemiologist-analyst/) | 流行病学家分析师人格，用于研究设计、队列分析、风险因素评估、公共卫生监测和因果推断。 |
+| [psychologist-analyst](skills/psychologist-analyst/) | 心理学家分析师人格，用于行为数据分析、心理评估解读、临床案例制定和心理健康研究。 |
+
+</details>
+
+### 公共卫生与时序分析
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [datacommons-client](skills/datacommons-client/) | 访问Google Data Commons的公共健康统计数据：疾病流行率、人口统计数据、全球来源的健康指标。 |
+| [timesfm-forecasting](skills/timesfm-forecasting/) | 使用Google TimesFM进行零样本时序预测。适用于生命体征趋势、健康传感器数据和纵向健康监测，无需自定义模型训练。 |
+| [aeon](skills/aeon/) | 时序机器学习：分类、回归、聚类、异常检测、分割，适用于时序健康数据和连续临床测量。 |
+
+</details>
+
+### 科学文献与参考管理
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [bgpt-paper-search](skills/bgpt-paper-search/) | 使用BGPT MCP服务器搜索科学论文。每篇论文返回25+结构化字段：方法、结果、样本量、质量评分。用于文献综述和证据综合。 |
+| [pyzotero](skills/pyzotero/) | 通过Zotero Web API v3以编程方式与Zotero参考文献库交互。检索、创建、更新条目，导出引用，上传PDF，构建研究自动化工作流程。 |
+| [open-notebook](skills/open-notebook/) | 自托管NotebookLM替代品。摄取PDF、视频、网页、文档；生成AI驱动的笔记；与研究材料对话；支持16+AI提供商。 |
+
+</details>
+
+### 数据处理与科学计算
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [dask](skills/dask/) | 用于超出RAM的基因组/组学数据集的分布式计算。扩展pandas/NumPy超过内存限制，并行文件处理，分布式ML。 |
+| [polars](skills/polars/) | 快速内存DataFrame库（1-100GB）。生物医学数据ETL和分析管道的更快pandas替代品。 |
+| [vaex](skills/vaex/) | 数十亿行数据的核外DataFrame操作。大型基因组和临床数据集的快速统计和可视化。 |
+| [zarr-python](skills/zarr-python/) | 云存储的分块N维数组。压缩数组、并行I/O、S3/GCS集成，用于大规模组学数据。 |
+| [pytorch-lightning](skills/pytorch-lightning/) | 生物医学AI的结构化PyTorch深度学习：多GPU训练、回调、日志记录、临床/基因组模型的分布式训练。 |
+
+</details>
+
+### 科学可视化与科研传播
+
+<details>
+<summary>点击展开技能列表</summary>
+
+| 技能 | 描述 |
+|------|------|
+| [matplotlib](skills/matplotlib/) | 全定制的低级绘图库。用于科学手稿和期刊的出版质量图形。 |
+| [seaborn](skills/seaborn/) | 带pandas集成的统计可视化。用于生物医学数据探索的箱线图、小提琴图、热图、配对图。 |
+| [plotly](skills/plotly/) | 交互式可视化。悬停信息、缩放、探索性生物医学分析和演示的仪表板。 |
+| [infographics](skills/infographics/) | 使用迭代AI精炼创建专业科学信息图表。支持10种信息图类型和8种行业风格。 |
+| [scientific-schematics](skills/scientific-schematics/) | 出版质量的科学图表：神经网络架构、生物通路、系统图、流程图。 |
+| [scientific-slides](skills/scientific-slides/) | 为会议、研讨会、论文答辩构建研究演示幻灯片。支持PowerPoint和LaTeX Beamer。 |
+| [latex-posters](skills/latex-posters/) | 使用LaTeX（beamerposter、tikzposter）创建专业研究海报。多栏布局的会议海报。 |
+| [pptx-posters](skills/pptx-posters/) | 可导出为PDF或PPTX的HTML/CSS研究海报。现代网页式海报设计。 |
+| [markdown-mermaid-writing](skills/markdown-mermaid-writing/) | 使用Markdown和24种Mermaid图表类型进行科学文档编写。9种科学报告文档模板。 |
+| [paper-2-web](skills/paper-2-web/) | 将学术论文转换为交互式网站、演示视频和会议海报（Paper2Web、Paper2Video、Paper2Poster）。 |
+
+</details>
 
 ### 补充科学工具
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1506,9 +1787,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [docx-official](skills/docx-official/) | 官方Word/DOCX技能：文档创建、编辑和格式化。 |
 | [pptx-official](skills/pptx-official/) | 官方PowerPoint/PPTX技能：演示文稿创建和编辑。 |
 
----
+</details>
 
 ### 计算模拟与本体论 (HeshamFS/materials-simulation-skills, 17个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1530,9 +1814,12 @@ Agent 应当列出已安装的技能及其功能说明。
 | [time-stepping](skills/time-stepping/) | 生物动力学自适应时间步控制：CFL约束、检查点调度。 |
 | [mesh-generation](skills/mesh-generation/) | 数值模拟的网格生成：分辨率、质量指标、自适应细化。 |
 
----
+</details>
 
 ### 开发工作流技能 (obra/superpowers, 14个)
+
+<details>
+<summary>点击展开技能列表</summary>
 
 | 技能 | 描述 |
 |------|------|
@@ -1550,6 +1837,10 @@ Agent 应当列出已安装的技能及其功能说明。
 | [using-git-worktrees](skills/using-git-worktrees/) | 为功能开发和计划执行创建隔离的 git 工作树。 |
 | [finishing-a-development-branch](skills/finishing-a-development-branch/) | 完成开发分支：合并、PR 或清理，提供结构化决策选项。 |
 | [using-superpowers](skills/using-superpowers/) | 元技能：在对话开始时发现并使用可用技能完成任何任务。 |
+
+</details>
+
+</details>
 
 ## 致谢
 

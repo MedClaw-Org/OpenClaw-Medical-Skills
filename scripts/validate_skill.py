@@ -3,7 +3,6 @@
 Quick validation script for skills - minimal version
 """
 
-import sys
 import re
 import yaml
 from pathlib import Path
@@ -69,12 +68,3 @@ def validate_skill(skill_path):
     #         return False, f"Description is too long ({len(description)} characters). Maximum is 1024 characters."
 
     return True, "Skill is valid!"
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python quick_validate.py <skill_directory>")
-        sys.exit(1)
-    
-    valid, message = validate_skill(sys.argv[1])
-    print(message)
-    sys.exit(0 if valid else 1)
