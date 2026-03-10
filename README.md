@@ -250,10 +250,18 @@ Your agent should list the installed skills with their capabilities.
 ---
 
 ## Skills List
-
 ---
 
+
+## General & Core
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
 ## General Tools
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -268,9 +276,23 @@ Your agent should list the installed skills with their capabilities.
 | [pptx](skills/pptx/) | Presentation creation, editing, and analysis. Supports layouts, speaker notes, templates, and design. Use for any .pptx file. |
 | [doc-coauthoring](skills/doc-coauthoring/) | Guide users through a structured workflow for co-authoring documentation. Use when writing documentation, proposals, technical specs, decision docs, or similar structured content. |
 
+</details>
+
+</details>
+
+
 ---
 
+
+## Medical & Clinical
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
 ## Medical Tools
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -350,9 +372,12 @@ Your agent should list the installed skills with their capabilities.
 | [gwas-database](skills/gwas-database/) | Query NHGRI-EBI GWAS Catalog for SNP-trait associations by rs ID, disease/trait, or gene. Retrieve p-values and summary statistics for genetic epidemiology. |
 | [scikit-survival](skills/scikit-survival/) | Survival analysis and time-to-event modeling in Python — Kaplan-Meier, Cox regression, log-rank tests, and censored data handling using scikit-survival. |
 
----
+</details>
 
 ### Drug Safety & Chemical Biology
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -363,9 +388,111 @@ Your agent should list the installed skills with their capabilities.
 | [tooluniverse-drug-target-validation](skills/tooluniverse-drug-target-validation/) | Computational validation of drug targets across 10 dimensions: disambiguation, disease association, druggability, chemical matter, clinical precedent, safety, and expression evidence. |
 | [tooluniverse-sequence-retrieval](skills/tooluniverse-sequence-retrieval/) | Retrieve biological sequences (DNA, RNA, protein) from NCBI and ENA with gene disambiguation, accession type handling, and comprehensive sequence profiles. |
 
+</details>
+
+### Medical Imaging & Pathology
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [pydicom](skills/pydicom/) | Python library for working with DICOM medical imaging files. Reading, writing, modifying DICOM data, extracting pixel data, handling metadata and multi-frame files. |
+| [histolab](skills/histolab/) | Digital pathology image processing toolkit for whole slide images (WSI). Process H&E or IHC stained tissue images, extract tiles from gigapixel slides. |
+| [pathml](skills/pathml/) | Computational pathology toolkit for analyzing WSI and multiparametric imaging data. H&E stained images, multiplex immunofluorescence, spatial omics integration. |
+| [omero-integration](skills/omero-integration/) | Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, for high-content screening workflows. |
+| [neurokit2](skills/neurokit2/) | Comprehensive biosignal processing: ECG, EEG, EDA, RSP, PPG, EMG, EOG signals. Cardiovascular signal analysis, neurophysiology, and physiological data processing. |
+| [neuropixels-analysis](skills/neuropixels-analysis/) | Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, for neuroscience research. |
+
+</details>
+
+### Healthcare ML & Clinical AI
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [pyhealth](skills/pyhealth/) | Comprehensive healthcare AI toolkit for developing ML models with clinical data (EHR, claims). Task definition API, model training, evaluation for clinical NLP and prediction. |
+| [scikit-learn](skills/scikit-learn/) | Machine learning in Python: supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning. |
+| [transformers](skills/transformers/) | Pre-trained transformer models for NLP, computer vision, audio, and multimodal tasks. Text generation, classification, question answering, and biomedical NLP (BioBERT, ClinicalBERT). |
+| [shap](skills/shap/) | Model interpretability using SHAP (SHapley Additive exPlanations). Explain ML model predictions, compute feature importance, generate SHAP plots for biomedical models. |
+| [umap-learn](skills/umap-learn/) | UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), for high-dimensional omics data. |
+
+</details>
+
+### Health & Wellness Analytics
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [nutrition-analyzer](skills/nutrition-analyzer/) | Comprehensive nutrition analysis: macro/micronutrient tracking, dietary assessment, meal planning, food data lookup, and nutritional recommendations. |
+| [mental-health-analyzer](skills/mental-health-analyzer/) | Mental health data analysis: mood tracking, symptom patterns, PHQ/GAD scoring, behavioral insights, and wellness recommendations. |
+| [sleep-analyzer](skills/sleep-analyzer/) | Sleep quality analysis: sleep stages, duration, efficiency metrics, circadian rhythm assessment, and sleep hygiene recommendations. |
+| [rehabilitation-analyzer](skills/rehabilitation-analyzer/) | Rehabilitation progress tracking: functional assessments, exercise programs, recovery milestones, and outcome measurement for physical/occupational therapy. |
+| [fitness-analyzer](skills/fitness-analyzer/) | Fitness performance analysis: exercise tracking, strength/cardio metrics, training load, VO2max estimation, and periodization planning. |
+| [health-trend-analyzer](skills/health-trend-analyzer/) | Longitudinal health trend analysis: vital sign tracking, biomarker trends, risk factor monitoring, and predictive health insights. |
+| [weightloss-analyzer](skills/weightloss-analyzer/) | Weight management analytics: caloric balance, body composition tracking, progress monitoring, and evidence-based weight loss strategies. |
+| [goal-analyzer](skills/goal-analyzer/) | Health goal tracking and analysis: SMART goal setting, progress metrics, habit formation, and motivational insights for wellness objectives. |
+| [occupational-health-analyzer](skills/occupational-health-analyzer/) | Occupational health assessment: workplace ergonomics, exposure risk, work-related illness surveillance, and return-to-work planning. |
+| [travel-health-analyzer](skills/travel-health-analyzer/) | Travel medicine: destination health risks, vaccination requirements, malaria prophylaxis, altitude sickness, and traveler health preparation. |
+| [family-health-analyzer](skills/family-health-analyzer/) | Family health management: pediatric milestones, family medical history, preventive screening schedules, and multigenerational health tracking. |
+| [tcm-constitution-analyzer](skills/tcm-constitution-analyzer/) | Traditional Chinese Medicine constitution analysis: TCM body type assessment, pattern differentiation, herbal recommendations, and lifestyle guidance. |
+| [emergency-card](skills/emergency-card/) | Generate emergency medical information cards with critical health data, medications, allergies, and emergency contacts for patient safety. |
+| [ai-analyzer](skills/ai-analyzer/) | AI-powered comprehensive health data interpretation combining multiple biomarkers and health metrics for holistic wellness assessment. |
+| [wellally-tech](skills/wellally-tech/) | Technical framework for WellAlly health analytics platform: integration patterns, data pipelines, and health AI infrastructure. |
+
+</details>
+
+### Mental Health & Crisis Intervention
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [crisis-detection-intervention-ai](skills/crisis-detection-intervention-ai/) | Detect crisis signals using NLP and mental health sentiment analysis. Implements suicide ideation detection, automated escalation, and crisis resource integration for mental health apps and recovery platforms. |
+| [crisis-response-protocol](skills/crisis-response-protocol/) | Handle mental health crisis situations safely: crisis detection, safety protocols, emergency escalation, suicide prevention, and hotline integration for AI coaching applications. |
+| [hipaa-compliance](skills/hipaa-compliance/) | Ensure HIPAA compliance when handling PHI. Audit logging, data access controls, security event tracking, and compliance verification for health data applications. |
+| [clinical-diagnostic-reasoning](skills/clinical-diagnostic-reasoning/) | Identify and counteract cognitive biases in medical decision-making through systematic error analysis, differential diagnosis frameworks, and clinical judgment improvement. |
+| [speech-pathology-ai](skills/speech-pathology-ai/) | AI-powered speech-language pathology: phoneme analysis, articulation visualization, voice disorder assessment, fluency intervention, AAC, and stuttering treatment support. |
+| [hrv-alexithymia-expert](skills/hrv-alexithymia-expert/) | Heart rate variability biometrics and emotional awareness training. HRV analysis, interoception training, biofeedback, vagal tone assessment, and autonomic nervous system evaluation. |
+| [adhd-daily-planner](skills/adhd-daily-planner/) | ADHD-optimized daily planning: time-blind friendly scheduling, executive function support, dopamine-aware task design, and neurodivergent-friendly productivity systems. |
+| [grief-companion](skills/grief-companion/) | Compassionate bereavement support, memorial creation, grief education, and healing journey guidance through the non-linear path of loss. |
+| [jungian-psychologist](skills/jungian-psychologist/) | Jungian analytical psychology: shadow work, archetypal analysis, dream interpretation, active imagination, addiction/recovery through depth psychology lens, and individuation process. |
+| [modern-drug-rehab-computer](skills/modern-drug-rehab-computer/) | Comprehensive addiction recovery knowledge system: evidence-based treatment (CBT, DBT, MI, EMDR, MAT), recovery resources, crisis intervention, and family systems for rehab environments. |
+| [recovery-community-moderator](skills/recovery-community-moderator/) | Trauma-informed AI moderation for addiction recovery communities: harm reduction, 12-step traditions, conflict detection, and crisis post identification. |
+
+</details>
+
+### Medical Device & Regulatory
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [iso-13485-certification](skills/iso-13485-certification/) | Comprehensive toolkit for ISO 13485 QMS documentation for medical devices: gap analysis, Quality Manuals, procedures, Medical Device Files. Covers FDA QMSR, EU MDR compliance. |
+
+</details>
+
+</details>
+
+
 ---
 
+
+## Scientific Databases
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
 ### Scientific Databases (Genomics & Variants)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -379,9 +506,12 @@ Your agent should list the installed skills with their capabilities.
 | [gget](skills/gget/) | CLI/Python toolkit for rapid bioinformatics queries with access to 20+ databases: Ensembl, UniProt, AlphaFold, ARCHS4, Enrichr, OpenTargets, COSMIC, BLAST, and more. |
 | [pysam](skills/pysam/) | Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines. |
 
----
+</details>
 
 ### Scientific Databases (Proteins, Pathways & Drugs)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -406,9 +536,67 @@ Your agent should list the installed skills with their capabilities.
 | [bioservices](skills/bioservices/) | Primary Python tool for 40+ bioinformatics services. Unified API for UniProt, KEGG, ChEMBL, PubChem, Reactome, QuickGO — preferred for multi-database workflows. |
 | [uspto-database](skills/uspto-database/) | Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citations, office actions, for IP analysis and prior art searches. |
 
+</details>
+
+### Cancer Genomics Databases
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [cbioportal-database](skills/cbioportal-database/) | Query cBioPortal for cancer genomics: somatic mutations, copy number, gene expression, and survival data across hundreds of cancer studies. Cancer target validation, oncogene analysis, and patient-level genomic profiling. |
+| [depmap](skills/depmap/) | Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity, and gene effect profiles. Identify cancer-specific vulnerabilities and synthetic lethal interactions. |
+| [imaging-data-commons](skills/imaging-data-commons/) | Query and download public cancer imaging data from NCI Imaging Data Commons. Access radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. |
+
+</details>
+
+### Genomic & Molecular Databases
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [bindingdb-database](skills/bindingdb-database/) | Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Drug discovery, lead optimization, polypharmacology, and SAR studies. |
+| [gnomad-database](skills/gnomad-database/) | Query gnomAD for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Variant pathogenicity interpretation and rare disease genetics. |
+| [gtex-database](skills/gtex-database/) | Query GTEx for tissue-specific gene expression, eQTLs, and sQTLs. Link GWAS variants to gene regulation and interpret non-coding variant effects. |
+| [interpro-database](skills/interpro-database/) | Query InterPro for protein family, domain, and functional site annotations. Integrates Pfam, PANTHER, PRINTS, SMART, and 11+ databases for protein function prediction. |
+| [jaspar-database](skills/jaspar-database/) | Query JASPAR for transcription factor binding site profiles (PWMs/PFMs). Regulatory genomics, motif analysis, and GWAS regulatory variant interpretation. |
+| [monarch-database](skills/monarch-database/) | Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations. Integrates OMIM, ORPHANET, HPO, ClinVar for rare disease gene discovery. |
+| [tiledbvcf](skills/tiledbvcf/) | Scalable VCF/BCF ingestion, storage, and parallel queries using TileDB for population genomics at scale. |
+
+</details>
+
+### Structural Biology & Drug Discovery
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [molecular-dynamics](skills/molecular-dynamics/) | Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Protein/small molecule systems, force fields, energy minimization, RMSD/RMSF analysis, free energy surfaces. |
+| [glycoengineering](skills/glycoengineering/) | Analyze and engineer protein glycosylation. Predict N/O-glycosylation sites, access glycoengineering tools (NetOGlyc, GlycoShield). Therapeutic antibody optimization and vaccine design. |
+| [adaptyv](skills/adaptyv/) | Cloud laboratory platform for automated protein testing: binding assays, expression testing, thermostability, enzyme activity. Protein sequence optimization with NetSolP, SoluProt, ESM. |
+| [ginkgo-cloud-lab](skills/ginkgo-cloud-lab/) | Submit and manage protocols on Ginkgo Bioworks Cloud Lab for autonomous lab execution. Cell-free protein expression, protocol workflows, and biotech automation. |
+
+</details>
+
+</details>
+
+
 ---
 
+
+## Bioinformatics (gptomics bio-* suite)
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
 ### Bioinformatics Tools & Pipelines
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -425,164 +613,12 @@ Your agent should list the installed skills with their capabilities.
 | [dnanexus-integration](skills/dnanexus-integration/) | DNAnexus cloud genomics platform. Build apps/applets, manage data, dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development. |
 | [latchbio-integration](skills/latchbio-integration/) | Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, Nextflow/Snakemake integration. |
 
----
-
-### Single-Cell & Spatial Omics
-
-| Skill | Description |
-|-------|-------------|
-| [anndata](skills/anndata/) | Working with annotated data matrices in Python for single-cell genomics analysis, managing experimental measurements with metadata and large-scale omics data. |
-| [scanpy](skills/scanpy/) | Single-cell RNA-seq analysis. Load .h5ad/10X data, QC, normalization, PCA/UMAP/t-SNE, Leiden clustering, marker genes, cell type annotation, trajectory. |
-| [scvi-tools](skills/scvi-tools/) | Deep learning for single-cell analysis: data integration/batch correction (scVI/scANVI), ATAC-seq (PeakVI), CITE-seq (totalVI), multiome (MultiVI), spatial deconvolution (DestVI). |
-| [single-cell-rna-qc](skills/single-cell-rna-qc/) | Quality control on single-cell RNA-seq data (.h5ad or .h5 files) using scverse best practices with MAD-based filtering and comprehensive visualizations. |
-| [cellxgene-census](skills/cellxgene-census/) | Query CZ CELLxGENE Census (61M+ cells). Filter by cell type/tissue/disease, retrieve expression data, integrate with scanpy/PyTorch, for population-scale single-cell analysis. |
-| [pydeseq2](skills/pydeseq2/) | Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots. |
-| [bulk-combat-correction](skills/bulk-combat-correction/) | Remove batch effects from merged bulk RNA-seq or microarray cohorts using pyComBat, with corrected matrix export and pre/post correction visualizations. |
-| [bulk-deg-analysis](skills/bulk-deg-analysis/) | Bulk RNA-seq DEG pipeline: gene ID mapping, DESeq2 normalization, statistical testing, visualization, and pathway enrichment via OmicVerse. |
-| [bulk-deseq2-analysis](skills/bulk-deseq2-analysis/) | PyDESeq2-based differential expression analysis with ID mapping, DE testing, fold-change thresholding, and enrichment visualization. |
-| [bulk-stringdb-ppi](skills/bulk-stringdb-ppi/) | Query STRING for protein interactions, build PPI graphs with pyPPI, and render network figures for bulk gene lists. |
-| [bulk-to-single-deconvolution](skills/bulk-to-single-deconvolution/) | Convert bulk RNA-seq cohorts to synthetic single-cell datasets using Bulk2Single workflow for cell fraction estimation and beta-VAE generation. |
-| [bulk-trajblend-interpolation](skills/bulk-trajblend-interpolation/) | Extend scRNA-seq developmental trajectories with BulkTrajBlend by generating intermediate cells from bulk RNA-seq using beta-VAE and GNN models. |
-| [bulk-wgcna-analysis](skills/bulk-wgcna-analysis/) | Run PyWGCNA through OmicVerse — co-expression module construction, eigengene visualization, and hub gene extraction. |
-| [single-annotation](skills/single-annotation/) | Single-cell annotation workflows: SCSA, MetaTiME, CellVote, CellMatch, GPTAnno, and weighted KNN transfer for annotating cell types across modalities. |
-| [single-cellphone-db](skills/single-cellphone-db/) | Run CellPhoneDB v5 on annotated single-cell data to infer ligand-receptor networks and produce CellChat-style visualizations. |
-| [single-clustering](skills/single-clustering/) | Single-cell clustering workflow: QC, multimethod clustering, topic modeling, cNMF, and cross-batch integration in OmicVerse. |
-| [single-downstream-analysis](skills/single-downstream-analysis/) | OmicVerse downstream tutorials covering AUCell scoring, metacell DEG, and related exports for single-cell data. |
-| [single-multiomics](skills/single-multiomics/) | OmicVerse multi-omics tutorials: MOFA, GLUE pairing, SIMBA integration, TOSICA transfer, and StaVIA cartography. |
-| [single-preprocessing](skills/single-preprocessing/) | Single-cell preprocessing in OmicVerse: QC, normalization, HVG detection, PCA/embedding pipelines (CPU/GPU). |
-| [single-to-spatial-mapping](skills/single-to-spatial-mapping/) | Map scRNA-seq atlases onto spatial transcriptomics slides using Single2Spatial workflow for deep-forest training and marker visualization. |
-| [single-trajectory](skills/single-trajectory/) | OmicVerse trajectory workflows: PAGA, Palantir, VIA, velocity coupling, and fate scoring. |
-| [spatial-tutorials](skills/spatial-tutorials/) | Spatial transcriptomics tutorials: preprocessing, deconvolution, and downstream modeling across Visium, Visium HD, Stereo-seq, and Slide-seq. |
-| [tcga-preprocessing](skills/tcga-preprocessing/) | Ingest TCGA sample sheets, expression archives, and clinical carts into OmicVerse, with survival metadata initialization and AnnData export. |
-| [gsea-enrichment](skills/gsea-enrichment/) | Gene set enrichment analysis in OmicVerse with correct geneset format handling for loading pathway databases and running GSEA. |
-
----
-
-### Cheminformatics & Drug Discovery
-
-| Skill | Description |
-|-------|-------------|
-| [rdkit](skills/rdkit/) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity. |
-| [datamol](skills/datamol/) | Pythonic RDKit wrapper with simplified interface for standard drug discovery: SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformer generation. |
-| [medchem](skills/medchem/) | Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering. |
-| [diffdock](skills/diffdock/) | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. |
-| [molfeat](skills/molfeat/) | Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML. |
-| [deepchem](skills/deepchem/) | Molecular machine learning toolkit. Property prediction (ADMET, toxicity), GNNs (GCN, MPNN), MoleculeNet benchmarks, pretrained models, for drug discovery ML. |
-| [torchdrug](skills/torchdrug/) | Graph-based drug discovery toolkit. Molecular property prediction (ADMET), protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis, GNNs. |
-| [torch_geometric](skills/torch_geometric/) | Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, molecular property prediction, for geometric deep learning in drug discovery. |
-| [pytdc](skills/pytdc/) | Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML. |
-| [cobrapy](skills/cobrapy/) | Constraint-based metabolic modeling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models, for systems biology and metabolic engineering. |
-
----
-
-### Proteomics & Mass Spectrometry
-
-| Skill | Description |
-|-------|-------------|
-| [matchms](skills/matchms/) | Mass spectrometry spectral analysis. Process mzML/MGF/MSP files, spectral similarity (cosine, modified cosine), metadata harmonization, compound identification. |
-| [pyopenms](skills/pyopenms/) | Python interface to OpenMS for LC-MS/MS proteomics and metabolomics workflows. File handling (mzML, mzXML, mzTab, pepXML, mzIdentML) and quantification. |
-| [flowio](skills/flowio/) | Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to CSV/DataFrame, for flow cytometry data preprocessing. |
-
----
-
-### Protein Structure & Design
-
-| Skill | Description |
-|-------|-------------|
-| [esm](skills/esm/) | ESM3 generative multimodal protein design (sequence, structure, function) and ESM C efficient protein embeddings. Protein language models for sequence scoring and embedding. |
-| [alphafold](skills/alphafold/) | Validate protein designs using AlphaFold2 structure prediction. Validates designed sequences, predicts binder-target complex structures, calculates pLDDT/PAE metrics. |
-| [boltz](skills/boltz/) | Structure prediction using Boltz-1/Boltz-2, an open biomolecular structure predictor for protein complexes, binder validation, and open-source AlphaFold alternative. |
-| [boltzgen](skills/boltzgen/) | All-atom protein design using BoltzGen diffusion model. Side-chain aware design from the start, designing around small molecules or ligands. |
-| [chai](skills/chai/) | Structure prediction using Chai-1 foundation model for protein-protein complexes, binder validation, and protein-small molecule interaction prediction. |
-| [rfdiffusion](skills/rfdiffusion/) | Generate protein backbones using RFdiffusion diffusion model for de novo protein structure generation and binder scaffold design. |
-| [bindcraft](skills/bindcraft/) | End-to-end binder design using BindCraft hallucination with built-in AF2 validation for production-quality binder campaigns. |
-| [binder-design](skills/binder-design/) | Guidance for choosing the right protein binder design tool (BoltzGen, BindCraft, or RFdiffusion) and planning binder design campaigns. |
-| [proteinmpnn](skills/proteinmpnn/) | Design protein sequences using ProteinMPNN inverse folding for RFdiffusion backbones, sequence redesign, and partial fixed-position design. |
-| [ligandmpnn](skills/ligandmpnn/) | Ligand-aware protein sequence design using LigandMPNN for sequences around small molecules, enzyme active site design, and binding pocket optimization. |
-| [solublempnn](skills/solublempnn/) | Solubility-optimized protein sequence design using SolubleMPNN for E. coli expression, reducing aggregation, and solubility optimization. |
-| [foldseek](skills/foldseek/) | Structure similarity search with Foldseek for finding similar structures in PDB/AFDB databases, structural homology search, and evolutionary relationship discovery. |
-| [ipsae](skills/ipsae/) | Binder design ranking using ipSAE (interprotein Score from Aligned Errors) for ranking binder designs and filtering BindCraft or RFdiffusion outputs. |
-| [pdb](skills/pdb/) | Fetch and analyze protein structures from RCSB PDB by PDB ID, search for similar structures, prepare targets for binder design. |
-| [protein-design-workflow](skills/protein-design-workflow/) | End-to-end guidance for protein design pipelines from project initiation to experimental validation. |
-| [protein-qc](skills/protein-qc/) | Quality control metrics and filtering thresholds for protein design: pLDDT, PAE, ipTM for binding, expression, and structure evaluation. |
-| [cell-free-expression](skills/cell-free-expression/) | Guidance for cell-free protein synthesis (CFPS) optimization, troubleshooting low yield/aggregation, and optimizing DNA template design. |
-| [binding-characterization](skills/binding-characterization/) | Guidance for SPR and BLI binding characterization experiments, kinetics interpretation, and troubleshooting poor binding signal. |
-
----
-
-### Medical Imaging & Pathology
-
-| Skill | Description |
-|-------|-------------|
-| [pydicom](skills/pydicom/) | Python library for working with DICOM medical imaging files. Reading, writing, modifying DICOM data, extracting pixel data, handling metadata and multi-frame files. |
-| [histolab](skills/histolab/) | Digital pathology image processing toolkit for whole slide images (WSI). Process H&E or IHC stained tissue images, extract tiles from gigapixel slides. |
-| [pathml](skills/pathml/) | Computational pathology toolkit for analyzing WSI and multiparametric imaging data. H&E stained images, multiplex immunofluorescence, spatial omics integration. |
-| [omero-integration](skills/omero-integration/) | Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, for high-content screening workflows. |
-| [neurokit2](skills/neurokit2/) | Comprehensive biosignal processing: ECG, EEG, EDA, RSP, PPG, EMG, EOG signals. Cardiovascular signal analysis, neurophysiology, and physiological data processing. |
-| [neuropixels-analysis](skills/neuropixels-analysis/) | Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, Kilosort4 spike sorting, quality metrics, Allen/IBL curation, for neuroscience research. |
-
----
-
-### Healthcare ML & Clinical AI
-
-| Skill | Description |
-|-------|-------------|
-| [pyhealth](skills/pyhealth/) | Comprehensive healthcare AI toolkit for developing ML models with clinical data (EHR, claims). Task definition API, model training, evaluation for clinical NLP and prediction. |
-| [scikit-learn](skills/scikit-learn/) | Machine learning in Python: supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning. |
-| [transformers](skills/transformers/) | Pre-trained transformer models for NLP, computer vision, audio, and multimodal tasks. Text generation, classification, question answering, and biomedical NLP (BioBERT, ClinicalBERT). |
-| [shap](skills/shap/) | Model interpretability using SHAP (SHapley Additive exPlanations). Explain ML model predictions, compute feature importance, generate SHAP plots for biomedical models. |
-| [umap-learn](skills/umap-learn/) | UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), for high-dimensional omics data. |
-
----
-
-### Statistics & Data Analysis
-
-| Skill | Description |
-|-------|-------------|
-| [statistical-analysis](skills/statistical-analysis/) | Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlation, Bayesian stats, power analysis, assumption checks, APA reporting. |
-| [statsmodels](skills/statsmodels/) | Statistical modeling: OLS, GLM, logistic, ARIMA, time series, hypothesis tests, diagnostics, AIC/BIC, for rigorous statistical inference. |
-| [pymc](skills/pymc/) | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming. |
-| [simpy](skills/simpy/) | Process-based discrete-event simulation for clinical systems: queues, resources, time-based events. Useful for modeling hospital workflows and patient flow. |
-| [exploratory-data-analysis](skills/exploratory-data-analysis/) | Comprehensive exploratory data analysis on scientific data files across 200+ file formats — structure, content, quality assessment, and visualization. |
-| [data-stats-analysis](skills/data-stats-analysis/) | Statistical tests, hypothesis testing, correlation analysis, and multiple testing corrections using scipy and statsmodels (OmicVerse). |
-| [data-transform](skills/data-transform/) | Transform, clean, reshape, and preprocess biological data using pandas and numpy (OmicVerse). |
-| [data-viz-plots](skills/data-viz-plots/) | Create publication-quality plots and visualizations using matplotlib and seaborn (OmicVerse). |
-| [scientific-visualization](skills/scientific-visualization/) | Create publication figures with matplotlib/seaborn/plotly. Multi-panel layouts, error bars, significance markers, colorblind-safe, PDF/EPS/TIFF export. |
-
----
-
-### Lab Automation & Integration
-
-| Skill | Description |
-|-------|-------------|
-| [opentrons-integration](skills/opentrons-integration/) | Lab automation platform for Flex/OT-2 robots. Write Protocol API v2 protocols, liquid handling, hardware modules (heater-shaker, thermocycler), labware management. |
-| [pylabrobot](skills/pylabrobot/) | Laboratory automation toolkit for controlling liquid handlers, plate readers, pumps, heater shakers, incubators, centrifuges, and analytical equipment. |
-| [benchling-integration](skills/benchling-integration/) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, for lab data management automation. |
-| [labarchive-integration](skills/labarchive-integration/) | Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap. |
-| [protocolsio-integration](skills/protocolsio-integration/) | Integration with protocols.io API for managing scientific protocols — search, create, update, publish protocols, and manage protocol steps and reagents. |
-| [instrument-data-to-allotrope](skills/instrument-data-to-allotrope/) | Convert laboratory instrument output files (PDF, CSV, Excel, TXT) to Allotrope Simple Model (ASM) JSON format for LIMS systems, data lakes, and downstream analysis. |
-
----
-
-### Scientific Research & Writing
-
-| Skill | Description |
-|-------|-------------|
-| [scientific-writing](skills/scientific-writing/) | Write scientific manuscripts in full paragraphs using a two-stage process: section outlines then full text. Covers all sections of research papers. |
-| [scientific-critical-thinking](skills/scientific-critical-thinking/) | Evaluate research rigor. Assess methodology, experimental design, statistical validity, biases, confounding, evidence quality (GRADE, Cochrane ROB). |
-| [scientific-brainstorming](skills/scientific-brainstorming/) | Research ideation partner. Generate hypotheses, explore interdisciplinary connections, challenge assumptions, develop methodologies, identify research gaps. |
-| [hypothesis-generation](skills/hypothesis-generation/) | Generate testable hypotheses. Formulate from observations, design experiments, explore competing explanations, develop predictions, propose mechanisms. |
-| [scientific-problem-selection](skills/scientific-problem-selection/) | Help scientists with research problem selection, project ideation, troubleshooting stuck projects, and strategic scientific decisions. |
-| [peer-review](skills/peer-review/) | Systematic peer review toolkit. Evaluate methodology, statistics, design, reproducibility, ethics, figure integrity, reporting standards, for manuscript and grant review. |
-| [citation-management](skills/citation-management/) | Comprehensive citation management. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, generate BibTeX entries. |
-| [research-grants](skills/research-grants/) | Write competitive research proposals for NSF, NIH, DOE, and DARPA. Agency-specific formatting, review criteria, budget preparation, broader impacts. |
-| [research-lookup](skills/research-lookup/) | Look up current research using Perplexity's Sonar Pro Search or Sonar Reasoning Pro via OpenRouter. Automatically selects best model for the query complexity. |
-| [biomni](skills/biomni/) | Autonomous biomedical AI agent framework for executing complex research tasks across genomics, drug discovery, molecular biology, and clinical analysis. |
-| [treatment-plans](skills/treatment-plans/) | Generate concise (3-4 page) medical treatment plans in LaTeX/PDF format for all clinical specialties including general medicine, rehabilitation, mental health, and chronic disease. |
-
----
+</details>
 
 ### Bioinformatics — Clinical Databases & Variant Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -618,9 +654,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-methylation-based-detection](skills/bio-methylation-based-detection/) | Detect methylation-based cancer signals from cfDNA methylation data. |
 | [bio-longitudinal-monitoring](skills/bio-longitudinal-monitoring/) | Track somatic variant evolution and clonal dynamics across serial samples. |
 
----
+</details>
 
 ### Bioinformatics — Sequencing & Read QC
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -656,9 +695,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-splicing-quantification](skills/bio-splicing-quantification/) | Quantify alternative splicing events: PSI/inclusion levels per isoform. |
 | [bio-sashimi-plots](skills/bio-sashimi-plots/) | Generate sashimi plots for visualizing RNA-seq splicing at specific loci. |
 
----
+</details>
 
 ### Bioinformatics — Differential Expression & Transcriptomics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -676,9 +718,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-ribo-seq-ribosome-stalling](skills/bio-ribo-seq-ribosome-stalling/) | Identify ribosome stalling sites and pausing from Ribo-seq profiles. |
 | [bio-ribo-seq-translation-efficiency](skills/bio-ribo-seq-translation-efficiency/) | Compute translation efficiency ratios from matched RNA-seq and Ribo-seq. |
 
----
+</details>
 
 ### Bioinformatics — Pathway & Network Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -689,9 +734,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-pathway-wikipathways](skills/bio-pathway-wikipathways/) | WikiPathways enrichment and network visualization. |
 | [bio-pathway-enrichment-visualization](skills/bio-pathway-enrichment-visualization/) | Dot plots, enrichment maps, and network visualizations for pathway results. |
 
----
+</details>
 
 ### Bioinformatics — Single-Cell & Spatial Omics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -722,9 +770,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-spatial-transcriptomics-spatial-statistics](skills/bio-spatial-transcriptomics-spatial-statistics/) | Spatial statistics: Moran's I, spatial autocorrelation, co-localization. |
 | [bio-spatial-transcriptomics-spatial-visualization](skills/bio-spatial-transcriptomics-spatial-visualization/) | Visualize spatial gene expression maps and tissue section overlays. |
 
----
+</details>
 
 ### Bioinformatics — Epigenomics & Chromatin
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -754,9 +805,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-methylation-dmr-detection](skills/bio-methylation-dmr-detection/) | Identify differentially methylated regions (DMRs) with DSS or MethylKit. |
 | [bio-methylation-methylkit](skills/bio-methylation-methylkit/) | Methylation analysis with MethylKit: CpG tiles, DMR calling, annotation. |
 
----
+</details>
 
 ### Bioinformatics — Metagenomics & Microbiome
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -774,9 +828,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-microbiome-qiime2-workflow](skills/bio-microbiome-qiime2-workflow/) | End-to-end QIIME2 workflow: denoising, diversity, differential abundance. |
 | [bio-microbiome-taxonomy-assignment](skills/bio-microbiome-taxonomy-assignment/) | Assign taxonomy to ASVs/OTUs using SILVA, GTDB, or Greengenes2. |
 
----
+</details>
 
 ### Bioinformatics — Immunoinformatics & Flow Cytometry
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -805,9 +862,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-imaging-mass-cytometry-quality-metrics](skills/bio-imaging-mass-cytometry-quality-metrics/) | Quality metrics for IMC acquisitions: signal-to-noise, tissue coverage. |
 | [bio-imaging-mass-cytometry-spatial-analysis](skills/bio-imaging-mass-cytometry-spatial-analysis/) | Spatial cell neighborhood analysis from imaging mass cytometry data. |
 
----
+</details>
 
 ### Bioinformatics — Multi-Omics Integration
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -816,9 +876,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-multi-omics-mofa-integration](skills/bio-multi-omics-mofa-integration/) | Multi-Omics Factor Analysis (MOFA+) for latent factor discovery across modalities. |
 | [bio-multi-omics-similarity-network](skills/bio-multi-omics-similarity-network/) | Similarity Network Fusion (SNF) for patient stratification from multi-omics. |
 
----
+</details>
 
 ### Bioinformatics — Proteomics & Metabolomics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -840,9 +903,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-metabolomics-targeted-analysis](skills/bio-metabolomics-targeted-analysis/) | Targeted metabolomics with MRM/SRM: calibration curves, quantification. |
 | [bio-metabolomics-xcms-preprocessing](skills/bio-metabolomics-xcms-preprocessing/) | XCMS-based LC-MS peak detection, alignment, and grouping. |
 
----
+</details>
 
 ### Bioinformatics — Structural Biology & Cheminformatics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -860,9 +926,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-virtual-screening](skills/bio-virtual-screening/) | Virtual screening workflows: docking, scoring, pose filtering with AutoDock/Vina. |
 | [bio-admet-prediction](skills/bio-admet-prediction/) | Predict ADMET properties: absorption, distribution, metabolism, excretion, toxicity. |
 
----
+</details>
 
 ### Bioinformatics — Epidemiological & Causal Genomics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -890,103 +959,129 @@ Your agent should list the installed skills with their capabilities.
 | [bio-crispr-screens-mageck-analysis](skills/bio-crispr-screens-mageck-analysis/) | MAGeCK MLE/RRA analysis for CRISPR pooled screens. |
 | [bio-crispr-screens-screen-qc](skills/bio-crispr-screens-screen-qc/) | Quality control for CRISPR screens: Gini index, read distribution. |
 
+</details>
+
+</details>
+
+
 ---
 
-### Health & Wellness Analytics
+
+## Omics & Computational Biology
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
+### Single-Cell & Spatial Omics
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
-| [nutrition-analyzer](skills/nutrition-analyzer/) | Comprehensive nutrition analysis: macro/micronutrient tracking, dietary assessment, meal planning, food data lookup, and nutritional recommendations. |
-| [mental-health-analyzer](skills/mental-health-analyzer/) | Mental health data analysis: mood tracking, symptom patterns, PHQ/GAD scoring, behavioral insights, and wellness recommendations. |
-| [sleep-analyzer](skills/sleep-analyzer/) | Sleep quality analysis: sleep stages, duration, efficiency metrics, circadian rhythm assessment, and sleep hygiene recommendations. |
-| [rehabilitation-analyzer](skills/rehabilitation-analyzer/) | Rehabilitation progress tracking: functional assessments, exercise programs, recovery milestones, and outcome measurement for physical/occupational therapy. |
-| [fitness-analyzer](skills/fitness-analyzer/) | Fitness performance analysis: exercise tracking, strength/cardio metrics, training load, VO2max estimation, and periodization planning. |
-| [health-trend-analyzer](skills/health-trend-analyzer/) | Longitudinal health trend analysis: vital sign tracking, biomarker trends, risk factor monitoring, and predictive health insights. |
-| [weightloss-analyzer](skills/weightloss-analyzer/) | Weight management analytics: caloric balance, body composition tracking, progress monitoring, and evidence-based weight loss strategies. |
-| [goal-analyzer](skills/goal-analyzer/) | Health goal tracking and analysis: SMART goal setting, progress metrics, habit formation, and motivational insights for wellness objectives. |
-| [occupational-health-analyzer](skills/occupational-health-analyzer/) | Occupational health assessment: workplace ergonomics, exposure risk, work-related illness surveillance, and return-to-work planning. |
-| [travel-health-analyzer](skills/travel-health-analyzer/) | Travel medicine: destination health risks, vaccination requirements, malaria prophylaxis, altitude sickness, and traveler health preparation. |
-| [family-health-analyzer](skills/family-health-analyzer/) | Family health management: pediatric milestones, family medical history, preventive screening schedules, and multigenerational health tracking. |
-| [tcm-constitution-analyzer](skills/tcm-constitution-analyzer/) | Traditional Chinese Medicine constitution analysis: TCM body type assessment, pattern differentiation, herbal recommendations, and lifestyle guidance. |
-| [emergency-card](skills/emergency-card/) | Generate emergency medical information cards with critical health data, medications, allergies, and emergency contacts for patient safety. |
-| [ai-analyzer](skills/ai-analyzer/) | AI-powered comprehensive health data interpretation combining multiple biomarkers and health metrics for holistic wellness assessment. |
-| [wellally-tech](skills/wellally-tech/) | Technical framework for WellAlly health analytics platform: integration patterns, data pipelines, and health AI infrastructure. |
+| [anndata](skills/anndata/) | Working with annotated data matrices in Python for single-cell genomics analysis, managing experimental measurements with metadata and large-scale omics data. |
+| [scanpy](skills/scanpy/) | Single-cell RNA-seq analysis. Load .h5ad/10X data, QC, normalization, PCA/UMAP/t-SNE, Leiden clustering, marker genes, cell type annotation, trajectory. |
+| [scvi-tools](skills/scvi-tools/) | Deep learning for single-cell analysis: data integration/batch correction (scVI/scANVI), ATAC-seq (PeakVI), CITE-seq (totalVI), multiome (MultiVI), spatial deconvolution (DestVI). |
+| [single-cell-rna-qc](skills/single-cell-rna-qc/) | Quality control on single-cell RNA-seq data (.h5ad or .h5 files) using scverse best practices with MAD-based filtering and comprehensive visualizations. |
+| [cellxgene-census](skills/cellxgene-census/) | Query CZ CELLxGENE Census (61M+ cells). Filter by cell type/tissue/disease, retrieve expression data, integrate with scanpy/PyTorch, for population-scale single-cell analysis. |
+| [pydeseq2](skills/pydeseq2/) | Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots. |
+| [bulk-combat-correction](skills/bulk-combat-correction/) | Remove batch effects from merged bulk RNA-seq or microarray cohorts using pyComBat, with corrected matrix export and pre/post correction visualizations. |
+| [bulk-deg-analysis](skills/bulk-deg-analysis/) | Bulk RNA-seq DEG pipeline: gene ID mapping, DESeq2 normalization, statistical testing, visualization, and pathway enrichment via OmicVerse. |
+| [bulk-deseq2-analysis](skills/bulk-deseq2-analysis/) | PyDESeq2-based differential expression analysis with ID mapping, DE testing, fold-change thresholding, and enrichment visualization. |
+| [bulk-stringdb-ppi](skills/bulk-stringdb-ppi/) | Query STRING for protein interactions, build PPI graphs with pyPPI, and render network figures for bulk gene lists. |
+| [bulk-to-single-deconvolution](skills/bulk-to-single-deconvolution/) | Convert bulk RNA-seq cohorts to synthetic single-cell datasets using Bulk2Single workflow for cell fraction estimation and beta-VAE generation. |
+| [bulk-trajblend-interpolation](skills/bulk-trajblend-interpolation/) | Extend scRNA-seq developmental trajectories with BulkTrajBlend by generating intermediate cells from bulk RNA-seq using beta-VAE and GNN models. |
+| [bulk-wgcna-analysis](skills/bulk-wgcna-analysis/) | Run PyWGCNA through OmicVerse — co-expression module construction, eigengene visualization, and hub gene extraction. |
+| [single-annotation](skills/single-annotation/) | Single-cell annotation workflows: SCSA, MetaTiME, CellVote, CellMatch, GPTAnno, and weighted KNN transfer for annotating cell types across modalities. |
+| [single-cellphone-db](skills/single-cellphone-db/) | Run CellPhoneDB v5 on annotated single-cell data to infer ligand-receptor networks and produce CellChat-style visualizations. |
+| [single-clustering](skills/single-clustering/) | Single-cell clustering workflow: QC, multimethod clustering, topic modeling, cNMF, and cross-batch integration in OmicVerse. |
+| [single-downstream-analysis](skills/single-downstream-analysis/) | OmicVerse downstream tutorials covering AUCell scoring, metacell DEG, and related exports for single-cell data. |
+| [single-multiomics](skills/single-multiomics/) | OmicVerse multi-omics tutorials: MOFA, GLUE pairing, SIMBA integration, TOSICA transfer, and StaVIA cartography. |
+| [single-preprocessing](skills/single-preprocessing/) | Single-cell preprocessing in OmicVerse: QC, normalization, HVG detection, PCA/embedding pipelines (CPU/GPU). |
+| [single-to-spatial-mapping](skills/single-to-spatial-mapping/) | Map scRNA-seq atlases onto spatial transcriptomics slides using Single2Spatial workflow for deep-forest training and marker visualization. |
+| [single-trajectory](skills/single-trajectory/) | OmicVerse trajectory workflows: PAGA, Palantir, VIA, velocity coupling, and fate scoring. |
+| [spatial-tutorials](skills/spatial-tutorials/) | Spatial transcriptomics tutorials: preprocessing, deconvolution, and downstream modeling across Visium, Visium HD, Stereo-seq, and Slide-seq. |
+| [tcga-preprocessing](skills/tcga-preprocessing/) | Ingest TCGA sample sheets, expression archives, and clinical carts into OmicVerse, with survival metadata initialization and AnnData export. |
+| [gsea-enrichment](skills/gsea-enrichment/) | Gene set enrichment analysis in OmicVerse with correct geneset format handling for loading pathway databases and running GSEA. |
 
----
+</details>
 
-### Analyst Personas
+### Cheminformatics & Drug Discovery
 
-| Skill | Description |
-|-------|-------------|
-| [biologist-analyst](skills/biologist-analyst/) | Expert biologist analyst persona for interpreting biological experiments, sequencing data, cell biology assays, and molecular biology research. |
-| [chemist-analyst](skills/chemist-analyst/) | Expert chemist analyst persona for interpreting chemical data, synthesis routes, spectroscopic results, reaction mechanisms, and laboratory analyses. |
-| [epidemiologist-analyst](skills/epidemiologist-analyst/) | Expert epidemiologist analyst persona for study design, cohort analysis, risk factor assessment, public health surveillance, and causal inference. |
-| [psychologist-analyst](skills/psychologist-analyst/) | Expert psychologist analyst persona for behavioral data analysis, psychological assessment interpretation, clinical case formulation, and mental health research. |
-
----
-
-### Mental Health & Crisis Intervention
-
-| Skill | Description |
-|-------|-------------|
-| [crisis-detection-intervention-ai](skills/crisis-detection-intervention-ai/) | Detect crisis signals using NLP and mental health sentiment analysis. Implements suicide ideation detection, automated escalation, and crisis resource integration for mental health apps and recovery platforms. |
-| [crisis-response-protocol](skills/crisis-response-protocol/) | Handle mental health crisis situations safely: crisis detection, safety protocols, emergency escalation, suicide prevention, and hotline integration for AI coaching applications. |
-| [hipaa-compliance](skills/hipaa-compliance/) | Ensure HIPAA compliance when handling PHI. Audit logging, data access controls, security event tracking, and compliance verification for health data applications. |
-| [clinical-diagnostic-reasoning](skills/clinical-diagnostic-reasoning/) | Identify and counteract cognitive biases in medical decision-making through systematic error analysis, differential diagnosis frameworks, and clinical judgment improvement. |
-| [speech-pathology-ai](skills/speech-pathology-ai/) | AI-powered speech-language pathology: phoneme analysis, articulation visualization, voice disorder assessment, fluency intervention, AAC, and stuttering treatment support. |
-| [hrv-alexithymia-expert](skills/hrv-alexithymia-expert/) | Heart rate variability biometrics and emotional awareness training. HRV analysis, interoception training, biofeedback, vagal tone assessment, and autonomic nervous system evaluation. |
-| [adhd-daily-planner](skills/adhd-daily-planner/) | ADHD-optimized daily planning: time-blind friendly scheduling, executive function support, dopamine-aware task design, and neurodivergent-friendly productivity systems. |
-| [grief-companion](skills/grief-companion/) | Compassionate bereavement support, memorial creation, grief education, and healing journey guidance through the non-linear path of loss. |
-| [jungian-psychologist](skills/jungian-psychologist/) | Jungian analytical psychology: shadow work, archetypal analysis, dream interpretation, active imagination, addiction/recovery through depth psychology lens, and individuation process. |
-| [modern-drug-rehab-computer](skills/modern-drug-rehab-computer/) | Comprehensive addiction recovery knowledge system: evidence-based treatment (CBT, DBT, MI, EMDR, MAT), recovery resources, crisis intervention, and family systems for rehab environments. |
-| [recovery-community-moderator](skills/recovery-community-moderator/) | Trauma-informed AI moderation for addiction recovery communities: harm reduction, 12-step traditions, conflict detection, and crisis post identification. |
-
----
-
-### Cancer Genomics Databases
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
-| [cbioportal-database](skills/cbioportal-database/) | Query cBioPortal for cancer genomics: somatic mutations, copy number, gene expression, and survival data across hundreds of cancer studies. Cancer target validation, oncogene analysis, and patient-level genomic profiling. |
-| [depmap](skills/depmap/) | Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity, and gene effect profiles. Identify cancer-specific vulnerabilities and synthetic lethal interactions. |
-| [imaging-data-commons](skills/imaging-data-commons/) | Query and download public cancer imaging data from NCI Imaging Data Commons. Access radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. |
+| [rdkit](skills/rdkit/) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity. |
+| [datamol](skills/datamol/) | Pythonic RDKit wrapper with simplified interface for standard drug discovery: SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformer generation. |
+| [medchem](skills/medchem/) | Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering. |
+| [diffdock](skills/diffdock/) | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. |
+| [molfeat](skills/molfeat/) | Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML. |
+| [deepchem](skills/deepchem/) | Molecular machine learning toolkit. Property prediction (ADMET, toxicity), GNNs (GCN, MPNN), MoleculeNet benchmarks, pretrained models, for drug discovery ML. |
+| [torchdrug](skills/torchdrug/) | Graph-based drug discovery toolkit. Molecular property prediction (ADMET), protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis, GNNs. |
+| [torch_geometric](skills/torch_geometric/) | Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, molecular property prediction, for geometric deep learning in drug discovery. |
+| [pytdc](skills/pytdc/) | Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML. |
+| [cobrapy](skills/cobrapy/) | Constraint-based metabolic modeling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models, for systems biology and metabolic engineering. |
 
----
+</details>
 
-### Genomic & Molecular Databases
+### Proteomics & Mass Spectrometry
 
-| Skill | Description |
-|-------|-------------|
-| [bindingdb-database](skills/bindingdb-database/) | Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Drug discovery, lead optimization, polypharmacology, and SAR studies. |
-| [gnomad-database](skills/gnomad-database/) | Query gnomAD for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Variant pathogenicity interpretation and rare disease genetics. |
-| [gtex-database](skills/gtex-database/) | Query GTEx for tissue-specific gene expression, eQTLs, and sQTLs. Link GWAS variants to gene regulation and interpret non-coding variant effects. |
-| [interpro-database](skills/interpro-database/) | Query InterPro for protein family, domain, and functional site annotations. Integrates Pfam, PANTHER, PRINTS, SMART, and 11+ databases for protein function prediction. |
-| [jaspar-database](skills/jaspar-database/) | Query JASPAR for transcription factor binding site profiles (PWMs/PFMs). Regulatory genomics, motif analysis, and GWAS regulatory variant interpretation. |
-| [monarch-database](skills/monarch-database/) | Query the Monarch Initiative knowledge graph for disease-gene-phenotype associations. Integrates OMIM, ORPHANET, HPO, ClinVar for rare disease gene discovery. |
-| [tiledbvcf](skills/tiledbvcf/) | Scalable VCF/BCF ingestion, storage, and parallel queries using TileDB for population genomics at scale. |
-
----
-
-### Structural Biology & Drug Discovery
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
-| [molecular-dynamics](skills/molecular-dynamics/) | Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Protein/small molecule systems, force fields, energy minimization, RMSD/RMSF analysis, free energy surfaces. |
-| [glycoengineering](skills/glycoengineering/) | Analyze and engineer protein glycosylation. Predict N/O-glycosylation sites, access glycoengineering tools (NetOGlyc, GlycoShield). Therapeutic antibody optimization and vaccine design. |
-| [adaptyv](skills/adaptyv/) | Cloud laboratory platform for automated protein testing: binding assays, expression testing, thermostability, enzyme activity. Protein sequence optimization with NetSolP, SoluProt, ESM. |
-| [ginkgo-cloud-lab](skills/ginkgo-cloud-lab/) | Submit and manage protocols on Ginkgo Bioworks Cloud Lab for autonomous lab execution. Cell-free protein expression, protocol workflows, and biotech automation. |
+| [matchms](skills/matchms/) | Mass spectrometry spectral analysis. Process mzML/MGF/MSP files, spectral similarity (cosine, modified cosine), metadata harmonization, compound identification. |
+| [pyopenms](skills/pyopenms/) | Python interface to OpenMS for LC-MS/MS proteomics and metabolomics workflows. File handling (mzML, mzXML, mzTab, pepXML, mzIdentML) and quantification. |
+| [flowio](skills/flowio/) | Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to CSV/DataFrame, for flow cytometry data preprocessing. |
 
----
+</details>
+
+### Protein Structure & Design
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [esm](skills/esm/) | ESM3 generative multimodal protein design (sequence, structure, function) and ESM C efficient protein embeddings. Protein language models for sequence scoring and embedding. |
+| [alphafold](skills/alphafold/) | Validate protein designs using AlphaFold2 structure prediction. Validates designed sequences, predicts binder-target complex structures, calculates pLDDT/PAE metrics. |
+| [boltz](skills/boltz/) | Structure prediction using Boltz-1/Boltz-2, an open biomolecular structure predictor for protein complexes, binder validation, and open-source AlphaFold alternative. |
+| [boltzgen](skills/boltzgen/) | All-atom protein design using BoltzGen diffusion model. Side-chain aware design from the start, designing around small molecules or ligands. |
+| [chai](skills/chai/) | Structure prediction using Chai-1 foundation model for protein-protein complexes, binder validation, and protein-small molecule interaction prediction. |
+| [rfdiffusion](skills/rfdiffusion/) | Generate protein backbones using RFdiffusion diffusion model for de novo protein structure generation and binder scaffold design. |
+| [bindcraft](skills/bindcraft/) | End-to-end binder design using BindCraft hallucination with built-in AF2 validation for production-quality binder campaigns. |
+| [binder-design](skills/binder-design/) | Guidance for choosing the right protein binder design tool (BoltzGen, BindCraft, or RFdiffusion) and planning binder design campaigns. |
+| [proteinmpnn](skills/proteinmpnn/) | Design protein sequences using ProteinMPNN inverse folding for RFdiffusion backbones, sequence redesign, and partial fixed-position design. |
+| [ligandmpnn](skills/ligandmpnn/) | Ligand-aware protein sequence design using LigandMPNN for sequences around small molecules, enzyme active site design, and binding pocket optimization. |
+| [solublempnn](skills/solublempnn/) | Solubility-optimized protein sequence design using SolubleMPNN for E. coli expression, reducing aggregation, and solubility optimization. |
+| [foldseek](skills/foldseek/) | Structure similarity search with Foldseek for finding similar structures in PDB/AFDB databases, structural homology search, and evolutionary relationship discovery. |
+| [ipsae](skills/ipsae/) | Binder design ranking using ipSAE (interprotein Score from Aligned Errors) for ranking binder designs and filtering BindCraft or RFdiffusion outputs. |
+| [pdb](skills/pdb/) | Fetch and analyze protein structures from RCSB PDB by PDB ID, search for similar structures, prepare targets for binder design. |
+| [protein-design-workflow](skills/protein-design-workflow/) | End-to-end guidance for protein design pipelines from project initiation to experimental validation. |
+| [protein-qc](skills/protein-qc/) | Quality control metrics and filtering thresholds for protein design: pLDDT, PAE, ipTM for binding, expression, and structure evaluation. |
+| [cell-free-expression](skills/cell-free-expression/) | Guidance for cell-free protein synthesis (CFPS) optimization, troubleshooting low yield/aggregation, and optimizing DNA template design. |
+| [binding-characterization](skills/binding-characterization/) | Guidance for SPR and BLI binding characterization experiments, kinetics interpretation, and troubleshooting poor binding signal. |
+
+</details>
 
 ### Single-Cell & Trajectory Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
 | [scvelo](skills/scvelo/) | RNA velocity analysis. Estimate cell state transitions from unspliced/spliced mRNA dynamics, infer trajectory directions, compute latent time, and identify driver genes in scRNA-seq data. |
 
----
+</details>
 
 ### Phylogenetics & Network Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -994,66 +1089,23 @@ Your agent should list the installed skills with their capabilities.
 | [networkx](skills/networkx/) | Network and graph analysis in Python. Biological network analysis, protein interaction networks, pathway graphs, community detection, and centrality measures. |
 | [torch-geometric](skills/torch-geometric/) | Graph Neural Networks (PyG) for molecular property prediction, drug-target interaction modeling, and geometric deep learning on biological graphs. |
 
----
+</details>
 
-### Medical Device & Regulatory
+</details>
 
-| Skill | Description |
-|-------|-------------|
-| [iso-13485-certification](skills/iso-13485-certification/) | Comprehensive toolkit for ISO 13485 QMS documentation for medical devices: gap analysis, Quality Manuals, procedures, Medical Device Files. Covers FDA QMSR, EU MDR compliance. |
 
 ---
 
-### Public Health & Time Series
 
-| Skill | Description |
-|-------|-------------|
-| [datacommons-client](skills/datacommons-client/) | Access public health statistics from Google Data Commons: disease prevalence, demographic data, health indicators across global sources. |
-| [timesfm-forecasting](skills/timesfm-forecasting/) | Zero-shot time series forecasting with Google's TimesFM. For vital sign trends, health sensor data, and longitudinal health monitoring without custom model training. |
-| [aeon](skills/aeon/) | Time series ML: classification, regression, clustering, anomaly detection, segmentation for temporal health data and sequential clinical measurements. |
+## ClawBio Pipelines
 
----
-
-### Scientific Literature & Reference Management
-
-| Skill | Description |
-|-------|-------------|
-| [bgpt-paper-search](skills/bgpt-paper-search/) | Search scientific papers with BGPT MCP server. Returns 25+ structured fields per paper: methods, results, sample sizes, quality scores. For literature reviews and evidence synthesis. |
-| [pyzotero](skills/pyzotero/) | Interact with Zotero reference libraries programmatically via Zotero Web API v3. Retrieve, create, update items, export citations, upload PDFs, and build research automation workflows. |
-| [open-notebook](skills/open-notebook/) | Self-hosted NotebookLM alternative. Ingest PDFs, videos, web pages, documents; generate AI-powered notes; chat with research materials; supports 16+ AI providers. |
-
----
-
-### Data Processing & Scientific Computing
-
-| Skill | Description |
-|-------|-------------|
-| [dask](skills/dask/) | Distributed computing for larger-than-RAM genomics/omics datasets. Scale pandas/NumPy beyond memory, parallel file processing, distributed ML. |
-| [polars](skills/polars/) | Fast in-memory DataFrame library (1-100GB). Faster pandas replacement for biomedical data ETL and analysis pipelines. |
-| [vaex](skills/vaex/) | Out-of-core DataFrame operations for billions of rows. Fast statistics and visualization for large genomic and clinical datasets. |
-| [zarr-python](skills/zarr-python/) | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration for large-scale omics data. |
-| [pytorch-lightning](skills/pytorch-lightning/) | Organized PyTorch deep learning for biomedical AI: multi-GPU training, callbacks, logging, distributed training for clinical/genomic models. |
-
----
-
-### Scientific Visualization & Communication
-
-| Skill | Description |
-|-------|-------------|
-| [matplotlib](skills/matplotlib/) | Low-level plotting library for full customization. Publication-quality figures for scientific manuscripts and journals. |
-| [seaborn](skills/seaborn/) | Statistical visualization with pandas integration. Box plots, violin plots, heatmaps, pair plots for biomedical data exploration. |
-| [plotly](skills/plotly/) | Interactive visualization. Hover info, zoom, dashboards for exploratory biomedical analysis and presentations. |
-| [infographics](skills/infographics/) | Create professional scientific infographics with iterative AI refinement. Supports 10 infographic types and 8 industry styles. |
-| [scientific-schematics](skills/scientific-schematics/) | Publication-quality scientific diagrams: neural network architectures, biological pathways, system diagrams, flowcharts. |
-| [scientific-slides](skills/scientific-slides/) | Build research presentation slide decks for conferences, seminars, thesis defenses. PowerPoint and LaTeX Beamer support. |
-| [latex-posters](skills/latex-posters/) | Create professional research posters in LaTeX (beamerposter, tikzposter). Conference posters with multi-column layouts. |
-| [pptx-posters](skills/pptx-posters/) | HTML/CSS research posters exportable to PDF or PPTX. Modern web-based poster design. |
-| [markdown-mermaid-writing](skills/markdown-mermaid-writing/) | Scientific documentation with Markdown and 24 Mermaid diagram types. 9 document templates for scientific reports. |
-| [paper-2-web](skills/paper-2-web/) | Convert academic papers to interactive websites, presentation videos, and conference posters (Paper2Web, Paper2Video, Paper2Poster). |
-
----
+<details>
+<summary>Expand/Collapse this category</summary>
 
 ### Bioinformatics Orchestration & Pipelines (ClawBio)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1064,9 +1116,12 @@ Your agent should list the installed skills with their capabilities.
 | [repro-enforcer](skills/repro-enforcer/) | Export bioinformatics analyses as reproducible bundles with Conda environment, Singularity container definition, and Nextflow pipeline. |
 | [galaxy-bridge](skills/galaxy-bridge/) | Galaxy tool discovery, recommendation, and execution — 8,000+ bioinformatics tools from usegalaxy.org with multi-signal scoring and workflow suggestions. |
 
----
+</details>
 
 ### Genomics, Ancestry & Pharmacogenomics (ClawBio)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1081,9 +1136,12 @@ Your agent should list the installed skills with their capabilities.
 | [claw-metagenomics](skills/claw-metagenomics/) | Shotgun metagenomics profiling: taxonomy (Kraken2/Bracken), resistome (CARD/RGI), and functional pathways (HUMAnN3) from paired-end FASTQ. |
 | [ukb-navigator](skills/ukb-navigator/) | Semantic search across UK Biobank's 12,000+ data fields and publications — find the right variables for your research question. |
 
----
+</details>
 
 ### Structural Biology & Literature (ClawBio)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1093,11 +1151,26 @@ Your agent should list the installed skills with their capabilities.
 | [labstep](skills/labstep/) | Interact with the Labstep electronic lab notebook API. Query experiments, protocols, resources, and inventory. |
 | [profile-report](skills/profile-report/) | Generate structured bioinformatics analysis profile reports. |
 
+</details>
+
+</details>
+
+
 ---
+
+
+## BioOS Extended Suite
+
+<details>
+<summary>Expand/Collapse this category</summary>
 
 ### BioOS Extended Bioinformatics Suite (mdbabumiamssm/LLMs-Universal-Life-Science-and-Clinical-Skills-)
 
 #### Sequence & Alignment Tools
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-alignment-sorting](skills/bio-alignment-sorting/) | Sort SAM/BAM files by coordinate or name with samtools sort. |
@@ -1119,7 +1192,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-sra-data](skills/bio-sra-data/) | Download raw sequencing data from NCBI SRA with fasterq-dump. |
 | [bio-batch-downloads](skills/bio-batch-downloads/) | Batch download bioinformatics data from NCBI, EBI, Ensembl. |
 
+</details>
+
 #### Sequence Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-seq-objects](skills/bio-seq-objects/) | Work with BioPython sequence objects: SeqRecord, features, annotations. |
@@ -1138,7 +1217,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-restriction-fragment-analysis](skills/bio-restriction-fragment-analysis/) | Analyze restriction fragment patterns for cloning and gel prediction. |
 | [bio-restriction-enzyme-selection](skills/bio-restriction-enzyme-selection/) | Select restriction enzymes for cloning based on cut sites and compatibility. |
 
+</details>
+
 #### Read Alignment
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-read-alignment-bwa-alignment](skills/bio-read-alignment-bwa-alignment/) | Align short reads to reference genome with BWA-MEM. |
@@ -1146,7 +1231,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-read-alignment-hisat2-alignment](skills/bio-read-alignment-hisat2-alignment/) | Splice-aware RNA-seq alignment with HISAT2. |
 | [bio-read-alignment-star-alignment](skills/bio-read-alignment-star-alignment/) | High-speed STAR aligner for RNA-seq with junction detection. |
 
+</details>
+
 #### Genome Assembly
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-genome-assembly-long-read-assembly](skills/bio-genome-assembly-long-read-assembly/) | De novo assembly from ONT/PacBio long reads with Flye or Canu. |
@@ -1158,7 +1249,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-genome-assembly-scaffolding](skills/bio-genome-assembly-scaffolding/) | Scaffold contigs with Hi-C, optical mapping, or long reads. |
 | [bio-genome-assembly-contamination-detection](skills/bio-genome-assembly-contamination-detection/) | Detect and remove contamination in assembled genomes. |
 
+</details>
+
 #### Genome Intervals & Annotation
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-genome-intervals-bed-file-basics](skills/bio-genome-intervals-bed-file-basics/) | Read, write, and filter BED files with pybedtools/bedtools. |
@@ -1169,7 +1266,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-genome-intervals-gtf-gff-handling](skills/bio-genome-intervals-gtf-gff-handling/) | Parse and manipulate GTF/GFF annotation files. |
 | [bio-bedgraph-handling](skills/bio-bedgraph-handling/) | Process bedGraph coverage files: arithmetic, normalization, conversion. |
 
+</details>
+
 #### RNA Quantification
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-rna-quantification-featurecounts-counting](skills/bio-rna-quantification-featurecounts-counting/) | Count reads per gene with featureCounts from subread package. |
@@ -1181,7 +1284,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-expression-matrix-metadata-joins](skills/bio-expression-matrix-metadata-joins/) | Join sample metadata to expression matrices for downstream analysis. |
 | [bio-expression-matrix-sparse-handling](skills/bio-expression-matrix-sparse-handling/) | Handle sparse count matrices efficiently with scipy sparse formats. |
 
+</details>
+
 #### Epitranscriptomics & CLIP-seq
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-epitranscriptomics-merip-preprocessing](skills/bio-epitranscriptomics-merip-preprocessing/) | Preprocess MeRIP-seq data for m6A methylation analysis. |
@@ -1195,7 +1304,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-clip-seq-binding-site-annotation](skills/bio-clip-seq-binding-site-annotation/) | Annotate CLIP-seq peaks with genomic features and RNA regions. |
 | [bio-clip-seq-clip-motif-analysis](skills/bio-clip-seq-clip-motif-analysis/) | Discover RBP binding motifs from CLIP-seq peak sequences. |
 
+</details>
+
 #### Small RNA-seq
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-small-rna-seq-smrna-preprocessing](skills/bio-small-rna-seq-smrna-preprocessing/) | Preprocess small RNA-seq: adapter trimming, size selection. |
@@ -1204,7 +1319,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-small-rna-seq-target-prediction](skills/bio-small-rna-seq-target-prediction/) | Predict miRNA target genes with TargetScan or miRDB. |
 | [bio-small-rna-seq-differential-mirna](skills/bio-small-rna-seq-differential-mirna/) | Differential miRNA expression analysis with DESeq2/edgeR. |
 
+</details>
+
 #### Population Genetics & Phasing
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-population-genetics-plink-basics](skills/bio-population-genetics-plink-basics/) | PLINK2 for GWAS QC, LD pruning, and basic population genetics. |
@@ -1218,7 +1339,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-phasing-imputation-reference-panels](skills/bio-phasing-imputation-reference-panels/) | Select and prepare reference panels (1KGP, HRC, TOPMed) for imputation. |
 | [bio-phasing-imputation-imputation-qc](skills/bio-phasing-imputation-imputation-qc/) | QC imputed data: R² filter, INFO score, allele concordance. |
 
+</details>
+
 #### Comparative Genomics & Phylogenetics
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-comparative-genomics-ortholog-inference](skills/bio-comparative-genomics-ortholog-inference/) | Infer orthologs and paralogs with OrthoFinder or OMA. |
@@ -1232,7 +1359,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-phylo-tree-visualization](skills/bio-phylo-tree-visualization/) | Visualize trees with iTOL, ETE3, or ggtree. |
 | [bio-phylo-distance-calculations](skills/bio-phylo-distance-calculations/) | Compute pairwise phylogenetic distances and diversity metrics. |
 
+</details>
+
 #### Systems Biology & Metabolic Modeling
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-systems-biology-flux-balance-analysis](skills/bio-systems-biology-flux-balance-analysis/) | Flux balance analysis (FBA) with COBRApy for metabolic network modeling. |
@@ -1241,7 +1374,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-systems-biology-context-specific-models](skills/bio-systems-biology-context-specific-models/) | Build context-specific metabolic models from expression data (GIMME, iMAT). |
 | [bio-systems-biology-model-curation](skills/bio-systems-biology-model-curation/) | Curate SBML metabolic models: mass/charge balance, gap filling. |
 
+</details>
+
 #### Experimental Design & Reporting
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-experimental-design-sample-size](skills/bio-experimental-design-sample-size/) | Power analysis and sample size calculation for omics experiments. |
@@ -1261,7 +1400,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-reporting-figure-export](skills/bio-reporting-figure-export/) | Export publication-quality figures in PDF/SVG/TIFF at specified DPI. |
 | [bio-research-tools-biomarker-signature-studio](skills/bio-research-tools-biomarker-signature-studio/) | Build, validate, and visualize multi-omic biomarker signatures. |
 
+</details>
+
 #### End-to-End Workflow Pipelines
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-workflows-fastq-to-variants](skills/bio-workflows-fastq-to-variants/) | Complete FASTQ → alignment → variant calling pipeline. |
@@ -1303,7 +1448,13 @@ Your agent should list the installed skills with their capabilities.
 | [bio-workflow-management-cwl-workflows](skills/bio-workflow-management-cwl-workflows/) | Write Common Workflow Language (CWL) portable workflow definitions. |
 | [bio-workflow-management-wdl-workflows](skills/bio-workflow-management-wdl-workflows/) | Create WDL workflows for Terra/Cromwell bioinformatics execution. |
 
+</details>
+
 #### Data Visualization (Bioinformatics)
+
+<details>
+<summary>Click to expand skill list</summary>
+
 | Skill | Description |
 |-------|-------------|
 | [bio-data-visualization-heatmaps-clustering](skills/bio-data-visualization-heatmaps-clustering/) | Hierarchical clustering heatmaps with ComplexHeatmap or seaborn. |
@@ -1318,9 +1469,12 @@ Your agent should list the installed skills with their capabilities.
 | [bio-data-visualization-color-palettes](skills/bio-data-visualization-color-palettes/) | Scientific color palettes: colorblind-safe, perceptually uniform, diverging. |
 | [bio-data-visualization-specialized-omics-plots](skills/bio-data-visualization-specialized-omics-plots/) | Specialized plots: lollipop (mutations), circomap, oncoprint. |
 
----
+</details>
 
 ### Oncology & Precision Medicine Agents (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1346,9 +1500,12 @@ Your agent should list the installed skills with their capabilities.
 | [exosome-ev-analysis-agent](skills/exosome-ev-analysis-agent/) | Extracellular vesicle and exosome analysis: cargo profiling and biomarker discovery. |
 | [microbiome-cancer-agent](skills/microbiome-cancer-agent/) | Tumor microbiome analysis and its role in cancer progression and immunotherapy response. |
 
----
+</details>
 
 ### Hematology & Blood Disorders (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1360,9 +1517,12 @@ Your agent should list the installed skills with their capabilities.
 | [chip-clonal-hematopoiesis-agent](skills/chip-clonal-hematopoiesis-agent/) | Clonal hematopoiesis of indeterminate potential (CHIP) variant detection and risk assessment. |
 | [coagulation-thrombosis-agent](skills/coagulation-thrombosis-agent/) | Coagulation pathway analysis, thrombophilia assessment, anticoagulation guidance. |
 
----
+</details>
 
 ### Immunology & Cell Therapy (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1376,9 +1536,12 @@ Your agent should list the installed skills with their capabilities.
 | [tme-immune-profiling-agent](skills/tme-immune-profiling-agent/) | Tumor microenvironment immune profiling: cell type deconvolution and spatial mapping. |
 | [cytokine-storm-analysis-agent](skills/cytokine-storm-analysis-agent/) | Cytokine storm detection, severity scoring, and intervention modeling. |
 
----
+</details>
 
 ### Single-Cell & Spatial Agents (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1398,9 +1561,12 @@ Your agent should list the installed skills with their capabilities.
 | [epigenomics-methylgpt-agent](skills/epigenomics-methylgpt-agent/) | Epigenomics and DNA methylation analysis with MethylGPT-inspired approaches. |
 | [biomaster-workflows](skills/biomaster-workflows/) | BioMaster workflow orchestration for end-to-end bioinformatics analyses. |
 
----
+</details>
 
 ### Drug Discovery & Design (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1434,9 +1600,12 @@ Your agent should list the installed skills with their capabilities.
 | [long-read-sequencing-agent](skills/long-read-sequencing-agent/) | Long-read sequencing analysis: SV calling, methylation, isoform discovery, assembly. |
 | [bayesian-optimizer](skills/bayesian-optimizer/) | Bayesian optimization for experimental design and hyperparameter tuning in biomedical research. |
 
----
+</details>
 
 ### Clinical AI & Healthcare (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1460,9 +1629,12 @@ Your agent should list the installed skills with their capabilities.
 | [biomedical-data-analysis](skills/biomedical-data-analysis/) | Comprehensive biomedical data analysis: statistics, visualization, and interpretation. |
 | [data-visualization-biomedical](skills/data-visualization-biomedical/) | Biomedical-specific data visualization: clinical trial plots, survival curves, forest plots. |
 
----
+</details>
 
 ### Research Infrastructure & Agents (BioOS)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1486,9 +1658,154 @@ Your agent should list the installed skills with their capabilities.
 | [data-visualization-expert](skills/data-visualization-expert/) | Expert data visualization for complex scientific and clinical datasets. |
 | [lobster-bioinformatics](skills/lobster-bioinformatics/) | Run bioinformatics analyses via Lobster AI: scRNA-seq, bulk RNA-seq, literature mining, dataset discovery, QC, and visualization. |
 
+</details>
+
+</details>
+
+
 ---
 
+
+## Data Science & Tools
+
+<details>
+<summary>Expand/Collapse this category</summary>
+
+### Statistics & Data Analysis
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [statistical-analysis](skills/statistical-analysis/) | Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlation, Bayesian stats, power analysis, assumption checks, APA reporting. |
+| [statsmodels](skills/statsmodels/) | Statistical modeling: OLS, GLM, logistic, ARIMA, time series, hypothesis tests, diagnostics, AIC/BIC, for rigorous statistical inference. |
+| [pymc](skills/pymc/) | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming. |
+| [simpy](skills/simpy/) | Process-based discrete-event simulation for clinical systems: queues, resources, time-based events. Useful for modeling hospital workflows and patient flow. |
+| [exploratory-data-analysis](skills/exploratory-data-analysis/) | Comprehensive exploratory data analysis on scientific data files across 200+ file formats — structure, content, quality assessment, and visualization. |
+| [data-stats-analysis](skills/data-stats-analysis/) | Statistical tests, hypothesis testing, correlation analysis, and multiple testing corrections using scipy and statsmodels (OmicVerse). |
+| [data-transform](skills/data-transform/) | Transform, clean, reshape, and preprocess biological data using pandas and numpy (OmicVerse). |
+| [data-viz-plots](skills/data-viz-plots/) | Create publication-quality plots and visualizations using matplotlib and seaborn (OmicVerse). |
+| [scientific-visualization](skills/scientific-visualization/) | Create publication figures with matplotlib/seaborn/plotly. Multi-panel layouts, error bars, significance markers, colorblind-safe, PDF/EPS/TIFF export. |
+
+</details>
+
+### Lab Automation & Integration
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [opentrons-integration](skills/opentrons-integration/) | Lab automation platform for Flex/OT-2 robots. Write Protocol API v2 protocols, liquid handling, hardware modules (heater-shaker, thermocycler), labware management. |
+| [pylabrobot](skills/pylabrobot/) | Laboratory automation toolkit for controlling liquid handlers, plate readers, pumps, heater shakers, incubators, centrifuges, and analytical equipment. |
+| [benchling-integration](skills/benchling-integration/) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, for lab data management automation. |
+| [labarchive-integration](skills/labarchive-integration/) | Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap. |
+| [protocolsio-integration](skills/protocolsio-integration/) | Integration with protocols.io API for managing scientific protocols — search, create, update, publish protocols, and manage protocol steps and reagents. |
+| [instrument-data-to-allotrope](skills/instrument-data-to-allotrope/) | Convert laboratory instrument output files (PDF, CSV, Excel, TXT) to Allotrope Simple Model (ASM) JSON format for LIMS systems, data lakes, and downstream analysis. |
+
+</details>
+
+### Scientific Research & Writing
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [scientific-writing](skills/scientific-writing/) | Write scientific manuscripts in full paragraphs using a two-stage process: section outlines then full text. Covers all sections of research papers. |
+| [scientific-critical-thinking](skills/scientific-critical-thinking/) | Evaluate research rigor. Assess methodology, experimental design, statistical validity, biases, confounding, evidence quality (GRADE, Cochrane ROB). |
+| [scientific-brainstorming](skills/scientific-brainstorming/) | Research ideation partner. Generate hypotheses, explore interdisciplinary connections, challenge assumptions, develop methodologies, identify research gaps. |
+| [hypothesis-generation](skills/hypothesis-generation/) | Generate testable hypotheses. Formulate from observations, design experiments, explore competing explanations, develop predictions, propose mechanisms. |
+| [scientific-problem-selection](skills/scientific-problem-selection/) | Help scientists with research problem selection, project ideation, troubleshooting stuck projects, and strategic scientific decisions. |
+| [peer-review](skills/peer-review/) | Systematic peer review toolkit. Evaluate methodology, statistics, design, reproducibility, ethics, figure integrity, reporting standards, for manuscript and grant review. |
+| [citation-management](skills/citation-management/) | Comprehensive citation management. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, generate BibTeX entries. |
+| [research-grants](skills/research-grants/) | Write competitive research proposals for NSF, NIH, DOE, and DARPA. Agency-specific formatting, review criteria, budget preparation, broader impacts. |
+| [research-lookup](skills/research-lookup/) | Look up current research using Perplexity's Sonar Pro Search or Sonar Reasoning Pro via OpenRouter. Automatically selects best model for the query complexity. |
+| [biomni](skills/biomni/) | Autonomous biomedical AI agent framework for executing complex research tasks across genomics, drug discovery, molecular biology, and clinical analysis. |
+| [treatment-plans](skills/treatment-plans/) | Generate concise (3-4 page) medical treatment plans in LaTeX/PDF format for all clinical specialties including general medicine, rehabilitation, mental health, and chronic disease. |
+
+</details>
+
+### Analyst Personas
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [biologist-analyst](skills/biologist-analyst/) | Expert biologist analyst persona for interpreting biological experiments, sequencing data, cell biology assays, and molecular biology research. |
+| [chemist-analyst](skills/chemist-analyst/) | Expert chemist analyst persona for interpreting chemical data, synthesis routes, spectroscopic results, reaction mechanisms, and laboratory analyses. |
+| [epidemiologist-analyst](skills/epidemiologist-analyst/) | Expert epidemiologist analyst persona for study design, cohort analysis, risk factor assessment, public health surveillance, and causal inference. |
+| [psychologist-analyst](skills/psychologist-analyst/) | Expert psychologist analyst persona for behavioral data analysis, psychological assessment interpretation, clinical case formulation, and mental health research. |
+
+</details>
+
+### Public Health & Time Series
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [datacommons-client](skills/datacommons-client/) | Access public health statistics from Google Data Commons: disease prevalence, demographic data, health indicators across global sources. |
+| [timesfm-forecasting](skills/timesfm-forecasting/) | Zero-shot time series forecasting with Google's TimesFM. For vital sign trends, health sensor data, and longitudinal health monitoring without custom model training. |
+| [aeon](skills/aeon/) | Time series ML: classification, regression, clustering, anomaly detection, segmentation for temporal health data and sequential clinical measurements. |
+
+</details>
+
+### Scientific Literature & Reference Management
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [bgpt-paper-search](skills/bgpt-paper-search/) | Search scientific papers with BGPT MCP server. Returns 25+ structured fields per paper: methods, results, sample sizes, quality scores. For literature reviews and evidence synthesis. |
+| [pyzotero](skills/pyzotero/) | Interact with Zotero reference libraries programmatically via Zotero Web API v3. Retrieve, create, update items, export citations, upload PDFs, and build research automation workflows. |
+| [open-notebook](skills/open-notebook/) | Self-hosted NotebookLM alternative. Ingest PDFs, videos, web pages, documents; generate AI-powered notes; chat with research materials; supports 16+ AI providers. |
+
+</details>
+
+### Data Processing & Scientific Computing
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [dask](skills/dask/) | Distributed computing for larger-than-RAM genomics/omics datasets. Scale pandas/NumPy beyond memory, parallel file processing, distributed ML. |
+| [polars](skills/polars/) | Fast in-memory DataFrame library (1-100GB). Faster pandas replacement for biomedical data ETL and analysis pipelines. |
+| [vaex](skills/vaex/) | Out-of-core DataFrame operations for billions of rows. Fast statistics and visualization for large genomic and clinical datasets. |
+| [zarr-python](skills/zarr-python/) | Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration for large-scale omics data. |
+| [pytorch-lightning](skills/pytorch-lightning/) | Organized PyTorch deep learning for biomedical AI: multi-GPU training, callbacks, logging, distributed training for clinical/genomic models. |
+
+</details>
+
+### Scientific Visualization & Communication
+
+<details>
+<summary>Click to expand skill list</summary>
+
+| Skill | Description |
+|-------|-------------|
+| [matplotlib](skills/matplotlib/) | Low-level plotting library for full customization. Publication-quality figures for scientific manuscripts and journals. |
+| [seaborn](skills/seaborn/) | Statistical visualization with pandas integration. Box plots, violin plots, heatmaps, pair plots for biomedical data exploration. |
+| [plotly](skills/plotly/) | Interactive visualization. Hover info, zoom, dashboards for exploratory biomedical analysis and presentations. |
+| [infographics](skills/infographics/) | Create professional scientific infographics with iterative AI refinement. Supports 10 infographic types and 8 industry styles. |
+| [scientific-schematics](skills/scientific-schematics/) | Publication-quality scientific diagrams: neural network architectures, biological pathways, system diagrams, flowcharts. |
+| [scientific-slides](skills/scientific-slides/) | Build research presentation slide decks for conferences, seminars, thesis defenses. PowerPoint and LaTeX Beamer support. |
+| [latex-posters](skills/latex-posters/) | Create professional research posters in LaTeX (beamerposter, tikzposter). Conference posters with multi-column layouts. |
+| [pptx-posters](skills/pptx-posters/) | HTML/CSS research posters exportable to PDF or PPTX. Modern web-based poster design. |
+| [markdown-mermaid-writing](skills/markdown-mermaid-writing/) | Scientific documentation with Markdown and 24 Mermaid diagram types. 9 document templates for scientific reports. |
+| [paper-2-web](skills/paper-2-web/) | Convert academic papers to interactive websites, presentation videos, and conference posters (Paper2Web, Paper2Video, Paper2Poster). |
+
+</details>
+
 ### Additional Scientific Tools
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1504,9 +1821,12 @@ Your agent should list the installed skills with their capabilities.
 | [docx-official](skills/docx-official/) | Official Word/DOCX skill for document creation, editing, and formatting. |
 | [pptx-official](skills/pptx-official/) | Official PowerPoint/PPTX skill for presentation creation and editing. |
 
----
+</details>
 
 ### Computational Simulation & Ontology (HeshamFS/materials-simulation-skills)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1528,9 +1848,12 @@ Your agent should list the installed skills with their capabilities.
 | [time-stepping](skills/time-stepping/) | Adaptive time-step control for biological dynamics: CFL constraints, checkpoint scheduling. |
 | [mesh-generation](skills/mesh-generation/) | Mesh generation for numerical simulations: resolution, quality metrics, adaptive refinement. |
 
----
+</details>
 
 ### Developer Workflow Skills (obra/superpowers)
+
+<details>
+<summary>Click to expand skill list</summary>
 
 | Skill | Description |
 |-------|-------------|
@@ -1549,6 +1872,9 @@ Your agent should list the installed skills with their capabilities.
 | [finishing-a-development-branch](skills/finishing-a-development-branch/) | Complete development branches: merge, PR, or cleanup with structured decision options. |
 | [using-superpowers](skills/using-superpowers/) | Meta-skill: discover and use available skills for any task at conversation start. |
 
+</details>
+
+</details>
 
 ## Acknowledgements
 
