@@ -1,105 +1,94 @@
-# OpenClaw Medical Skills
+# OpenClaw Medical Skills — 医療AIスキルライブラリ
 
 <div align="center">
 
 [![GitHub Stars](https://img.shields.io/github/stars/FreedomIntelligence/OpenClaw-Medical-Skills?style=for-the-badge&logo=github&color=gold)](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/FreedomIntelligence/OpenClaw-Medical-Skills?style=for-the-badge&logo=github&color=blue)](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/FreedomIntelligence/OpenClaw-Medical-Skills?style=for-the-badge&logo=github)](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/issues)
-[![Skills Count](https://img.shields.io/badge/Skills-869-brightgreen?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01IDEuNDEtMS40MUwxMCAxNC4xN2w3LjU5LTcuNTlMMTkgOGwtOSA5eiIvPjwvc3ZnPg==)](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/tree/main/skills)
+[![スキル数](https://img.shields.io/badge/スキル数-869-brightgreen?style=for-the-badge)](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/tree/main/skills)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-OpenClaw%20%7C%20NanoClaw-orange?style=for-the-badge)](https://github.com/openclaw/openclaw)
+[![Platform](https://img.shields.io/badge/プラットフォーム-OpenClaw%20%7C%20NanoClaw-orange?style=for-the-badge)](https://github.com/openclaw/openclaw)
 
-**The largest open-source medical AI skill library for OpenClaw.**
+**OpenClaw向けに設計された、最大のオープンソース医療AIスキルライブラリ。**
 
-*869 curated skills · Clinical · Genomics · Drug Discovery · Bioinformatics · Medical Devices*
+*869の厳選スキル · 臨床医学 · ゲノミクス · 創薬 · バイオインフォマティクス · 医療機器*
 
-[English](#) | [中文](README_zh.md) | [日本語](README_ja.md)
+[English](README.md) | [中文](README_zh.md) | [日本語](#)
 
 </div>
 
 ---
 
-## What Is This?
+## プロジェクト概要
 
-**OpenClaw Medical Skills** is a curated collection of **869 AI agent skills** covering the full spectrum of biomedical and clinical research. These skills are designed for [OpenClaw](https://github.com/openclaw/openclaw) / [NanoClaw](https://github.com/qwibitai/nanoclaw) — Claude-based personal AI assistant frameworks — and transform a general-purpose AI agent into a powerful medical and scientific research companion.
+**OpenClaw Medical Skills** は、生物医学と臨床研究の全領域をカバーする **869のAIエージェントスキル** を厳選したコレクションです。[OpenClaw](https://github.com/openclaw/openclaw) / [NanoClaw](https://github.com/qwibitai/nanoclaw) — Claude ベースのパーソナルAIアシスタントフレームワーク — 向けに設計されており、汎用AIエージェントを強力な医学・科学研究パートナーに変革します。
 
-Each skill is a self-contained module (a `SKILL.md` file) that:
-- Teaches the agent specialized domain knowledge and workflows
-- Connects to real databases, APIs, and computational tools
-- Produces structured, clinically or scientifically relevant outputs
+各スキルは独立したモジュール（`SKILL.md` ファイル）で、以下の機能を提供します：
+- エージェントに専門分野の知識とワークフローを注入
+- 実際のデータベース、API、計算ツールに接続
+- 構造化された臨床・科学的に関連性のある出力を生成
 
-> We benefit from the open-source community. The full collection of resources can be found here: [Awesome LLM Resources](https://github.com/WangRongsheng/awesome-LLM-resources?tab=readme-ov-file#%E6%8A%80%E8%83%BD-Skills)
+### このスキルライブラリが必要な理由
 
-### Why This Collection Matters
-
-| Without Skills | With OpenClaw Medical Skills |
+| スキルなし | OpenClaw Medical Skills 導入後 |
 |---|---|
-| Generic AI responses about medicine | Real PubMed / ClinicalTrials.gov / FDA queries |
-| No bioinformatics capability | RNA-seq, scRNA-seq, GWAS, variant calling pipelines |
-| No drug intelligence | ChEMBL, DrugBank, DDI prediction, pharmacovigilance |
-| No clinical documentation | SOAP notes, discharge summaries, prior auth decisions |
-| No genomics support | VCF annotation, ACMG classification, PRS calculation |
-| No regulatory guidance | FDA, CE mark, IEC 62304, ISO 14971 compliance |
+| 医学に関する一般的なAI回答 | PubMed / ClinicalTrials.gov / FDA の実データクエリ |
+| バイオインフォマティクス機能なし | RNA-seq、scRNA-seq、GWAS、変異アノテーションパイプライン |
+| 創薬インテリジェンスなし | ChEMBL、DrugBank、DDI予測、ファーマコビジランス |
+| 臨床文書なし | SOAPノート、退院サマリー、事前承認判定 |
+| ゲノミクスサポートなし | VCFアノテーション、ACMG分類、ポリジェニックリスクスコア |
+| 規制ガイダンスなし | FDA、CEマーク、IEC 62304、ISO 14971 コンプライアンス |
 
-This collection aggregates skills from **12+ open-source skill repositories** spanning academic research tools, clinical workflows, regulatory frameworks, and cutting-edge AI-driven protein design — giving your AI agent capabilities comparable to a team of specialized research scientists.
-
----
-
-## Installation
-
-### Requirements
-
-- [OpenClaw](https://github.com/openclaw/openclaw) installed and running, **or** [NanoClaw](https://github.com/qwibitai/nanoclaw) as an alternative
-- Git (for cloning this repo)
+本コレクションは **12以上** のオープンソーススキルリポジトリを統合し、学術研究ツール、臨床ワークフロー、規制フレームワーク、最先端のAI駆動タンパク質設計をカバーしています。AIエージェントに専門研究科学者チームに匹敵する能力を付与します。
 
 ---
 
-### For OpenClaw Users
+## インストール方法
 
-OpenClaw loads skills from two locations:
+### 前提条件
 
-| Priority | Path | Scope |
+- [OpenClaw](https://github.com/openclaw/openclaw) がインストール・稼働中、または代替として [NanoClaw](https://github.com/qwibitai/nanoclaw)
+- Git（本リポジトリのクローン用）
+
+---
+
+### OpenClaw ユーザー向け
+
+OpenClaw は以下の2箇所からスキルを読み込みます：
+
+| 優先度 | パス | スコープ |
 |---|---|---|
-| High | `<workspace>/skills/` | Per-workspace (recommended) |
-| Low | `~/.openclaw/skills/` | Global, shared across all agents |
+| 高 | `<workspace>/skills/` | ワークスペースごと（推奨） |
+| 低 | `~/.openclaw/skills/` | グローバル、全エージェント共有 |
 
-#### Method 1 — Clone and Copy (Recommended)
+#### 方法1 — クローンしてコピー（推奨）
 
 ```bash
-# Clone this repository (skills only — skips large data files)
-git clone --depth=1 --no-checkout https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
-cd OpenClaw-Medical-Skills
-git sparse-checkout init --cone
-git sparse-checkout set skills
-git checkout main
+# リポジトリをクローン
+git clone https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
 
-# Install to your workspace skills directory
-cp -r skills/* <your-workspace>/skills/
+# ワークスペースのskillsディレクトリにインストール
+cp -r OpenClaw-Medical-Skills/skills/* <your-workspace>/skills/
 
-# Or install globally (available to all agents)
-cp -r skills/* ~/.openclaw/skills/
+# またはグローバルにインストール（全エージェントで利用可能）
+cp -r OpenClaw-Medical-Skills/skills/* ~/.openclaw/skills/
 ```
 
-> **Note:** Some skills bundle large data files (databases, datasets). The
-> sparse-checkout method above avoids downloading them. If you need the full
-> repo including all data, install [Git LFS](https://git-lfs.com) first, then
-> run `git clone https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git`.
+次回のセッションでスキルが自動的に有効になります。再起動は不要です。
 
-Skills are picked up automatically on the next session. No restart needed.
+#### 方法2 — ClawHub CLI
 
-#### Method 2 — ClawHub CLI
-
-If you use the [ClawHub registry](https://clawhub.com), you can search and install individual skills from there. For bulk install from this collection, Method 1 is faster.
+[ClawHub レジストリ](https://clawhub.com)をご利用の場合、個別のスキルを検索してインストールできます。コレクション全体の一括インストールには方法1を推奨します。
 
 ```bash
 npm install -g clawhub
-clawhub install <skill-slug>    # install a single skill
-clawhub update --all            # update all installed skills
+clawhub install <skill-slug>    # 安装单个技能
+clawhub update --all            # 更新所有已安装技能
 ```
 
-#### Method 3 — Configure Extra Directories
+#### 方法3 — 追加スキルディレクトリの設定
 
-To point OpenClaw at a cloned copy of this repo permanently, add it to `~/.openclaw/openclaw.json`:
+本リポジトリのクローンパスを `~/.openclaw/openclaw.json` に恒久的に設定します：
 
 ```json
 {
@@ -111,14 +100,14 @@ To point OpenClaw at a cloned copy of this repo permanently, add it to `~/.openc
 }
 ```
 
-This mounts the entire collection without copying files.
+これによりファイルをコピーせずにスキルコレクション全体をマウントできます。
 
-#### Method 4 — Install Selected Skills Only
+#### 方法4 — 必要なスキルのみインストール
 
-Pick skills relevant to your domain:
+必要に応じて、ご自身の分野に関連するスキルを選択してください：
 
 ```bash
-# Example: clinical + drug discovery stack
+# 例：臨床 + 創薬スキルの組み合わせ
 SKILLS=(
   "clinical-reports"
   "tooluniverse-drug-research"
@@ -135,139 +124,139 @@ done
 
 ---
 
-### For NanoClaw Users
+### NanoClaw ユーザー向け
 
-NanoClaw loads skills into agent containers at startup from `container/skills/`.
+NanoClaw はコンテナ起動時に `container/skills/` からスキルを読み込みます。
 
 ```bash
-# Clone and copy into NanoClaw container skills directory
+# クローンしてNanoClawコンテナのスキルディレクトリにコピー
 git clone https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills.git
 cp -r OpenClaw-Medical-Skills/skills/* /path/to/nanoclaw/container/skills/
 
-# Rebuild the container to apply
+# コンテナを再ビルドして適用
 cd /path/to/nanoclaw
 ./container/build.sh
 ```
 
 ---
 
-### Verification
+### インストール確認
 
-After installation, ask your agent:
+インストール完了後、エージェントに質問してみてください：
 
 ```
-What medical and clinical skills do you have available?
+利用可能な医療・臨床スキルを教えてください。
 ```
 
-Your agent should list the installed skills with their capabilities.
+エージェントがインストール済みのスキルとその機能を一覧表示するはずです。
 
 ---
 
-## Skills Overview
+## スキル概要
 
-| Category | Count | Highlights |
+| カテゴリ | 数量 | 主なスキル |
 |---|---|---|
-| General & Core | 10 | Browser/search, document tools, and developer workflow utilities |
-| Medical & Clinical | 119 | Clinical reports, CDS, oncology, imaging, and healthcare AI |
-| Scientific Databases | 43 | Genomics/protein/drug databases and biomedical knowledge retrieval |
-| Bioinformatics (gptomics) | 239 | Variant analysis, sequencing QC, DE, pathways, single-cell, and epigenomics |
-| Omics & Computational Biology | 59 | Single-cell/spatial, proteomics, cheminformatics, and protein design tools |
-| ClawBio Pipelines | 21 | Orchestration pipelines for scRNA, GWAS, ancestry, and structural workflows |
-| BioOS Extended Suite | 285 | Extended agent suite for oncology, immunology, clinical AI, and infrastructure |
-| Data Science & Tools | 93 | Statistics, visualization, automation, simulation, and scientific tooling |
-| **Total** | **869** | |
+| 汎用・コア | 10 | ブラウザ/検索、ドキュメントツール、開発ワークフローユーティリティ |
+| 医療・臨床 | 119 | 臨床報告、意思決定支援、腫瘍学、画像診断、医療AI |
+| 科学データベース | 43 | ゲノム/タンパク質/薬物データベース、生物医学情報検索 |
+| バイオインフォマティクス (gptomics bio-* スイート) | 239 | 変異解析、シーケンスQC、発現差異、パスウェイ、シングルセル解析 |
+| オミクス・計算生物学 | 59 | シングルセル/空間オミクス、プロテオミクス、ケモインフォマティクス、タンパク質設計 |
+| ClawBio パイプライン | 21 | scRNA、GWAS、祖先解析、構造生物学向けオーケストレーション |
+| BioOS 拡張スイート | 285 | 腫瘍学、免疫学、臨床AI、研究インフラの拡張エージェント |
+| データサイエンス・ツール | 93 | 統計、可視化、自動化、シミュレーション、科学ツール |
+| **合計** | **869** | |
 
 ---
 
-## Table of Contents
+## 目次
 
-### General & Core
-- [General Tools](#general-tools)
+### 汎用・コア
+- [汎用ツール](#汎用ツール)
 
-### Medical & Clinical
-- [Medical Tools](#medical-tools)
-- [Drug Safety & Chemical Biology](#drug-safety--chemical-biology)
-- [Medical Imaging & Pathology](#medical-imaging--pathology)
-- [Healthcare ML & Clinical AI](#healthcare-ml--clinical-ai)
-- [Mental Health & Crisis Intervention](#mental-health--crisis-intervention)
-- [Health & Wellness Analytics](#health--wellness-analytics)
-- [Medical Device & Regulatory](#medical-device--regulatory)
-- [Medical Device Software (meddev-agent-skills)](#medical-device--regulatory)
+### 医療・臨床
+- [医療専用ツール](#医療専用ツール)
+- [薬物安全性・化学生物学](#薬物安全性・化学生物学)
+- [医用画像・病理学](#医用画像・病理学)
+- [医療ML・臨床AI](#医療ml・臨床ai)
+- [メンタルヘルス・危機介入](#メンタルヘルス・危機介入)
+- [ヘルス・ウェルネス分析](#ヘルス・ウェルネス分析)
+- [医療機器・規制](#医療機器・規制)
+- [医療機器ソフトウェア (meddev-agent-skills)](#医療機器・規制)
 
-### Scientific Databases
-- [Scientific Databases (Genomics & Variants)](#scientific-databases-genomics--variants)
-- [Scientific Databases (Proteins, Pathways & Drugs)](#scientific-databases-proteins-pathways--drugs)
-- [Cancer Genomics Databases](#cancer-genomics-databases)
-- [Genomic & Molecular Databases](#genomic--molecular-databases)
-- [Structural Biology & Drug Discovery](#structural-biology--drug-discovery)
+### 科学データベース
+- [科学データベース（ゲノミクス・変異）](#科学データベース（ゲノミクス・変異）)
+- [科学データベース（タンパク質・パスウェイ・薬物）](#科学データベース（タンパク質・パスウェイ・薬物）)
+- [がんゲノミクスデータベース](#がんゲノミクスデータベース)
+- [ゲノム・分子データベース](#ゲノム・分子データベース)
+- [構造生物学・創薬](#構造生物学・創薬)
 
-### Bioinformatics (gptomics bio-* suite)
-- [Bioinformatics Tools & Pipelines](#bioinformatics-tools--pipelines)
-- [Bioinformatics — Clinical Databases & Variant Analysis](#bioinformatics--clinical-databases--variant-analysis)
-- [Bioinformatics — Sequencing & Read QC](#bioinformatics--sequencing--read-qc)
-- [Bioinformatics — Differential Expression & Transcriptomics](#bioinformatics--differential-expression--transcriptomics)
-- [Bioinformatics — Pathway & Network Analysis](#bioinformatics--pathway--network-analysis)
-- [Bioinformatics — Single-Cell & Spatial Omics](#bioinformatics--single-cell--spatial-omics)
-- [Bioinformatics — Epigenomics & Chromatin](#bioinformatics--epigenomics--chromatin)
-- [Bioinformatics — Metagenomics & Microbiome](#bioinformatics--metagenomics--microbiome)
-- [Bioinformatics — Immunoinformatics & Flow Cytometry](#bioinformatics--immunoinformatics--flow-cytometry)
-- [Bioinformatics — Multi-Omics Integration](#bioinformatics--multi-omics-integration)
-- [Bioinformatics — Proteomics & Metabolomics](#bioinformatics--proteomics--metabolomics)
-- [Bioinformatics — Structural Biology & Cheminformatics](#bioinformatics--structural-biology--cheminformatics)
-- [Bioinformatics — Epidemiological & Causal Genomics](#bioinformatics--epidemiological--causal-genomics)
+### バイオインフォマティクス (gptomics)
+- [バイオインフォマティクスツール・パイプライン](#バイオインフォマティクスツール・パイプライン)
+- [バイオインフォ — 臨床データベース・変異解析](#バイオインフォ--臨床データベース・変異解析)
+- [バイオインフォ — シーケンシング・リードQC](#バイオインフォ--シーケンシング・リードqc)
+- [バイオインフォ — 発現差異解析・トランスクリプトミクス](#バイオインフォ--発現差異解析・トランスクリプトミクス)
+- [バイオインフォ — パスウェイ・ネットワーク解析](#バイオインフォ--パスウェイ・ネットワーク解析)
+- [バイオインフォ — シングルセル・空間オミクス](#バイオインフォ--シングルセル・空間オミクス)
+- [バイオインフォ — エピゲノミクス・クロマチン](#バイオインフォ--エピゲノミクス・クロマチン)
+- [バイオインフォ — メタゲノミクス・マイクロバイオーム](#バイオインフォ--メタゲノミクス・マイクロバイオーム)
+- [バイオインフォ — 免疫インフォマティクス・フローサイトメトリー](#バイオインフォ--免疫インフォマティクス・フローサイトメトリー)
+- [バイオインフォ — マルチオミクス統合](#バイオインフォ--マルチオミクス統合)
+- [バイオインフォ — プロテオミクス・メタボロミクス](#バイオインフォ--プロテオミクス・メタボロミクス)
+- [バイオインフォ — 構造生物学・ケモインフォマティクス](#バイオインフォ--構造生物学・ケモインフォマティクス)
+- [バイオインフォ — 疫学ゲノミクス・因果ゲノミクス](#バイオインフォ--疫学ゲノミクス・因果ゲノミクス)
 
-### Omics & Computational Biology
-- [Single-Cell & Spatial Omics](#single-cell--spatial-omics)
-- [Single-Cell & Trajectory Analysis](#single-cell--trajectory-analysis)
-- [Proteomics & Mass Spectrometry](#proteomics--mass-spectrometry)
-- [Cheminformatics & Drug Discovery](#cheminformatics--drug-discovery)
-- [Protein Structure & Design](#protein-structure--design)
-- [Phylogenetics & Network Analysis](#phylogenetics--network-analysis)
+### オミクス・計算生物学
+- [シングルセル・空間オミクス](#シングルセル・空間オミクス)
+- [シングルセル・軌跡解析](#シングルセル・軌跡解析)
+- [プロテオミクス・質量分析](#プロテオミクス・質量分析)
+- [ケモインフォマティクス・創薬](#ケモインフォマティクス・創薬)
+- [タンパク質構造・設計](#タンパク質構造・設計)
+- [系統解析・ネットワーク解析](#系統解析・ネットワーク解析)
 
-### ClawBio Pipelines
-- [Bioinformatics Orchestration & Pipelines (ClawBio)](#bioinformatics-orchestration--pipelines-clawbio)
-- [Genomics, Ancestry & Pharmacogenomics (ClawBio)](#genomics-ancestry--pharmacogenomics-clawbio)
-- [Structural Biology & Literature (ClawBio)](#structural-biology--literature-clawbio)
+### ClawBio パイプライン
+- [バイオインフォマティクスオーケストレーション・パイプライン (ClawBio)](#バイオインフォマティクスオーケストレーション・パイプライン-clawbio)
+- [ゲノミクス・祖先解析・ファーマコゲノミクス (ClawBio)](#ゲノミクス・祖先解析・ファーマコゲノミクス-clawbio)
+- [構造生物学・文献統合 (ClawBio)](#構造生物学・文献統合-clawbio)
 
-### BioOS Extended Suite
-- [BioOS Extended Bioinformatics Suite](#bioos-extended-bioinformatics-suite-mdbabumiamssmllms-universal-life-science-and-clinical-skills-)
-- [Oncology & Precision Medicine Agents (BioOS)](#oncology--precision-medicine-agents-bioos)
-- [Hematology & Blood Disorders (BioOS)](#hematology--blood-disorders-bioos)
-- [Immunology & Cell Therapy (BioOS)](#immunology--cell-therapy-bioos)
-- [Single-Cell & Spatial Agents (BioOS)](#single-cell--spatial-agents-bioos)
-- [Drug Discovery & Design (BioOS)](#drug-discovery--design-bioos)
-- [Clinical AI & Healthcare (BioOS)](#clinical-ai--healthcare-bioos)
-- [Research Infrastructure & Agents (BioOS)](#research-infrastructure--agents-bioos)
+### BioOS 拡張スイート
+- [BioOS 拡張バイオインフォマティクススイート](#bioos-拡張バイオインフォマティクススイート)
+- [腫瘍学・精密医療エージェント (BioOS)](#腫瘍学・精密医療エージェント-bioos)
+- [血液学・血液疾患 (BioOS)](#血液学・血液疾患-bioos)
+- [免疫学・細胞治療 (BioOS)](#免疫学・細胞治療-bioos)
+- [シングルセル・空間オミクスエージェント (BioOS)](#シングルセル・空間オミクスエージェント-bioos)
+- [創薬・分子設計 (BioOS)](#創薬・分子設計-bioos)
+- [臨床AI・ヘルスケア (BioOS)](#臨床ai・ヘルスケア-bioos)
+- [研究基盤・エージェントフレームワーク (BioOS)](#研究基盤・エージェントフレームワーク-bioos)
 
-### Data Science & Tools
-- [Statistics & Data Analysis](#statistics--data-analysis)
-- [Data Processing & Scientific Computing](#data-processing--scientific-computing)
-- [Scientific Visualization & Communication](#scientific-visualization--communication)
-- [Public Health & Time Series](#public-health--time-series)
-- [Computational Simulation & Ontology](#computational-simulation--ontology-heshamfsmaterials-simulation-skills)
-- [Analyst Personas](#analyst-personas)
-- [Lab Automation & Integration](#lab-automation--integration)
-- [Scientific Research & Writing](#scientific-research--writing)
-- [Scientific Literature & Reference Management](#scientific-literature--reference-management)
-- [Additional Scientific Tools](#additional-scientific-tools)
-- [Developer Workflow Skills](#developer-workflow-skills-obrasuperpowers)
+### データサイエンス・ツール
+- [統計・データ分析](#統計・データ分析)
+- [データ処理・科学計算](#データ処理・科学計算)
+- [科学的可視化・コミュニケーション](#科学的可視化・コミュニケーション)
+- [公衆衛生・時系列分析](#公衆衛生・時系列分析)
+- [計算シミュレーション・オントロジー](#計算シミュレーション・オントロジー-heshamfsmaterials-simulation-skills)
+- [アナリストペルソナ](#アナリストペルソナ)
+- [ラボ自動化・統合](#ラボ自動化・統合)
+- [科学研究・執筆](#科学研究・執筆)
+- [科学文献・参考文献管理](#科学文献・参考文献管理)
+- [補足科学ツール](#補足科学ツール)
+- [開発ワークフロースキル](#開発ワークフロースキル-obrasuperpowers)
 
 ---
 
-## Skills List
+## スキル一覧
 
-## 🧰 General & Core
+## 🧰 汎用・コア
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### General Tools
+### 汎用ツール
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [agent-browser](skills/agent-browser/) | Browse the web for any task — research topics, read articles, interact with web apps, fill forms, take screenshots, extract data, and test web pages. Use whenever a browser would be useful. |
 | [find-skills](skills/find-skills/) | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. |
 | [multi-search-engine](skills/multi-search-engine/) | Multi search engine integration with 17 engines (8 CN + 9 Global). Supports Baidu, Bing, 360, Sogou, WeChat, Google, DuckDuckGo, WolframAlpha and more. Supports advanced operators, time filters, site search. No API keys required. |
@@ -283,18 +272,18 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## 🏥 Medical & Clinical
+## 🏥 医療・臨床
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Medical Tools
+### 医療専用ツール
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [pubmed-search](skills/pubmed-search/) | Search PubMed for scientific literature. Use when the user asks to find papers, search literature, look up research, find publications, or asks about recent studies. |
 | [medical-research-toolkit](skills/medical-research-toolkit/) | Query 14+ biomedical databases for drug repurposing, target discovery, clinical trials, and literature research. Access ChEMBL, PubMed, ClinicalTrials.gov, OpenTargets, OpenFDA, OMIM, Reactome, KEGG, UniProt, and more through a unified MCP endpoint. |
 | [medical-specialty-briefs](skills/medical-specialty-briefs/) | Generate daily or on-demand medical research briefs for any medical specialty. Searches latest research from top-tier journals (NEJM, Lancet, JAMA, BMJ, Nature Medicine), delivers concise summaries with 1-sentence takeaways and direct links. Use when user asks for medical news, research updates, or specialty-specific updates (endocrinology, cardiology, oncology, neurology, etc.). |
@@ -373,13 +362,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Drug Safety & Chemical Biology
+### 薬物安全性・化学生物学
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [tooluniverse-adverse-event-detection](skills/tooluniverse-adverse-event-detection/) | Detect and analyze adverse drug event signals using FDA FAERS data, drug labels, disproportionality analysis (PRR, ROR, IC), and biomedical evidence. Generates quantitative safety signal scores (0-100). |
 | [tooluniverse-binder-discovery](skills/tooluniverse-binder-discovery/) | Discover novel small molecule binders for protein targets using structure-based and ligand-based approaches. Creates actionable reports with candidate compounds, ADMET profiles, and synthesis feasibility. |
 | [tooluniverse-chemical-compound-retrieval](skills/tooluniverse-chemical-compound-retrieval/) | Retrieves chemical compound information from PubChem and ChEMBL with disambiguation, cross-referencing, and quality assessment. Comprehensive compound profiles with identifiers, properties, bioactivity. |
@@ -389,13 +378,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Medical Imaging & Pathology
+### 医用画像・病理学
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [pydicom](skills/pydicom/) | Python library for working with DICOM medical imaging files. Reading, writing, modifying DICOM data, extracting pixel data, handling metadata and multi-frame files. |
 | [histolab](skills/histolab/) | Digital pathology image processing toolkit for whole slide images (WSI). Process H&E or IHC stained tissue images, extract tiles from gigapixel slides. |
 | [pathml](skills/pathml/) | Computational pathology toolkit for analyzing WSI and multiparametric imaging data. H&E stained images, multiplex immunofluorescence, spatial omics integration. |
@@ -405,13 +394,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Healthcare ML & Clinical AI
+### 医療ML・臨床AI
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [pyhealth](skills/pyhealth/) | Comprehensive healthcare AI toolkit for developing ML models with clinical data (EHR, claims). Task definition API, model training, evaluation for clinical NLP and prediction. |
 | [scikit-learn](skills/scikit-learn/) | Machine learning in Python: supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning. |
 | [transformers](skills/transformers/) | Pre-trained transformer models for NLP, computer vision, audio, and multimodal tasks. Text generation, classification, question answering, and biomedical NLP (BioBERT, ClinicalBERT). |
@@ -420,13 +409,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Health & Wellness Analytics
+### ヘルス・ウェルネス分析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [nutrition-analyzer](skills/nutrition-analyzer/) | Comprehensive nutrition analysis: macro/micronutrient tracking, dietary assessment, meal planning, food data lookup, and nutritional recommendations. |
 | [mental-health-analyzer](skills/mental-health-analyzer/) | Mental health data analysis: mood tracking, symptom patterns, PHQ/GAD scoring, behavioral insights, and wellness recommendations. |
 | [sleep-analyzer](skills/sleep-analyzer/) | Sleep quality analysis: sleep stages, duration, efficiency metrics, circadian rhythm assessment, and sleep hygiene recommendations. |
@@ -445,13 +434,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Mental Health & Crisis Intervention
+### メンタルヘルス・危機介入
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [crisis-detection-intervention-ai](skills/crisis-detection-intervention-ai/) | Detect crisis signals using NLP and mental health sentiment analysis. Implements suicide ideation detection, automated escalation, and crisis resource integration for mental health apps and recovery platforms. |
 | [crisis-response-protocol](skills/crisis-response-protocol/) | Handle mental health crisis situations safely: crisis detection, safety protocols, emergency escalation, suicide prevention, and hotline integration for AI coaching applications. |
 | [hipaa-compliance](skills/hipaa-compliance/) | Ensure HIPAA compliance when handling PHI. Audit logging, data access controls, security event tracking, and compliance verification for health data applications. |
@@ -466,31 +455,31 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Medical Device & Regulatory
+### 医療機器・規制
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [iso-13485-certification](skills/iso-13485-certification/) | Comprehensive toolkit for ISO 13485 QMS documentation for medical devices: gap analysis, Quality Manuals, procedures, Medical Device Files. Covers FDA QMSR, EU MDR compliance. |
 
 </details>
 
 </details>
 
-## 🗂️ Scientific Databases
+## 🗂️ 科学データベース
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Scientific Databases (Genomics & Variants)
+### 科学データベース（ゲノミクス・変異）
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [clinvar-database](skills/clinvar-database/) | Query NCBI ClinVar for variant clinical significance. Search by gene/position, interpret pathogenicity classifications, access via E-utilities API or FTP, annotate VCFs, for genomic medicine. |
 | [clinpgx-database](skills/clinpgx-database/) | Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele functions, for precision medicine and genotype-guided dosing decisions. |
 | [cosmic-database](skills/cosmic-database/) | Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication. |
@@ -503,13 +492,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Scientific Databases (Proteins, Pathways & Drugs)
+### 科学データベース（タンパク質・パスウェイ・薬物）
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [alphafold-database](skills/alphafold-database/) | Access AlphaFold's 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, analyze confidence metrics (pLDDT, PAE), for drug discovery and structural biology. |
 | [pdb-database](skills/pdb-database/) | Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery. |
 | [uniprot-database](skills/uniprot-database/) | Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For multi-database workflows, prefer bioservices (unified interface to 40+ services). |
@@ -533,26 +522,26 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Cancer Genomics Databases
+### がんゲノミクスデータベース
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [cbioportal-database](skills/cbioportal-database/) | Query cBioPortal for cancer genomics: somatic mutations, copy number, gene expression, and survival data across hundreds of cancer studies. Cancer target validation, oncogene analysis, and patient-level genomic profiling. |
 | [depmap](skills/depmap/) | Query the Cancer Dependency Map (DepMap) for cancer cell line gene dependency scores (CRISPR Chronos), drug sensitivity, and gene effect profiles. Identify cancer-specific vulnerabilities and synthetic lethal interactions. |
 | [imaging-data-commons](skills/imaging-data-commons/) | Query and download public cancer imaging data from NCI Imaging Data Commons. Access radiology (CT, MR, PET) and pathology datasets for AI training or research. No authentication required. |
 
 </details>
 
-### Genomic & Molecular Databases
+### ゲノム・分子データベース
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bindingdb-database](skills/bindingdb-database/) | Query BindingDB for measured drug-target binding affinities (Ki, Kd, IC50, EC50). Drug discovery, lead optimization, polypharmacology, and SAR studies. |
 | [gnomad-database](skills/gnomad-database/) | Query gnomAD for population allele frequencies, variant constraint scores (pLI, LOEUF), and loss-of-function intolerance. Variant pathogenicity interpretation and rare disease genetics. |
 | [gtex-database](skills/gtex-database/) | Query GTEx for tissue-specific gene expression, eQTLs, and sQTLs. Link GWAS variants to gene regulation and interpret non-coding variant effects. |
@@ -563,13 +552,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Structural Biology & Drug Discovery
+### 構造生物学・創薬
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [molecular-dynamics](skills/molecular-dynamics/) | Run and analyze molecular dynamics simulations with OpenMM and MDAnalysis. Protein/small molecule systems, force fields, energy minimization, RMSD/RMSF analysis, free energy surfaces. |
 | [glycoengineering](skills/glycoengineering/) | Analyze and engineer protein glycosylation. Predict N/O-glycosylation sites, access glycoengineering tools (NetOGlyc, GlycoShield). Therapeutic antibody optimization and vaccine design. |
 | [adaptyv](skills/adaptyv/) | Cloud laboratory platform for automated protein testing: binding assays, expression testing, thermostability, enzyme activity. Protein sequence optimization with NetSolP, SoluProt, ESM. |
@@ -579,18 +568,18 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## 🧬 Bioinformatics (gptomics bio-* suite)
+## 🧬 バイオインフォマティクス (gptomics bio-* スイート)
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Bioinformatics Tools & Pipelines
+### バイオインフォマティクスツール・パイプライン
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [biopython](skills/biopython/) | Primary Python toolkit for molecular biology: PubMed/NCBI queries (Bio.Entrez), sequence manipulation, file parsing (FASTA, GenBank, FASTQ, PDB), BLAST workflows. |
 | [scikit-bio](skills/scikit-bio/) | Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, for microbiome analysis. |
 | [etetoolkit](skills/etetoolkit/) | Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics. |
@@ -606,13 +595,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Clinical Databases & Variant Analysis
+### バイオインフォ — 臨床データベース・変異解析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-clinical-databases-clinvar-lookup](skills/bio-clinical-databases-clinvar-lookup/) | Query ClinVar for clinical variant classifications, pathogenicity assertions, and review status. |
 | [bio-clinical-databases-dbsnp-queries](skills/bio-clinical-databases-dbsnp-queries/) | Query dbSNP for SNP frequency, allele, and functional annotation data. |
 | [bio-clinical-databases-gnomad-frequencies](skills/bio-clinical-databases-gnomad-frequencies/) | Retrieve population allele frequencies from gnomAD for rare variant interpretation. |
@@ -647,13 +636,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Sequencing & Read QC
+### バイオインフォ — シーケンシング・リードQC
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-fastq-quality](skills/bio-fastq-quality/) | Assess FASTQ read quality with FastQC/MultiQC; generate per-sample QC reports. |
 | [bio-read-qc-adapter-trimming](skills/bio-read-qc-adapter-trimming/) | Trim sequencing adapters with Trimmomatic, Cutadapt, or fastp. |
 | [bio-read-qc-contamination-screening](skills/bio-read-qc-contamination-screening/) | Screen reads for human/microbial contamination using FastQ Screen or Kraken. |
@@ -689,13 +678,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Differential Expression & Transcriptomics
+### バイオインフォ — 発現差異解析・トランスクリプトミクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-de-deseq2-basics](skills/bio-de-deseq2-basics/) | DESeq2 differential expression analysis: design matrix, size factors, dispersion. |
 | [bio-de-edger-basics](skills/bio-de-edger-basics/) | EdgeR differential expression for count data with empirical Bayes dispersion. |
 | [bio-de-results](skills/bio-de-results/) | Extract, filter, and annotate DESeq2/EdgeR results tables. |
@@ -712,13 +701,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Pathway & Network Analysis
+### バイオインフォ — パスウェイ・ネットワーク解析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-pathway-go-enrichment](skills/bio-pathway-go-enrichment/) | Gene Ontology enrichment analysis with clusterProfiler or g:Profiler. |
 | [bio-pathway-gsea](skills/bio-pathway-gsea/) | Gene Set Enrichment Analysis (GSEA) with pre-ranked or count-based statistics. |
 | [bio-pathway-kegg-pathways](skills/bio-pathway-kegg-pathways/) | KEGG pathway enrichment and visualization for metabolic/signaling pathways. |
@@ -728,13 +717,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Single-Cell & Spatial Omics
+### バイオインフォ — シングルセル・空間オミクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-single-cell-batch-integration](skills/bio-single-cell-batch-integration/) | Integrate scRNA-seq datasets across batches with Harmony, BBKNN, scVI. |
 | [bio-single-cell-cell-annotation](skills/bio-single-cell-cell-annotation/) | Annotate single-cell clusters using marker genes and reference atlases. |
 | [bio-single-cell-cell-communication](skills/bio-single-cell-cell-communication/) | Infer ligand-receptor cell-cell communication with CellChat or NicheNet. |
@@ -764,13 +753,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Epigenomics & Chromatin
+### バイオインフォ — エピゲノミクス・クロマチン
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-atac-seq-atac-peak-calling](skills/bio-atac-seq-atac-peak-calling/) | Call ATAC-seq chromatin accessibility peaks with MACS2/MACS3. |
 | [bio-atac-seq-atac-qc](skills/bio-atac-seq-atac-qc/) | ATAC-seq quality control: TSS enrichment, fragment size, FRiP score. |
 | [bio-atac-seq-differential-accessibility](skills/bio-atac-seq-differential-accessibility/) | Differential chromatin accessibility between conditions with DESeq2/DiffBind. |
@@ -799,13 +788,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Metagenomics & Microbiome
+### バイオインフォ — メタゲノミクス・マイクロバイオーム
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-metagenomics-abundance](skills/bio-metagenomics-abundance/) | Estimate microbial taxon abundances from shotgun metagenomics. |
 | [bio-metagenomics-amr-detection](skills/bio-metagenomics-amr-detection/) | Detect antimicrobial resistance genes with AMRFinder or RGI/CARD. |
 | [bio-metagenomics-functional-profiling](skills/bio-metagenomics-functional-profiling/) | Functional profiling of metagenomes with HUMAnN3 for pathway/gene families. |
@@ -822,13 +811,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Immunoinformatics & Flow Cytometry
+### バイオインフォ — 免疫インフォマティクス・フローサイトメトリー
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-immunoinformatics-epitope-prediction](skills/bio-immunoinformatics-epitope-prediction/) | Predict MHC-I/II epitopes from protein sequences with NetMHCpan/MHCflurry. |
 | [bio-immunoinformatics-immunogenicity-scoring](skills/bio-immunoinformatics-immunogenicity-scoring/) | Score peptide immunogenicity for vaccine and neoantigen prioritization. |
 | [bio-immunoinformatics-mhc-binding-prediction](skills/bio-immunoinformatics-mhc-binding-prediction/) | Predict peptide-MHC binding affinities for multiple alleles. |
@@ -856,13 +845,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Multi-Omics Integration
+### バイオインフォ — マルチオミクス統合
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-multi-omics-data-harmonization](skills/bio-multi-omics-data-harmonization/) | Harmonize multi-omics datasets: sample matching, batch correction, feature alignment. |
 | [bio-multi-omics-mixomics-analysis](skills/bio-multi-omics-mixomics-analysis/) | Multi-omics factor analysis with mixOmics (DIABLO, MOFA, sPLS-DA). |
 | [bio-multi-omics-mofa-integration](skills/bio-multi-omics-mofa-integration/) | Multi-Omics Factor Analysis (MOFA+) for latent factor discovery across modalities. |
@@ -870,13 +859,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Proteomics & Metabolomics
+### バイオインフォ — プロテオミクス・メタボロミクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-proteomics-data-import](skills/bio-proteomics-data-import/) | Import DDA/DIA proteomics data from MaxQuant, Proteome Discoverer, FragPipe. |
 | [bio-proteomics-dia-analysis](skills/bio-proteomics-dia-analysis/) | DIA proteomics analysis with DIA-NN or Spectronaut. |
 | [bio-proteomics-differential-abundance](skills/bio-proteomics-differential-abundance/) | Differential protein abundance with limma, MSstats, or DEqMS. |
@@ -897,13 +886,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Structural Biology & Cheminformatics
+### バイオインフォ — 構造生物学・ケモインフォマティクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-structural-biology-alphafold-predictions](skills/bio-structural-biology-alphafold-predictions/) | Use AlphaFold2/3 predictions: model quality assessment, confidence scores. |
 | [bio-structural-biology-modern-structure-prediction](skills/bio-structural-biology-modern-structure-prediction/) | Modern structure prediction with ESMFold, RoseTTAFold, and OpenFold. |
 | [bio-pdb-geometric-analysis](skills/bio-pdb-geometric-analysis/) | Geometric analysis of protein structures: distances, angles, contacts, RMSD. |
@@ -920,13 +909,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Bioinformatics — Epidemiological & Causal Genomics
+### バイオインフォ — 疫学ゲノミクス・因果ゲノミクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-epidemiological-genomics-amr-surveillance](skills/bio-epidemiological-genomics-amr-surveillance/) | Antimicrobial resistance surveillance from genomic epidemiology data. |
 | [bio-epidemiological-genomics-pathogen-typing](skills/bio-epidemiological-genomics-pathogen-typing/) | Pathogen molecular typing: MLST, wgMLST, cgMLST for outbreak analysis. |
 | [bio-epidemiological-genomics-phylodynamics](skills/bio-epidemiological-genomics-phylodynamics/) | Phylodynamics: molecular clock, population dynamics, BEAST2/TreeTime. |
@@ -955,18 +944,18 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## 🔬 Omics & Computational Biology
+## 🔬 オミクス・計算生物学
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Single-Cell & Spatial Omics
+### シングルセル・空間オミクス
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [anndata](skills/anndata/) | Working with annotated data matrices in Python for single-cell genomics analysis, managing experimental measurements with metadata and large-scale omics data. |
 | [scanpy](skills/scanpy/) | Single-cell RNA-seq analysis. Load .h5ad/10X data, QC, normalization, PCA/UMAP/t-SNE, Leiden clustering, marker genes, cell type annotation, trajectory. |
 | [scvi-tools](skills/scvi-tools/) | Deep learning for single-cell analysis: data integration/batch correction (scVI/scANVI), ATAC-seq (PeakVI), CITE-seq (totalVI), multiome (MultiVI), spatial deconvolution (DestVI). |
@@ -994,13 +983,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Cheminformatics & Drug Discovery
+### ケモインフォマティクス・創薬
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [rdkit](skills/rdkit/) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity. |
 | [datamol](skills/datamol/) | Pythonic RDKit wrapper with simplified interface for standard drug discovery: SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformer generation. |
 | [medchem](skills/medchem/) | Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering. |
@@ -1014,26 +1003,26 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Proteomics & Mass Spectrometry
+### プロテオミクス・質量分析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [matchms](skills/matchms/) | Mass spectrometry spectral analysis. Process mzML/MGF/MSP files, spectral similarity (cosine, modified cosine), metadata harmonization, compound identification. |
 | [pyopenms](skills/pyopenms/) | Python interface to OpenMS for LC-MS/MS proteomics and metabolomics workflows. File handling (mzML, mzXML, mzTab, pepXML, mzIdentML) and quantification. |
 | [flowio](skills/flowio/) | Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata/channels, convert to CSV/DataFrame, for flow cytometry data preprocessing. |
 
 </details>
 
-### Protein Structure & Design
+### タンパク質構造・設計
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [esm](skills/esm/) | ESM3 generative multimodal protein design (sequence, structure, function) and ESM C efficient protein embeddings. Protein language models for sequence scoring and embedding. |
 | [alphafold](skills/alphafold/) | Validate protein designs using AlphaFold2 structure prediction. Validates designed sequences, predicts binder-target complex structures, calculates pLDDT/PAE metrics. |
 | [boltz](skills/boltz/) | Structure prediction using Boltz-1/Boltz-2, an open biomolecular structure predictor for protein complexes, binder validation, and open-source AlphaFold alternative. |
@@ -1055,24 +1044,24 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Single-Cell & Trajectory Analysis
+### シングルセル・軌跡解析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [scvelo](skills/scvelo/) | RNA velocity analysis. Estimate cell state transitions from unspliced/spliced mRNA dynamics, infer trajectory directions, compute latent time, and identify driver genes in scRNA-seq data. |
 
 </details>
 
-### Phylogenetics & Network Analysis
+### 系統解析・ネットワーク解析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [phylogenetics](skills/phylogenetics/) | Build and analyze phylogenetic trees using MAFFT, IQ-TREE 2, and FastTree. Evolutionary analysis, microbial genomics, viral phylodynamics, and molecular clock studies. |
 | [networkx](skills/networkx/) | Network and graph analysis in Python. Biological network analysis, protein interaction networks, pathway graphs, community detection, and centrality measures. |
 | [torch-geometric](skills/torch-geometric/) | Graph Neural Networks (PyG) for molecular property prediction, drug-target interaction modeling, and geometric deep learning on biological graphs. |
@@ -1081,18 +1070,18 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## ⚙️ ClawBio Pipelines
+## ⚙️ ClawBio パイプライン
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Bioinformatics Orchestration & Pipelines (ClawBio)
+### バイオインフォマティクスオーケストレーション・パイプライン (ClawBio)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-orchestrator](skills/bio-orchestrator/) | Meta-agent routing bioinformatics requests to specialized sub-skills. Handles file type detection (VCF, FASTQ, BAM, PDB, h5ad), analysis planning, report generation, and reproducibility export. |
 | [scrna-orchestrator](skills/scrna-orchestrator/) | Local Scanpy pipeline for single-cell RNA-seq QC, clustering, marker discovery, and two-group differential expression from raw-count .h5ad files. |
 | [seq-wrangler](skills/seq-wrangler/) | Sequence QC, alignment, and BAM processing. Wraps FastQC, BWA/Bowtie2, SAMtools for automated read-to-BAM pipelines. |
@@ -1102,13 +1091,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Genomics, Ancestry & Pharmacogenomics (ClawBio)
+### ゲノミクス・祖先解析・ファーマコゲノミクス (ClawBio)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [gwas-lookup](skills/gwas-lookup/) | Federated variant lookup across 9 genomic databases: GWAS Catalog, Open Targets, PheWeb (UKB, FinnGen, BBJ), GTEx, eQTL Catalogue, and more. |
 | [gwas-prs](skills/gwas-prs/) | Calculate polygenic risk scores from DTC genetic data (23andMe/AncestryDNA) using the PGS Catalog. |
 | [pharmgx-reporter](skills/pharmgx-reporter/) | Pharmacogenomic report from DTC genetic data — 12 genes, 31 SNPs, 51 drugs with CPIC guidelines and personalized dosage cards. |
@@ -1122,13 +1111,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Structural Biology & Literature (ClawBio)
+### 構造生物学・文献統合 (ClawBio)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [struct-predictor](skills/struct-predictor/) | Local protein structure prediction with AlphaFold, Boltz, or Chai. Compare structures, compute RMSD, visualize 3D models. |
 | [lit-synthesizer](skills/lit-synthesizer/) | Search PubMed and bioRxiv, summarize papers with LLM, build citation graphs, and generate literature review sections. |
 | [claw-semantic-sim](skills/claw-semantic-sim/) | Semantic Similarity Index for disease research literature using PubMedBERT embeddings. Compute research equity metrics (HEIM). |
@@ -1139,20 +1128,20 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## 🧠 BioOS Extended Suite
+## 🧠 BioOS 拡張スイート
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### BioOS Extended Bioinformatics Suite (mdbabumiamssm/LLMs-Universal-Life-Science-and-Clinical-Skills-)
+### BioOS 拡張バイオインフォマティクススイート
 
-#### Sequence & Alignment Tools
+#### 配列・アライメントツール
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-alignment-sorting](skills/bio-alignment-sorting/) | Sort SAM/BAM files by coordinate or name with samtools sort. |
 | [bio-alignment-filtering](skills/bio-alignment-filtering/) | Filter alignments by flag, quality, region, or paired status. |
 | [bio-alignment-indexing](skills/bio-alignment-indexing/) | Index BAM/CRAM files with samtools index for random access. |
@@ -1174,13 +1163,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Sequence Analysis
+#### 配列解析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-seq-objects](skills/bio-seq-objects/) | Work with BioPython sequence objects: SeqRecord, features, annotations. |
 | [bio-sequence-properties](skills/bio-sequence-properties/) | Compute sequence properties: MW, pI, hydrophobicity, extinction coefficient. |
 | [bio-sequence-similarity](skills/bio-sequence-similarity/) | Compute sequence similarity with pairwise alignment and percent identity. |
@@ -1199,13 +1188,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Read Alignment
+#### リードアライメント
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-read-alignment-bwa-alignment](skills/bio-read-alignment-bwa-alignment/) | Align short reads to reference genome with BWA-MEM. |
 | [bio-read-alignment-bowtie2-alignment](skills/bio-read-alignment-bowtie2-alignment/) | Align short reads with Bowtie2; local and end-to-end modes. |
 | [bio-read-alignment-hisat2-alignment](skills/bio-read-alignment-hisat2-alignment/) | Splice-aware RNA-seq alignment with HISAT2. |
@@ -1213,13 +1202,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Genome Assembly
+#### ゲノムアセンブリ
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-genome-assembly-long-read-assembly](skills/bio-genome-assembly-long-read-assembly/) | De novo assembly from ONT/PacBio long reads with Flye or Canu. |
 | [bio-genome-assembly-hifi-assembly](skills/bio-genome-assembly-hifi-assembly/) | HiFi (CCS) read assembly with Hifiasm for high-accuracy genomes. |
 | [bio-genome-assembly-short-read-assembly](skills/bio-genome-assembly-short-read-assembly/) | Illumina de novo assembly with SPAdes for metagenomes/bacteria/transcriptomes. |
@@ -1231,13 +1220,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Genome Intervals & Annotation
+#### ゲノム区間・アノテーション
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-genome-intervals-bed-file-basics](skills/bio-genome-intervals-bed-file-basics/) | Read, write, and filter BED files with pybedtools/bedtools. |
 | [bio-genome-intervals-interval-arithmetic](skills/bio-genome-intervals-interval-arithmetic/) | Intersect, subtract, merge, and complement genomic intervals. |
 | [bio-genome-intervals-proximity-operations](skills/bio-genome-intervals-proximity-operations/) | Find nearest features and compute distances between intervals. |
@@ -1248,13 +1237,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### RNA Quantification
+#### RNA定量
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-rna-quantification-featurecounts-counting](skills/bio-rna-quantification-featurecounts-counting/) | Count reads per gene with featureCounts from subread package. |
 | [bio-rna-quantification-alignment-free-quant](skills/bio-rna-quantification-alignment-free-quant/) | Pseudo-alignment quantification with Salmon or Kallisto. |
 | [bio-rna-quantification-tximport-workflow](skills/bio-rna-quantification-tximport-workflow/) | Import Salmon/Kallisto quantification into R/DESeq2 with tximport. |
@@ -1266,13 +1255,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Epitranscriptomics & CLIP-seq
+#### エピトランスクリプトミクス・CLIP-seq
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-epitranscriptomics-merip-preprocessing](skills/bio-epitranscriptomics-merip-preprocessing/) | Preprocess MeRIP-seq data for m6A methylation analysis. |
 | [bio-epitranscriptomics-m6a-peak-calling](skills/bio-epitranscriptomics-m6a-peak-calling/) | Call m6A peaks from MeRIP-seq with exomePeak2 or MACS2. |
 | [bio-epitranscriptomics-m6anet-analysis](skills/bio-epitranscriptomics-m6anet-analysis/) | Nanopore direct RNA m6A detection with m6Anet deep learning. |
@@ -1286,13 +1275,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Small RNA-seq
+#### スモールRNA-seq
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-small-rna-seq-smrna-preprocessing](skills/bio-small-rna-seq-smrna-preprocessing/) | Preprocess small RNA-seq: adapter trimming, size selection. |
 | [bio-small-rna-seq-mirdeep2-analysis](skills/bio-small-rna-seq-mirdeep2-analysis/) | Identify and quantify known/novel miRNAs with miRDeep2. |
 | [bio-small-rna-seq-mirge3-analysis](skills/bio-small-rna-seq-mirge3-analysis/) | miRNA annotation and quantification with miRge3.0. |
@@ -1301,13 +1290,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Population Genetics & Phasing
+#### 集団遺伝学・ハプロタイプ推定
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-population-genetics-plink-basics](skills/bio-population-genetics-plink-basics/) | PLINK2 for GWAS QC, LD pruning, and basic population genetics. |
 | [bio-population-genetics-population-structure](skills/bio-population-genetics-population-structure/) | Population stratification with PCA, ADMIXTURE, and STRUCTURE. |
 | [bio-population-genetics-linkage-disequilibrium](skills/bio-population-genetics-linkage-disequilibrium/) | Compute LD metrics (r², D') and LD decay analysis. |
@@ -1321,13 +1310,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Comparative Genomics & Phylogenetics
+#### 比較ゲノミクス・系統発生学
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-comparative-genomics-ortholog-inference](skills/bio-comparative-genomics-ortholog-inference/) | Infer orthologs and paralogs with OrthoFinder or OMA. |
 | [bio-comparative-genomics-synteny-analysis](skills/bio-comparative-genomics-synteny-analysis/) | Detect syntenic blocks between genomes with MCScan or SyRI. |
 | [bio-comparative-genomics-positive-selection](skills/bio-comparative-genomics-positive-selection/) | Test for positive selection with PAML, HyPhy, or dN/dS ratios. |
@@ -1341,13 +1330,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Systems Biology & Metabolic Modeling
+#### システム生物学・代謝モデリング
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-systems-biology-flux-balance-analysis](skills/bio-systems-biology-flux-balance-analysis/) | Flux balance analysis (FBA) with COBRApy for metabolic network modeling. |
 | [bio-systems-biology-metabolic-reconstruction](skills/bio-systems-biology-metabolic-reconstruction/) | Reconstruct genome-scale metabolic models from genome annotations. |
 | [bio-systems-biology-gene-essentiality](skills/bio-systems-biology-gene-essentiality/) | Predict essential genes by single gene knockouts in metabolic models. |
@@ -1356,13 +1345,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Experimental Design & Reporting
+#### 実験計画・機械学習・レポーティング
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-experimental-design-sample-size](skills/bio-experimental-design-sample-size/) | Power analysis and sample size calculation for omics experiments. |
 | [bio-experimental-design-power-analysis](skills/bio-experimental-design-power-analysis/) | Statistical power analysis for detecting differential signals. |
 | [bio-experimental-design-batch-design](skills/bio-experimental-design-batch-design/) | Optimize sample batching to minimize confounding with ComBat design. |
@@ -1382,13 +1371,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### End-to-End Workflow Pipelines
+#### エンドツーエンドワークフローパイプライン
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-workflows-fastq-to-variants](skills/bio-workflows-fastq-to-variants/) | Complete FASTQ → alignment → variant calling pipeline. |
 | [bio-workflows-rnaseq-to-de](skills/bio-workflows-rnaseq-to-de/) | RNA-seq → alignment → counts → DESeq2 differential expression. |
 | [bio-workflows-scrnaseq-pipeline](skills/bio-workflows-scrnaseq-pipeline/) | Single-cell RNA-seq end-to-end: Cell Ranger → Scanpy → clustering. |
@@ -1431,13 +1420,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-#### Data Visualization (Bioinformatics)
+#### データ可視化（バイオインフォマティクス）
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bio-data-visualization-heatmaps-clustering](skills/bio-data-visualization-heatmaps-clustering/) | Hierarchical clustering heatmaps with ComplexHeatmap or seaborn. |
 | [bio-data-visualization-volcano-customization](skills/bio-data-visualization-volcano-customization/) | Customized volcano plots with ggplot2 or matplotlib for DE results. |
 | [bio-data-visualization-circos-plots](skills/bio-data-visualization-circos-plots/) | Circular genome visualization with Circos or pycirclize. |
@@ -1452,13 +1441,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Oncology & Precision Medicine Agents (BioOS)
+### 腫瘍学・精密医療エージェント (BioOS)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [autonomous-oncology-agent](skills/autonomous-oncology-agent/) | Autonomous oncology research agent: literature mining, trial matching, biomarker analysis, and treatment hypothesis generation. |
 | [precision-oncology-agent](skills/precision-oncology-agent/) | Precision oncology: tumor molecular profiling → actionable alterations → treatment recommendations. |
 | [pan-cancer-multiomics-agent](skills/pan-cancer-multiomics-agent/) | Pan-cancer multi-omics integration for cross-cancer pattern discovery and driver identification. |
@@ -1484,13 +1473,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Hematology & Blood Disorders (BioOS)
+### 血液学・血液疾患 (BioOS)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [myeloma-mrd-agent](skills/myeloma-mrd-agent/) | Multiple myeloma MRD assessment from flow cytometry and NGS data. |
 | [mpn-progression-monitor-agent](skills/mpn-progression-monitor-agent/) | Myeloproliferative neoplasm progression monitoring from serial molecular data. |
 | [mpn-research-assistant](skills/mpn-research-assistant/) | Research assistant for myeloproliferative neoplasms: literature, mutation analysis, treatment. |
@@ -1501,13 +1490,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Immunology & Cell Therapy (BioOS)
+### 免疫学・細胞治療 (BioOS)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [cart-design-optimizer-agent](skills/cart-design-optimizer-agent/) | Optimize CAR-T cell construct design: scFv selection, linker, co-stimulatory domain. |
 | [armored-cart-design-agent](skills/armored-cart-design-agent/) | Design armored CAR-T cells with cytokine payloads and resistance mechanisms. |
 | [tcell-exhaustion-analysis-agent](skills/tcell-exhaustion-analysis-agent/) | Analyze T cell exhaustion from scRNA-seq and ATAC-seq data. |
@@ -1520,13 +1509,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Single-Cell & Spatial Agents (BioOS)
+### シングルセル・空間オミクス智能体 (15个)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [cellagent-annotation](skills/cellagent-annotation/) | AI-driven single-cell cluster annotation using marker gene databases. |
 | [universal-single-cell-annotator](skills/universal-single-cell-annotator/) | Universal scRNA-seq annotator using foundation models and multi-reference integration. |
 | [scfoundation-model-agent](skills/scfoundation-model-agent/) | Single-cell foundation model inference (scFoundation/scGPT) for zero-shot annotation. |
@@ -1545,13 +1534,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Drug Discovery & Design (BioOS)
+### 药物发现与分子设计 (35个)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [agentd-drug-discovery](skills/agentd-drug-discovery/) | AgentD autonomous drug discovery: target identification, hit finding, ADMET optimization. |
 | [chematagent-drug-discovery](skills/chematagent-drug-discovery/) | CheMatAgent: chemistry-aware drug design with retrosynthesis and property optimization. |
 | [chemcrow-drug-discovery](skills/chemcrow-drug-discovery/) | ChemCrow drug discovery toolkit: web search, Python, chemical tools integration. |
@@ -1584,13 +1573,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Clinical AI & Healthcare (BioOS)
+### 临床AI与医疗 (20个)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [chatehr-clinician-assistant](skills/chatehr-clinician-assistant/) | EHR clinical assistant: note summarization, structured data extraction, clinical decision support. |
 | [clinical-note-summarization](skills/clinical-note-summarization/) | Summarize clinical notes into structured SOAP format with key findings. |
 | [clinical-nlp-extractor](skills/clinical-nlp-extractor/) | Extract clinical entities (diagnoses, medications, procedures) from unstructured text. |
@@ -1613,13 +1602,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Research Infrastructure & Agents (BioOS)
+### 研究基础设施与智能体框架 (20个)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [biomni-general-agent](skills/biomni-general-agent/) | BioMni general biomedical agent for flexible multi-step research tasks. |
 | [biomni-research-agent](skills/biomni-research-agent/) | BioMni research-focused agent with literature, database, and analysis integration. |
 | [biokernel](skills/biokernel/) | BioKernel: unified computational kernel for bioinformatics tool orchestration. |
@@ -1643,18 +1632,18 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## 📊 Data Science & Tools
+## 📊 データサイエンス・ツール
 
 <details open>
-<summary>Expand/Collapse this category</summary>
+<summary>このカテゴリを展開/折りたたむ</summary>
 
-### Statistics & Data Analysis
+### 統計・データ分析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [statistical-analysis](skills/statistical-analysis/) | Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlation, Bayesian stats, power analysis, assumption checks, APA reporting. |
 | [statsmodels](skills/statsmodels/) | Statistical modeling: OLS, GLM, logistic, ARIMA, time series, hypothesis tests, diagnostics, AIC/BIC, for rigorous statistical inference. |
 | [pymc](skills/pymc/) | Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming. |
@@ -1667,13 +1656,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Lab Automation & Integration
+### ラボ自動化・統合
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [opentrons-integration](skills/opentrons-integration/) | Lab automation platform for Flex/OT-2 robots. Write Protocol API v2 protocols, liquid handling, hardware modules (heater-shaker, thermocycler), labware management. |
 | [pylabrobot](skills/pylabrobot/) | Laboratory automation toolkit for controlling liquid handlers, plate readers, pumps, heater shakers, incubators, centrifuges, and analytical equipment. |
 | [benchling-integration](skills/benchling-integration/) | Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, workflows via API, build Benchling Apps, for lab data management automation. |
@@ -1683,13 +1672,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Scientific Research & Writing
+### 科学研究・執筆
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [scientific-writing](skills/scientific-writing/) | Write scientific manuscripts in full paragraphs using a two-stage process: section outlines then full text. Covers all sections of research papers. |
 | [scientific-critical-thinking](skills/scientific-critical-thinking/) | Evaluate research rigor. Assess methodology, experimental design, statistical validity, biases, confounding, evidence quality (GRADE, Cochrane ROB). |
 | [scientific-brainstorming](skills/scientific-brainstorming/) | Research ideation partner. Generate hypotheses, explore interdisciplinary connections, challenge assumptions, develop methodologies, identify research gaps. |
@@ -1704,13 +1693,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Analyst Personas
+### アナリストペルソナ
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [biologist-analyst](skills/biologist-analyst/) | Expert biologist analyst persona for interpreting biological experiments, sequencing data, cell biology assays, and molecular biology research. |
 | [chemist-analyst](skills/chemist-analyst/) | Expert chemist analyst persona for interpreting chemical data, synthesis routes, spectroscopic results, reaction mechanisms, and laboratory analyses. |
 | [epidemiologist-analyst](skills/epidemiologist-analyst/) | Expert epidemiologist analyst persona for study design, cohort analysis, risk factor assessment, public health surveillance, and causal inference. |
@@ -1718,39 +1707,39 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Public Health & Time Series
+### 公衆衛生・時系列分析
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [datacommons-client](skills/datacommons-client/) | Access public health statistics from Google Data Commons: disease prevalence, demographic data, health indicators across global sources. |
 | [timesfm-forecasting](skills/timesfm-forecasting/) | Zero-shot time series forecasting with Google's TimesFM. For vital sign trends, health sensor data, and longitudinal health monitoring without custom model training. |
 | [aeon](skills/aeon/) | Time series ML: classification, regression, clustering, anomaly detection, segmentation for temporal health data and sequential clinical measurements. |
 
 </details>
 
-### Scientific Literature & Reference Management
+### 科学文献・参考文献管理
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [bgpt-paper-search](skills/bgpt-paper-search/) | Search scientific papers with BGPT MCP server. Returns 25+ structured fields per paper: methods, results, sample sizes, quality scores. For literature reviews and evidence synthesis. |
 | [pyzotero](skills/pyzotero/) | Interact with Zotero reference libraries programmatically via Zotero Web API v3. Retrieve, create, update items, export citations, upload PDFs, and build research automation workflows. |
 | [open-notebook](skills/open-notebook/) | Self-hosted NotebookLM alternative. Ingest PDFs, videos, web pages, documents; generate AI-powered notes; chat with research materials; supports 16+ AI providers. |
 
 </details>
 
-### Data Processing & Scientific Computing
+### データ処理・科学計算
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [dask](skills/dask/) | Distributed computing for larger-than-RAM genomics/omics datasets. Scale pandas/NumPy beyond memory, parallel file processing, distributed ML. |
 | [polars](skills/polars/) | Fast in-memory DataFrame library (1-100GB). Faster pandas replacement for biomedical data ETL and analysis pipelines. |
 | [vaex](skills/vaex/) | Out-of-core DataFrame operations for billions of rows. Fast statistics and visualization for large genomic and clinical datasets. |
@@ -1759,13 +1748,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Scientific Visualization & Communication
+### 科学的可視化・コミュニケーション
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [matplotlib](skills/matplotlib/) | Low-level plotting library for full customization. Publication-quality figures for scientific manuscripts and journals. |
 | [seaborn](skills/seaborn/) | Statistical visualization with pandas integration. Box plots, violin plots, heatmaps, pair plots for biomedical data exploration. |
 | [plotly](skills/plotly/) | Interactive visualization. Hover info, zoom, dashboards for exploratory biomedical analysis and presentations. |
@@ -1779,13 +1768,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Additional Scientific Tools
+### 補足科学ツール
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [pymoo](skills/pymoo/) | Multi-objective optimization with PYMOO. Drug design parameter optimization, Pareto front analysis, evolutionary algorithms. |
 | [markitdown](skills/markitdown/) | Convert documents (PDF, DOCX, PPTX, HTML, images) to Markdown for processing and analysis. |
 | [perplexity-search](skills/perplexity-search/) | AI-powered search via Perplexity for real-time scientific information retrieval. |
@@ -1800,13 +1789,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Computational Simulation & Ontology (HeshamFS/materials-simulation-skills)
+### 計算シミュレーション・オントロジー (HeshamFS/materials-simulation-skills)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [ontology-validator](skills/ontology-validator/) | Validate biomedical ontology structures and term relationships (HPO, GO, MeSH, SNOMED, OBO). |
 | [ontology-explorer](skills/ontology-explorer/) | Navigate and query biomedical ontologies: term hierarchies, annotations, cross-references. |
 | [ontology-mapper](skills/ontology-mapper/) | Map between biomedical ontologies: HPO↔OMIM, GO↔UniProt, disease↔phenotype cross-ontology. |
@@ -1827,13 +1816,13 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-### Developer Workflow Skills (obra/superpowers)
+### 開発ワークフロースキル (obra/superpowers)
 
 <details>
-<summary>Click to expand skill list</summary>
+<summary>クリックしてスキル一覧を展開</summary>
 
-| Skill | Description |
-|-------|-------------|
+| スキル | 説明 |
+|------|------|
 | [test-driven-development](skills/test-driven-development/) | TDD workflow: write tests before implementation, red-green-refactor cycle for reliable code. |
 | [systematic-debugging](skills/systematic-debugging/) | Structured debugging approach: hypothesis formation, evidence gathering, root cause analysis. |
 | [dispatching-parallel-agents](skills/dispatching-parallel-agents/) | Orchestrate parallel subagents for independent tasks to maximize throughput. |
@@ -1853,9 +1842,9 @@ Your agent should list the installed skills with their capabilities.
 
 </details>
 
-## Acknowledgements
+## 謝辞
 
-We have benefited from the following excellent projects. If you’re interested, please check them out.
+以下の優れたプロジェクトの恩恵を受けています。興味のある方はぜひご覧ください。
 
 1. [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
 2. [Anthropics Skills](https://github.com/anthropics/skills)

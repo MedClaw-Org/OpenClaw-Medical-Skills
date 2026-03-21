@@ -13,7 +13,7 @@
 
 *869 个精选技能 · 临床医学 · 基因组学 · 药物发现 · 生物信息学 · 医疗器械*
 
-[English](README.md) | [中文](#)
+[English](README.md) | [中文](#) | [日本語](README_ja.md)
 
 </div>
 
